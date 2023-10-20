@@ -1,378 +1,312 @@
 export default [
   {
-    "id": "ada-lovelace",
-    "name": "Ada Lovelace",
-    "shortDescription": "Pionera en la programación, primera programadora de la historia.",
-    "description": "Una visionaria matemática británica del siglo XIX, es aclamada como la primera programadora de la historia. Su colaboración con Charles Babbage en la creación de la Máquina Analítica la llevó a desarrollar algoritmos, incluyendo el famoso \"algoritmo de Bernoulli\", destinados a ser procesados por una máquina. Su visión pionera la convirtió en una figura fundamental en la informática y la inteligencia artificial. Lovelace demostró que las computadoras podían ir más allá de simples cálculos matemáticos, anticipando un mundo donde la programación sería esencial en la resolución de problemas complejos, dejando una huella imborrable en la ciencia y la tecnología.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/ada-lovelace.jpg",
+    "id": "akira",
+    "name": "Akira",
+    "shortDescription": "En un Neo-Tokio distópico, un joven con poderes psíquicos desencadena el caos mientras un grupo de amigos lucha por detenerlo",
+    "description": "Es una película de animación japonesa de 1988 dirigida por Katsuhiro Otomo, basada en su manga homónimo. La historia se desarrolla en Neo-Tokio, una ciudad pos apocalíptica, siguiendo a Kaneda y Tetsuo, dos jóvenes envueltos en un misterio relacionado con Akira, un niño con poderes psíquicos. La película combina una trama intrincada con una animación revolucionaria y efectos visuales sorprendentes. Akira es aclamada por su influencia en la cultura pop y su impacto en el género de la ciencia ficción, siendo una obra maestra del anime que continúa fascinando a audiencias en todo el mundo.",
+    "imageUrl":  "https://static.wikia.nocookie.net/akira/images/9/96/Akira-poster-2001.jpg/revision/latest?cb=20230506010126&path-prefix=es",
     "facts": {
-      "yearOfBirth": "1815",
-      "yearOfDeath": "1852",
-      "birthPlace": "Londres, Reino Unido",
-      "mainField": "Ciencia de la Computación"
+      "year": 1988,
+      "genre": "Ciencia Ficción",
+      "studio": "TMS Entertainment"
     },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/genera-una-imagen-de-ada-lovelace2c-la-primera-prog/650a1eff8ff04b88833d5cdef0309441"
+  },
+  {
+    "id": "my-neighbor-totoro",
+    "name": "My Neighbor Totoro",
+    "shortDescription": "Embárcate en un viaje mágico con dos niñas que encuentran amistad y maravillas en el bosque con el encantador Totoro",
+    "description": "Es una película de animación japonesa del Studio Ghibli, dirigida por Hayao Miyazaki en 1988. La historia sigue a dos hermanas, Satsuki y Mei, que se mudan a la campiña japonesa para estar cerca de su madre enferma. Allí, descubren a Totoro, un amigable espíritu del bosque. La película es un cuento mágico que celebra la niñez, la naturaleza y la imaginación. Con su animación exquisita y personajes entrañables. Mi Vecino Totoro ha cautivado a audiencias de todas las edades y se ha convertido en un clásico del cine de animación japonesa.",
+    "imageUrl": "https://es.web.img2.acsta.net/c_310_420/medias/nmedia/18/70/26/45/20236853.jpg",
+    "facts": {
+      "year": 1988,
+      "genre": "Fantasía",
+      "studio": "Studio Ghibli"
+
+    },
+  },
+  {
+    "id": "grave-of-the-fireflies",
+      "name": "Grave of the fireflies",
+      "shortDescription": "Una poderosa y desgarradora historia de dos hermanos luchando por sobrevivir en medio de la devastación de la Segunda Guerra Mundial.",
+      "description": "Es una película de animación japonesa de 1988, dirigida por Isao Takahata y producida por Studio Ghibli. La película narra la desgarradora historia de dos hermanos, Setsuko y Seita, que luchan por sobrevivir en Japón durante la Segunda Guerra Mundial. Abandonados por su familia, enfrentan la hambruna y la tragedia en un mundo devastado por la guerra. La película explora temas de pérdida, sacrificio y la inocencia perdida. Con su narrativa conmovedora y animación conmovedora. La Tumba de las Luciérnagas es un conmovedor retrato de la lucha y la resiliencia en medio de la adversidad.",
+      "imageUrl": "https://www.ecartelera.com/carteles/6200/6288/003.jpg",
+      "facts": {
+        "year": 1988,
+        "genre": "Drama/Bélico",
+        "studio": "Studio Ghibli"
+    },
+  },
+  {
+    "id": "ninja-scroll",
+      "name": "Ninja Scroll",
+      "shortDescription": "Un ninja solitario debe enfrentarse a demonios y asesinos mortales en un emocionante viaje lleno de acción y misterio.",
+      "description": "Ninja Scroll es una película de anime que combina acción y aventuras, lanzada en 1993 y dirigida por Yoshiaki Kawajiri. La historia sigue a Jubei Kibagami, un ninja solitario, mientras se ve envuelto en una trama mortal que involucra a un grupo de guerreros sobrenaturales y un misterioso oro. Con combates emocionantes y una trama llena de giros, la película se ha convertido en un clásico del anime y es conocida por su estilo visual distintivo y su trama intensa.",
+      "imageUrl": "https://www.ecartelera.com/carteles/6000/6061/001_p.jpg",
+      "facts": {
+        "year": 1993,
+        "genre": "Acción, Aventuras, Fantasía",
+        "studio": "Madhouse",
+    },
+  },
+  {
+    "id": "ghost-in-the-shell",
+      "name": "Ghost in the shell",
+      "shortDescription": "Adéntrate en un intrigante futuro cibernético donde una valiente agente busca la verdad en un mundo de alta tecnología.",
+      "description": "Es una película de anime revolucionaria dirigida por Mamoru Oshii. Ambientada en un futuro distópico, sigue a la Mayor Motoko Kusanagi y su equipo en la unidad de seguridad cibernética persiguiendo a un hacker conocido como el Puppet Master. La película explora cuestiones existenciales y filosóficas sobre la identidad y la tecnología, todo en un cautivador mundo cibernético. Con su impresionante animación y su enfoque en la fusión entre humanos y máquinas, Ghost in the Shell ha dejado una marca duradera en el género de ciencia ficción y anime.",
+      "imageUrl": "http://misiontokyo.com/wp-content/uploads/2022/04/Ghost.jpg",
+      "facts": {
+        "year": 1995,
+        "genre": "Ciencia Ficción/Thriller",
+        "studio": "Production I.G"
+    },
+  },
+  {
+    "id": "princess-mononoke",
+      "name": "Princess Mononoke",
+      "shortDescription": "En un mundo de dioses y espíritus, una feroz princesa lucha por la supervivencia en una epopeya animada inolvidable.",
+      "description": "Dirigida por Hayao Miyazaki, es una obra maestra de la animación japonesa. La película narra la lucha épica entre la naturaleza y la civilización a través de la historia de Ashitaka, un joven príncipe maldito que se adentra en un mundo de dioses y espíritus para encontrar una cura. Se convierte en un intermediario en el conflicto entre los espíritus del bosque y los humanos que destruyen la naturaleza. La Princesa Mononoke es una exploración profunda de la coexistencia, la ecología y la relación entre humanidad y medio ambiente, todo ello con una animación visualmente impresionante y personajes complejos.",
+      "imageUrl": "https://pics.filmaffinity.com/La_princesa_Mononoke-720005363-large.jpg",
+      "facts": {
+        "year": 1997,
+        "genre": "Fantasía/Aventura",
+        "studio": "Studio Ghibli"
+    },
+  },
+  {
+    "id": "perfect-blue",
+      "name": "Perfect Blue",
+      "shortDescription": "Una estrella del pop se enfrenta a la oscuridad en su mente cuando un acosador desencadena un aterrador descenso psicológico.",
+      "description": "Dirigida por Satoshi Kon, es un thriller psicológico de animación que sigue a Mima, una cantante pop que decide dejar su carrera para convertirse en actriz. A medida que se sumerge en su nuevo papel, la realidad y la ficción se entrelazan y Mima experimenta una serie de sucesos aterradores que desafían su percepción de la realidad. La película explora temas de identidad, fama y obsesión en un ambiente de suspense psicológico. Perfect Blue es aclamada por su narrativa intrigante y su estilo visual distintivo, consolidando a Satoshi Kon como un maestro del anime.",
+      "imageUrl": "https://static.wikia.nocookie.net/doblaje/images/3/32/PerfectBlue.png/revision/latest/scale-to-width-down/338?cb=20230528031457&path-prefix=es",
+      "facts": {
+        "year": 1997,
+        "genre": "Thriller/Psicológico",
+        "studio": "Madhouse"
+
+    },
+  },
+  {
+    "id": "cowboy-bebop-knockin-on-heavens-door",
+      "name": "Cowboy Bebop Knockin on heavens door",
+      "shortDescription": "Los cazarrecompensas del Bebop se embarcan en una última misión épica para atrapar a un peligroso asesino en Marte.",
+      "description": "Es una película de anime basada en la exitosa serie de televisión Cowboy Bebop. Dirigida por Shinichirō Watanabe, la trama sigue a los cazarrecompensas del Bebop mientras investigan una serie de explosiones mortales en Marte. La película ofrece una narrativa independiente llena de acción, misterio y personajes complejos, ambientada en un universo futurista influenciado por el jazz y el cine noir. Knockin' on Heaven's Door es alabada por su impresionante animación y música, manteniendo el atractivo del fenómeno Cowboy Bebop y atrayendo a nuevos fanáticos al mundo de estos cazarrecompensas.",
+      "imageUrl": "https://www.ecartelera.com/carteles/8000/8003/001_p.jpg",
+      "facts": {
+        "year": 2001,
+        "genre": "Ciencia Ficción/Thriller",
+        "studio": "Sunrise"
+
+    },
+  },
+  {
+    
+    "id": "neon-genesis-evangelion-the-end-of-evangelion",
+    "name": "Neon Genesis Evangelion: The End of Evangelion",
+    "shortDescription": "La humanidad lucha por su existencia cuando los EVA se enfrentan a un apocalipsis espiritual y emocional.",
+    "description": "Una película de animación japonesa dirigida por Hideaki Anno, que sirve como final alternativo para la serie de televisión Neon Genesis Evangelion. La película presenta una narrativa compleja y abstracta que aborda temas existenciales y psicológicos a medida que los personajes enfrentan un apocalipsis de proporciones cósmicas. Con intensas secuencias de acción y simbolismo intrigante, The End of Evangelion ha dejado una impresión duradera en el mundo del anime y es celebrada por su exploración profunda de la psicología de los personajes y su enfoque filosófico en el género mecha.",
+    "imageUrl": "https://static.wikia.nocookie.net/doblaje/images/8/80/The_End_of_Evangelion_DVD.jpg/revision/latest/scale-to-width-down/340?cb=20200826040119&path-prefix=es",
+    "facts": {
+      "year": 1997,
+      "genre": "Mecha/Psicológico",
+      "studio": "Gainax"
+    },
+  },
+  {
+    "id": "porco-rosso",
+    "name": "Porco Rosso",
+    "shortDescription": "Únete al valiente piloto Porco Rosso mientras desafía a piratas aéreos en la Adriática de la década de 1930.",
+    "description": "Una película de animación japonesa dirigida por Hayao Miyazaki y producida por Studio Ghibli. La historia sigue a Porco Rosso, un piloto y aventurero convertido en cerdo antropomórfico, mientras combate piratas aéreos en el Adriático entre las dos guerras mundiales. La película presenta un mundo exquisitamente detallado y personajes encantadores, y aborda temas de honor, identidad y la lucha contra el mal. Con su estética nostálgica y encanto, Porco Rosso es una obra maestra que combina comedia, aventura y reflexión, y ha ganado un lugar especial en el corazón de los amantes del cine de animación.",
+    "imageUrl": "https://static.wikia.nocookie.net/doblaje/images/1/1d/Porco_Rosso_Portada.jpg/revision/latest?cb=20200301112423&path-prefix=es",
+    "facts": {
+      "year": 1992,
+      "genre": "Aventura",
+      "studio": "Studio Ghibli"
     }
   },
   {
-    "id": "emmy-noether",
-    "name": "Emmy Noether",
-    "shortDescription": "Matemática destacada, teorema fundamental en álgebra abstracta.",
-    "description": "Una brillante matemática alemana, revolucionó la física teórica con sus contribuciones al teorema de conservación de la energía y el teorema de Noether, fundamentales en la teoría de la relatividad y la mecánica cuántica. A pesar de los obstáculos que enfrentó como mujer en la academia, sus investigaciones en álgebra abstracta y teoría de grupos son fundamentales en la física moderna. Su capacidad para unificar conceptos matemáticos y físicos marcó un hito en la historia de la ciencia, allanando el camino para futuras generaciones de científicas.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/emmy-noether.jpg",
+    "id": "whisper-of-the-heart",
+    "name": "Whisper of the heart",
+    "shortDescription": "Acompaña a una joven en su inspirador viaje de autodescubrimiento y creatividad mientras persigue su pasión por la escritura.",
+    "description": "Dirigida por Yoshifumi Kondō y producida por Studio Ghibli, es una conmovedora película de animación que sigue la historia de Shizuku, una joven apasionada por la lectura y la escritura. Cuando descubre un gato curioso en un tren, su búsqueda de un antiguo violín la lleva a descubrir su pasión y determinación. La película es un cálido retrato de la adolescencia, el amor y la búsqueda de los sueños, con una banda sonora encantadora y animación detallada. Whisper of the Heart es un tesoro de Ghibli que celebra la creatividad y el autodescubrimiento.",
+    "imageUrl": "https://cl.buscafs.com/www.tomatazos.com/public/uploads/images/79205/79205_444x600.jpg",
     "facts": {
-      "yearOfBirth": "1882",
-      "yearOfDeath": "1935",
-      "birthPlace": "Erlangen, Alemania",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/create-an-image-of-of-a-german-woman2c-a-pioneering/6510ddb1e8254b928b8f8f1d5e95fea4"
+      "year": 1995,
+      "genre": "Drama/Romance",
+      "studio": "Studio Ghibli"
     }
   },
   {
-    "id": "hypatia-de-alejandria",
-    "name": "Hypatia de Alejandría",
-    "shortDescription": "Matemática y filósofa en la antigua Alejandría.",
-    "description": "Filósofa y matemática en la antigua Alejandría, desafió las normas de género de su época al destacar en una sociedad dominada por hombres. Su legado incluye importantes contribuciones a la geometría y la astronomía, así como su destacado papel como maestra y defensora del conocimiento en una época de agitación política. Hypatia demostró que las mujeres podían sobresalir en campos intelectuales y su valentía al mantener sus creencias filosóficas la convierte en un símbolo de resistencia y sabiduría en la historia de la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/hypatia-de-alejandria.jpg",
+    "id": "paprika",
+    "name": "Paprika",
+    "shortDescription": "Adéntrate en un mundo de sueños y pesadillas cuando una terapeuta usa tecnología para explorar la psique de sus pacientes.",
+    "description": "Dirigida por Satoshi Kon, es un intrigante thriller de animación que explora los límites entre la realidad y los sueños. La trama sigue a una terapeuta llamada Paprika que utiliza un dispositivo para entrar en los sueños de sus pacientes. Sin embargo, cuando el dispositivo es robado y los sueños comienzan a invadir la realidad, el mundo se sumerge en el caos. La película es un viaje psicodélico a través de los paisajes oníricos y los oscuros secretos de la mente humana, ofreciendo una narrativa surrealista y visualmente impactante. Paprika es un viaje emocionante y cerebral que desafía la percepción.",
+    "imageUrl": "https://pics.filmaffinity.com/Paprika_detective_de_los_sueanos-186953258-large.jpg",
     "facts": {
-      "yearOfBirth": "circa 360",
-      "yearOfDeath": "415",
-      "birthPlace": "Alejandría, Egipto",
-      "mainField": "Matemáticas, Filosofía"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/create-a-vivid-digital-artwork-or-painting-that-de/6510df0ebe1a4807af22175452761e1a"
+      "year": 2006,
+      "genre": "Ciencia Ficción/Psicológico",
+      "studio": "Madhouse"
     }
   },
   {
-    "id": "marjorie-lee-browne",
-    "name": "Marjorie Lee Browne",
-    "shortDescription": "Matemática, contribuyó a la teoría de números.",
-    "description": "Matemática estadounidense, destacó en una época en la que las mujeres afroamericanas enfrentaban múltiples barreras en la educación superior. No solo obtuvo su doctorado en matemáticas, sino que también se convirtió en una destacada educadora, promoviendo la diversidad en las ciencias matemáticas y desafiando la discriminación racial y de género. Su compromiso con la educación y su capacidad para inspirar a futuras generaciones la convierten en un modelo a seguir para las mujeres en la ciencia, dejando una huella perdurable en la historia académica.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/marjorie-lee-browne.jpg",
+    "id": "spirited-away",
+    "name": "Spirited Away",
+    "shortDescription": "Acompaña a Chihiro en un viaje mágico a un mundo espiritual donde supera desafíos y descubre su coraje interior.",
+    "description": "El Viaje de Chihiro es una película de animación japonesa dirigida por Hayao Miyazaki y producida por Studio Ghibli. La película fue lanzada en el año 2001 y se ha convertido en un clásico del cine de animación. La historia sigue a Chihiro, una niña que se adentra en un mundo mágico lleno de espíritus y criaturas extraordinarias. A medida que Chihiro busca una manera de regresar a su mundo, se enfrenta a desafíos emocionantes y conmovedores. La película combina elementos de fantasía, aventura y drama para crear una experiencia cinematográfica inolvidable.",
+    "imageUrl": "https://es.web.img2.acsta.net/r_1920_1080/img/49/e8/49e8fe683dd25ab1338340981c5f62ca.jpg",
     "facts": {
-      "yearOfBirth": "1914",
-      "yearOfDeath": "1979",
-      "birthPlace": "Memphis, Estados Unidos",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/design-an-inspiring-and-historically-accurate-imag/6510df7e7bb745f69d67f695441607a8"
+      "year": 2001,
+      "genre": "Animación, Aventuras, Fantasía",
+      "studio": "Studio Ghibli",
+      
     }
   },
   {
-    "id": "shakuntala-devi",
-    "name": "Shakuntala Devi",
-    "shortDescription": "Matemática prodigio, conocida como la 'Calculadora Humana'.",
-    "description": "Conocida como \"la bruja de las matemáticas\" de la India, dejó una marca indeleble en el mundo de los números. Su capacidad mental asombrosa la llevó a resolver complejos cálculos matemáticos mentalmente en cuestión de segundos, estableciendo récords mundiales. Además de su talento innato, Devi promovió activamente la educación matemática y luchó por la igualdad de género en un país donde las mujeres enfrentaban desafíos en la ciencia y la educación. Su legado destaca el poder de la mente humana y la importancia de la igualdad de oportunidades en la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/shakuntala-devi.jpg",
+    "id": "howls-moving-castle",
+    "name": "Howls Moving Castle",
+    "shortDescription": "Embárcate en un viaje mágico con una joven encantada que se une a un hechicero en su misterioso castillo ambulante.",
+    "description": "El Castillo Ambulante es una película de animación japonesa dirigida por Hayao Miyazaki y producida por Studio Ghibli. La película se lanzó en el año 2004 y es una obra maestra del cine de animación. La historia sigue a Sophie, una joven que se convierte en una anciana debido a una maldición, y su encuentro con un misterioso castillo ambulante dirigido por Howl, un mago enigmático. La película combina elementos de fantasía, aventuras y romance en un mundo mágico lleno de personajes encantadores y creatividad visual.",
+    "imageUrl": "https://i.pinimg.com/564x/5c/88/35/5c88353ae652bed16e16fa47923aa903.jpg",
     "facts": {
-      "yearOfBirth": "1929",
-      "yearOfDeath": "2013",
-      "birthPlace": "Bangalore, India",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/indian-woman-writing-math-problems-in-a-blackbard-/6510e19f3db54e14b365b7e8dc5045f6"
+      "year": 2004,
+      "genre": "Animación, Aventuras, Fantasía",
+      "studio": "Studio Ghibli",
+     }
+  },
+  {
+    "id": "your-name",
+    "name": "Your Name",
+    "shortDescription": "Dos almas destinadas se cruzan en un romance apasionante y misterioso que trasciende el tiempo y el espacio.",
+    "description": "Dirigida por Makoto Shinkai, es una película de animación japonesa que entrelaza dos destinos. La historia sigue a Mitsuha, una chica que anhela la vida en la ciudad, y Taki, un chico de Tokio. A través de un misterioso fenómeno, sus cuerpos intercambian lugares intermitentemente, lo que da lugar a una conmovedora conexión. La película es una exploración de la distancia, el tiempo y el destino, con un toque mágico y una narrativa emocional. Your Name es alabada por su animación impresionante y su capacidad para tocar el corazón de los espectadores con su historia de amor y conexión trascendental.",
+    "imageUrl": "https://pics.filmaffinity.com/Your_Name-867860907-large.jpg",
+    "facts": {
+      "year": 2016,
+      "genre": "Drama/Romance",
+      "studio": "CoMix Wave Films"
     }
   },
   {
-    "id": "sofia-kovalevskaya",
-    "name": "Sofia Kovalevskaya",
-    "shortDescription": "Matemática y escritora, contribuyó a la teoría de funciones.",
-    "description": "Matemática rusa del siglo XIX, dejó una marca indeleble en la ciencia del siglo XIX al desafiar las barreras de género. Como matemática rusa, superó las restricciones sociales de su época para convertirse en la primera mujer en obtener un doctorado en matemáticas en Europa. Sus contribuciones a la teoría de las ecuaciones diferenciales y la mecánica revolucionaron la disciplina, abriendo nuevas perspectivas en el análisis matemático. Su destacada membresía en la Academia de Ciencias de Suecia marcó un hito en la historia de las mujeres en la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/sofia-kovalevskaya.jpg",
+    "id": "princess-kaguya",
+    "name": "The Tale of the Princess Kaguya",
+    "shortDescription": "Explora una conmovedora fábula de una princesa celestial que lucha contra expectativas y celebra la belleza de la vida humana.",
+    "description": "El cuento de la princesa Kaguya es una película de animación japonesa dirigida por Isao Takahata y producida por Studio Ghibli. La película se lanzó en el año 2013 y está basada en un antiguo cuento folklórico japonés llamado 'El cortador de bambú'. La historia sigue a una misteriosa princesa que nace de un bambú y crece rápidamente, enfrentando desafíos y aventuras en un mundo lleno de magia y belleza. La película combina elementos de fantasía y drama en un estilo visual único y conmovedor.",
+    "imageUrl": "https://mundo-ghibli.com/wp-content/uploads/2023/02/the-tale-of-the-princess-kaguya-wallpaper-71.jpg.webp",
     "facts": {
-      "yearOfBirth": "1850",
-      "yearOfDeath": "1891",
-      "birthPlace": "Moscú, Rusia",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/indian-woman-writing-math-problems-in-a-blackbard-/6510e19f3db54e14b365b7e8dc5045f6"
+      "year": 2013,
+      "genre": "Animación, Fantasía, Drama",
+      "studio": "Studio Ghibli",
+      
     }
   },
   {
-    "id": "yoko-shimomura",
-    "name": "Yoko Shimomura",
-    "shortDescription": "Compositora de música, destacada en la industria de los videojuegos.",
-    "description": "Compositora japonesa, es una figura destacada en la ciencia de la música y el arte sonoro. Aunque no se dedica a la ciencia en el sentido tradicional, su trabajo en la composición musical ha requerido un profundo entendimiento de la teoría musical y la tecnología de audio. Ha contribuido de manera significativa a la industria de los videojuegos, componiendo icónicas bandas sonoras que han enriquecido la experiencia de juego. Su éxito en un campo donde las mujeres estaban subrepresentadas la convierte en un modelo a seguir, incluso en campos no convencionales como la composición musical.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/yoko-shimomura.jpg",
+    "id": "the-wind-rises",
+    "name": "The Wind Rises",
+    "shortDescription": "Adéntrate en la vida del visionario ingeniero Jiro Horikoshi mientras persigue su sueño de diseño de aviones en la preguerra.",
+    "description": "El Viento se Levanta es una película de animación japonesa dirigida por Hayao Miyazaki y producida por Studio Ghibli. La película se lanzó en el año 2013 y es una obra maestra que combina elementos de drama, romance y biografía. La historia sigue la vida de Jiro Horikoshi, el diseñador de aviones que creó el famoso avión de combate Mitsubishi A6M Zero. A través de la película, se exploran temas de pasión, creatividad y los dilemas éticos de la ingeniería en tiempos de guerra.",
+    "imageUrl": "https://2.bp.blogspot.com/-NQtphumFrWk/UtWZml6uGZI/AAAAAAAAC-o/geHvU_WeG08/s1600/kaze-tachinu-cartel-usa-2.jpg",
     "facts": {
-      "yearOfBirth": "1967",
-      "birthPlace": "Hyogo, Japón",
-      "mainField": "Composición Musical, Video Juegos"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/yoko-shimomura-making-music-for-a-video-game-in-19/6510e40dd1eb45d0906e8c1f4bb601d3"
+      "year": 2013,
+      "genre": "Animación, Drama, Romance",
+      "studio": "Studio Ghibli",
+      
     }
   },
   {
-    "id": "maryam-mirzakhani",
-    "name": "Maryam Mirzakhani",
-    "shortDescription": "Matemática, ganadora del Premio Fields.",
-    "description": "Matemática iraní, hizo historia al convertirse en la primera mujer en ganar la Medalla Fields, el premio más prestigioso en matemáticas. Sus investigaciones en la geometría de superficies y la teoría de las superficies de Riemann han tenido un impacto duradero en la matemática pura. A lo largo de su carrera, Mirzakhani inspiró a muchas mujeres a perseguir carreras en ciencia y matemáticas, derribando las barreras de género. Su enfoque innovador y su capacidad para resolver problemas complejos la convierten en un modelo a seguir para la comunidad científica y en un símbolo de la excelencia matemática.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/maryam-mirzakhani.jpg",
+    "id": "kikis-delivery-service",
+    "name": "Kikis Delivery Service",
+    "shortDescription": "Acompaña a una joven bruja en su encantador viaje de autodescubrimiento mientras abre un servicio de entregas mágicas.",
+    "description": "Dirigida por Hayao Miyazaki y producida por Studio Ghibli, es una encantadora película de animación que narra la historia de Kiki, una joven bruja que, como parte de su tradición, debe embarcarse en un año de independencia para perfeccionar sus habilidades mágicas. Junto con su gato Jiji, Kiki se establece en una ciudad costera y comienza un servicio de entregas. La película celebra la autodeterminación, la amistad y la importancia de encontrar tu lugar en el mundo. Con una animación asombrosa y un espíritu optimista, Kiki's Delivery Service es una obra maestra que cautiva a todas las edades.",
+    "imageUrl": "https://i.pinimg.com/564x/8e/ec/3b/8eec3b6d566e087a113d310b300afe47.jpg",
     "facts": {
-      "yearOfBirth": "1977",
-      "yearOfDeath": "2017",
-      "birthPlace": "Teherán, Irán",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://chalkdustmagazine.com/features/mathematics-maryam-mirzakhani/"
+      "year": 1989,
+      "genre": "Fantasía/Aventura",
+      "studio": "Studio Ghibli"
     }
   },
   {
-    "id": "adele-goldberg",
-    "name": "Adele Goldberg",
-    "shortDescription": "Informática pionera, co-creadora del lenguaje de programación Smalltalk.",
-    "description": "Informática estadounidense reconocida por su influyente trabajo en la investigación y desarrollo de la programación orientada a objetos. Su contribución más destacada es la creación del lenguaje de programación Smalltalk, que revolucionó la forma en que se desarrollan software y sistemas informáticos. Goldberg ha sido una defensora incansable de la usabilidad y la accesibilidad en la informática, asegurando que las aplicaciones informáticas sean más amigables para los usuarios. Su trabajo ha allanado el camino para una programación más intuitiva y eficiente, y su legado perdura en la industria de la tecnología.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/adele-goldberg.jpg",
+    "id": "the-red-turtle",
+    "name": "The Red Turtle",
+    "shortDescription": "Sumérgete en una historia silente y emotiva de un náufrago que forja un vínculo profundo con una misteriosa tortuga roja.",
+    "description": "La Tortuga Roja es una película de animación franco-belga-japonesa dirigida por Michael Dudok de Wit. La película se lanzó en el año 2016 y es conocida por su estilo visual único y la falta de diálogos, lo que la convierte en una experiencia cinematográfica única. La historia sigue a un náufrago que queda atrapado en una isla desierta y su relación con una misteriosa tortuga roja. A lo largo de la película, se exploran temas de soledad, conexión con la naturaleza y la vida misma.",
+    "imageUrl": "https://static.tvtropes.org/pmwiki/pub/images/red_turtle.png",
     "facts": {
-      "yearOfBirth": "1945",
-      "birthPlace": "Chicago, Estados Unidos",
-      "mainField": "Ciencias de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://pionerasinformaticas.ujaen.es/en/computer-women-pioneers/adele-goldberg-en"
-    }
+      "year": 2016,
+      "genre": "Animación, Drama, Fantasía",
+      "studio": "Studio Ghibli, Wild Bunch, Why Not Productions",
+    }  
   },
   {
-    "id": "barbara-liskov",
-    "name": "Barbara Liskov",
-    "shortDescription": "Científica de la computación, pionera en programación orientada a objetos.",
-    "description": "Pionera de la informática, es conocida por su trabajo en la programación y la arquitectura de sistemas distribuidos. Fue la primera mujer en obtener un doctorado en ciencias de la computación en el Instituto de Tecnología de Stanford y desarrolló el lenguaje de programación CLU, que estableció fundamentos para la programación orientada a objetos. Liskov ha dejado una marca indeleble en la industria de la tecnología al liderar avances en sistemas de almacenamiento y seguridad informática. Su enfoque en la fiabilidad y la robustez ha influido en el diseño de sistemas críticos en todo el mundo.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/barbara-liskov.jpg",
+    "id": "a-silent-voice",
+    "name": "A Silent Voice",
+    "shortDescription": "Una emotiva película que explora la redención y el poder del perdón mientras un acosador busca la amistad.",
+    "description": "Dirigida por Naoko Yamada, es una conmovedora película de animación japonesa que aborda el tema del bullying y la redención. La historia sigue a Shoya Ishida, quien busca la redención por haber acosado a una compañera sorda, Shoko Nishimiya, en la escuela primaria. La película explora temas de comunicación, aislamiento y perdón, mientras los personajes buscan reconciliarse con su pasado. Silent Voice ofrece una narrativa compleja y emotiva que invita a la reflexión sobre la importancia de la empatía y la aceptación, y es un retrato profundamente conmovedor de la lucha por la redención personal.",
+    "imageUrl": "https://www.ecartelera.com/images/sets/30600/30631.jpg",
     "facts": {
-      "yearOfBirth": "1939",
-      "birthPlace": "Los Angeles, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://medium.com/a-computer-of-ones-own/barbara-liskov-inventor-of-abstract-data-types-9f8908fdcf86"
+      "year": 2016,
+      "genre": "Drama/Romance",
+      "studio": "Kyoto Animation"
     }
-  },
+  },      
   {
-    "id": "grace-hopper",
-    "name": "Grace Hopper",
-    "shortDescription": "Científica de la computación, creadora del primer compilador.",
-    "description": "Una de las pioneras de la informática, es famosa por su contribución al desarrollo del primer compilador y al lenguaje de programación COBOL. Además, desafió los estereotipos de género en la década de 1940 al unirse a la Marina de los Estados Unidos y convertirse en la primera programadora de la computadora Harvard Mark I. Su legado abarca la creación de conceptos cruciales como la \"depuración de software\" y su influencia en el desarrollo de la informática moderna, estableciendo estándares para la programación de alto nivel y la innovación tecnológica.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/grace-hopper.jpg",
+    "id": "weathering-with-you",
+    "name": "Weathering With You",
+    "shortDescription": "En un mundo donde la lluvia es mágica, dos jóvenes buscan un amor imposible bajo los cielos cambiantes.",
+    "description": "El Tiempo Contigo es una película de animación japonesa dirigida por Makoto Shinkai. La película se lanzó en el año 2019 y es conocida por su hermosa animación y su historia romántica y fantástica. La trama sigue a un joven llamado Hodaka que se muda a Tokio y se encuentra con una chica llamada Hina, que tiene el poder de controlar el clima. Juntos, enfrentan desafíos y descubren el significado de la conexión humana en un mundo donde el clima es impredecible.",
+    "imageUrl": "https://mandranime.com/storage/post_images/tenki-no-ko-pelicula-latino-mega-mf-cover-bpp.webp",
     "facts": {
-      "yearOfBirth": "1906",
-      "yearOfDeath": "1992",
-      "birthPlace": "Nueva York, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://photos.com/featured/grace-hopper-with-early-computer-bettmann.html"
+      "year": 2019,
+      "genre": "Animación, Romance, Fantasía",
+      "studio": "CoMix Wave Films",
+     
     }
-  },
+  },    
   {
-    "id": "margaret-hamilton",
-    "name": "Margaret Hamilton",
-    "shortDescription": "Científica de la computación, lideró desarrollo de software para Apollo 11.",
-    "description": "Destacada científica de la computación que desempeñó un papel fundamental en el programa Apollo de la NASA. Fue directora de la División de Ingeniería de Software en el Laboratorio de Instrumentación del MIT, donde desarrolló el concepto de \"ingeniería de software\". Su liderazgo en el desarrollo del software de vuelo para las misiones Apollo fue fundamental para el éxito de la llegada del hombre a la Luna. Hamilton es un ejemplo de cómo la tecnología y la ciencia pueden alcanzar logros extraordinarios cuando se combinan con un enfoque innovador y una visión audaz.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/margaret-hamilton.jpg",
+    "id": "demon-slayer-mugen-train",
+    "name": "Demon Slayer: Mugen Train",
+    "shortDescription": "Un grupo de cazadores de demonios aborda un tren infernal en una épica aventura para vencer a un demonio poderoso.",
+    "description": "Dirigida por Haruo Sotozaki, es una película de anime que continúa la historia de la popular serie Demon Slayer. La trama sigue a Tanjiro Kamado y sus compañeros cazadores de demonios mientras abordan un tren misterioso infestado de demonios. La película ofrece espectaculares secuencias de acción, una animación impresionante y profundiza en los personajes mientras enfrentan desafíos personales y peligros mortales. Mugen Train se convirtió en un fenómeno en Japón y en todo el mundo, estableciendo récords de taquilla y encantando a los fanáticos con su emocionante continuación de la historia de Tanjiro y Nezuko.",
+    "imageUrl": "https://ramenparados.com/wp-content/uploads/2021/04/guardianes-de-la-noche.jpg",
     "facts": {
-      "yearOfBirth": "1936",
-      "birthPlace": "Paoli, Indiana, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://odetta.ai/blogs/margaret-hamilton-the-first-software-engineer"
-    }
-  },
-  {
-    "id": "radia-perlman",
-    "name": "Radia Perlman",
-    "shortDescription": "Ingeniera de redes, inventora del algoritmo Spanning Tree.",
-    "description": "Científica de la computación estadounidense, ha dejado una marca indeleble en el mundo de las redes informáticas y la seguridad. Conocida como \"la madre de Internet\", su invención del algoritmo Spanning Tree Protocol (STP) revolucionó la conectividad de redes y sentó las bases para la infraestructura de Internet moderna. A pesar de operar en un campo dominado por hombres, Perlman ha demostrado que las mujeres pueden liderar avances tecnológicos vitales. Su compromiso con la resiliencia de las redes y la ciberseguridad ha influido en la estabilidad y confiabilidad de la comunicación en línea.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/radia-perlman.jpg",
-    "facts": {
-      "yearOfBirth": "1951",
-      "birthPlace": "Portsmouth, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://hackaday.com/2018/05/29/spanning-the-tree-dr-radia-perlman-untangling-networks/"
-    }
-  },
-  {
-    "id": "shafi-goldwasser",
-    "name": "Shafi Goldwasser",
-    "shortDescription": "Científica de la computación, ganadora del Premio Turing.",
-    "description": "Es una destacada criptógrafa y científica de la computación que ha contribuido significativamente a la teoría de la computación y la seguridad de la información. Su trabajo en criptografía de probabilidad y complejidad computacional ha sentado las bases para la seguridad en línea y la privacidad de datos en un mundo cada vez más digitalizado. Goldwasser es un ejemplo de cómo la ciencia de la computación puede abordar desafíos contemporáneos y proteger la información en la era de la información.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/shafi-goldwasser.jpg",
-    "facts": {
-      "yearOfBirth": "1958",
-      "birthPlace": "Nueva York, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.jahresbericht2019.unibe.ch/successes_2019/einstein_lectures/index_eng.html"
-    }
-  },
-  {
-    "id": "chien-shiung-wu",
-    "name": "Chien-Shiung Wu",
-    "shortDescription": "Física experimental, contribuyó a la física nuclear.",
-    "description": "Física experimental de origen chino, desafiando los prejuicios de género y nacionalidad, realizó experimentos fundamentales en física de partículas y contribuyó significativamente a la comprensión de la desintegración beta. Su famoso experimento \"Wu\" refutó la paridad en la física de partículas, lo que cambió la forma en que los científicos comprenden las fuerzas fundamentales de la naturaleza. Wu demostró que el talento y la perseverancia pueden superar cualquier barrera, y su legado sigue siendo un faro de inspiración para científicas en todo el mundo.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/chien-shiung-wu.jpg",
-    "facts": {
-      "yearOfBirth": "1912",
-      "yearOfDeath": "1997",
-      "birthPlace": "Liuhe, Taicang, China",
-      "mainField": "Física"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.thoughtco.com/chien-shiung-wu-biography-3530366"
-    }
-  },
-  {
-    "id": "hedy-lamarr",
-    "name": "Hedy Lamarr",
-    "shortDescription": "Actriz e inventora, contribuyó al desarrollo de la tecnología de espectro ensanchado.",
-    "description": "Actriz austroamericana y científica, fue una mente brillante en la intersección de la tecnología y el entretenimiento. Junto con el compositor George Antheil, inventó un sistema de comunicación secreta durante la Segunda Guerra Mundial que sentó las bases para la tecnología de espectro ensanchado y la comunicación inalámbrica moderna. Lamarr demostró que las mujeres pueden destacar tanto en el cine como en la ciencia, y su legado como inventora ha sido fundamental para el desarrollo de la tecnología de comunicación inalámbrica que usamos en la actualidad.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/hedy-lamarr.jpg",
-    "facts": {
-      "yearOfBirth": "1914",
-      "yearOfDeath": "2000",
-      "birthPlace": "Viena, Austria",
-      "mainField": "Actuación, Física"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.sparkfun.com/news/6147"
-    }
-  },
-  {
-    "id": "maria-goeppert-mayer",
-    "name": "Maria Goeppert Mayer",
-    "shortDescription": "Física teórica, ganadora del Premio Nobel de Física.",
-    "description": "Física teórica alemana-estadounidense, dejó una profunda huella en la física nuclear y la mecánica cuántica. Fue la segunda mujer en recibir el Premio Nobel de Física y su trabajo pionero en la estructura de capas nucleares revolucionó nuestra comprensión de los núcleos atómicos. A pesar de las barreras de género en la academia, su dedicación y talento la llevaron a contribuir significativamente a la teoría nuclear, abriendo el camino para futuras investigadoras en un campo dominado por hombres. Maria Goeppert Mayer es un ejemplo inspirador de excelencia científica y perseverancia en la búsqueda del conocimiento.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/maria-goeppert-mayer.jpg",
-    "facts": {
-      "yearOfBirth": "1906",
-      "yearOfDeath": "1972",
-      "birthPlace": "Kattowitz, Alemania",
-      "mainField": "Física"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.wsemexhibit.org/maria-goeppert-mayer.html"
-    }
-  },
-  {
-    "id": "lise-meitner",
-    "name": "Lise Meitner",
-    "shortDescription": "Física nuclear, contribuyó a la teoría de la fisión nuclear.",
-    "description": "Física austriaca-sueca, dejó un legado imborrable en la física nuclear y la radioquímica. A pesar de enfrentar obstáculos de género en una era dominada por hombres, colaboró con Otto Hahn en el descubrimiento de la fisión nuclear, un avance revolucionario. Aunque no compartió el Premio Nobel por este logro, su contribución fue crucial para comprender la energía nuclear y la física de partículas. Su determinación y pasión por la ciencia han inspirado a generaciones de científicas. Lise Meitner es un símbolo perdurable de la perseverancia femenina y el impacto duradero que las mujeres pueden tener en la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/lise-meitner.jpg",
-    "facts": {
-      "yearOfBirth": "1878",
-      "yearOfDeath": "1968",
-      "birthPlace": "Viena, Austria",
-      "mainField": "Física"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/lise-meitner-in-nuclear-physics-lab-in-19502c-retro/651196e6bbcb4009950e9955c2199760"
-    }
-  },
-  {
-    "id": "sau-lan-wu",
-    "name": "Sau Lan Wu",
-    "shortDescription": "Física de partículas, contribuyó a experimentos clave en física de alta energía.",
-    "description": "Física experimental sinoamericana, ha sido una fuerza motriz en la física de partículas. Destacó en experimentos en el CERN y lideró investigaciones cruciales, como el descubrimiento del quark c, que expandieron nuestro entendimiento de la estructura fundamental de la materia. Wu superó desafíos en una disciplina dominada por hombres y ha sido un faro de inspiración para científicas de todo el mundo. Sau Lan Wu es un ejemplo de excelencia científica y de cómo las mujeres pueden dejar huella en la investigación de vanguardia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/sau-lan-wu.jpg",
-    "facts": {
-      "yearOfBirth": "1940",
-      "birthPlace": "Hong Kong, China",
-      "mainField": "Física de Partículas"
-    },
-    "extraInfo": {
-      "imageSource": "https://repository.aip.org/islandora/object/nbla%3A315195"
-    }
-  },
-  {
-    "id": "jocelyn-bell-burnell",
-    "name": "Jocelyn Bell Burnell",
-    "shortDescription": "Astrónoma y astrofísica, co-descubridora de los púlsares.",
-    "description": "Astrofísica británica, es una figura extraordinaria en la ciencia. Durante su doctorado, hizo un descubrimiento revolucionario al detectar los primeros púlsares, estrellas de neutrones altamente magnetizadas que emiten pulsos regulares de radiación. A pesar de que su asesor recibió el Premio Nobel por este descubrimiento, Bell Burnell se ha convertido en un símbolo de perseverancia y contribución de las mujeres a la astronomía. Su carrera distinguida y su activismo en favor de la diversidad de género en la ciencia han inspirado a generaciones futuras de científicas. Jocelyn Bell Burnell es un ejemplo de valentía y excelencia científica.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/jocelyn-bell-burnell.jpg",
-    "facts": {
-      "yearOfBirth": "1943",
-      "birthPlace": "Belfast, Reino Unido",
-      "mainField": "Astronomía, Astrofísica"
-    },
-    "extraInfo": {
-      "imageSource": "https://womeninscienceweadmire.icfo.eu/wiswa-2/jocelyn-bell/"
-    }
-  },
-  {
-    "id": "dorothy-crowfoot-hodgkin",
-    "name": "Dorothy Crowfoot Hodgkin",
-    "shortDescription": "Química, ganadora del Premio Nobel de Química.",
-    "description": "Química británica, es una figura icónica en la ciencia que superó las barreras de género de su época. Su trabajo revolucionario en la cristalografía de rayos X permitió determinar la estructura de importantes biomoléculas, como la penicilina, la vitamina B12 y la insulina. Fue galardonada con el Premio Nobel de Química en 1964, siendo la tercera mujer en recibir este prestigioso reconocimiento. Hodgkin no solo fue una científica excepcional, sino también una defensora de la igualdad de género en la ciencia, allanando el camino para futuras generaciones de científicas y dejando un legado duradero en la investigación y la equidad.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/dorothy-crowfoot-hodgkin.jpg",
-    "facts": {
-      "yearOfBirth": "1910",
-      "yearOfDeath": "1994",
-      "birthPlace": "El Cairo, Egipto / Shipston-on-Stour, Reino Unido",
-      "mainField": "Química"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.some.ox.ac.uk/news/jan-royall-why-we-must-champion-dorothy-hodgkin-for-the-50-note/"
-    }
-  },
-  {
-    "id": "marie-curie",
-    "name": "Marie Curie",
-    "shortDescription": "Física y química, ganadora de dos Premios Nobel.",
-    "description": "física y química de origen polaco y nacionalizada francesa, es una de las figuras más icónicas en la historia de la ciencia. Ganadora de dos premios Nobel (Física en 1903 y Química en 1911), Curie realizó investigaciones fundamentales sobre la radiactividad y el descubrimiento de los elementos radio y polonio. Su dedicación y valentía en la investigación científica, a pesar de los desafíos de la discriminación de género y los riesgos de la radiación, la convierten en un modelo a seguir para científicas de todo el mundo.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/marie-curie.jpg",
-    "facts": {
-      "yearOfBirth": "1867",
-      "yearOfDeath": "1934",
-      "birthPlace": "Varsovia, Polonia",
-      "mainField": "Física y Química"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.historyextra.com/period/first-world-war/life-of-the-week-marie-curie/"
-    }
-  },
-  {
-    "id": "marjory-stephenson",
-    "name": "Marjory Stephenson",
-    "shortDescription": "Microbióloga y bioquímica, investigó en enzimología.",
-    "description": "Bioquímica británica, brilló como científica en una época en la que las mujeres enfrentaban obstáculos muy significativos en la investigación científica. Su trabajo pionero en microbiología, enzimología y bioquímica contribuyó al entendimiento de procesos fundamentales en la vida. Fue una de las primeras mujeres en ser elegida miembro de la Royal Society, un reconocimiento a su destacada contribución a la ciencia. Además, fue una mentora y defensora de las mujeres en la ciencia, inspirando y allanando el camino para futuras generaciones.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/marjory-stephenson.jpg",
-    "facts": {
-      "yearOfBirth": "1885",
-      "yearOfDeath": "1948",
-      "birthPlace": "Londres, Reino Unido",
-      "mainField": "Química, Microbiología, Bioquímica"
-    },
-    "extraInfo": {
-      "imageSource": "https://microbiologysociety.org/grants-prizes/all-prizes-and-competitions-/prize-lectures/marjory-stephenson-prize-lecture/marjory-stephenson-a-short-history.html"
-    }
-  },
-  {
-    "id": "rosalind-franklin",
-    "name": "Rosalind Franklin",
-    "shortDescription": "Química y cristalógrafa, contribuyó a la comprensión de la estructura del ADN.",
-    "description": "Química y cristalógrafa británica, destacó en un campo dominado por hombres y su contribución a la ciencia es innegable. Sus investigaciones pioneras en la cristalografía de rayos X fueron fundamentales para revelar la estructura del ADN en forma de doble hélice, un hito crucial en la biología molecular. A pesar de que su trabajo inicial fue subestimado, su determinación y habilidad científica allanaron el camino para futuros avances en genética y biología. Franklin es un ejemplo inspirador de cómo las mujeres pueden sobresalir en la ciencia, dejando un legado duradero en la investigación y la igualdad de género.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/rosalind-franklin.jpg",
-    "facts": {
-      "yearOfBirth": "1920",
-      "yearOfDeath": "1958",
-      "birthPlace": "Londres, Reino Unido",
-      "mainField": "Química, Cristalografía"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.esa.int/ESA_Multimedia/Images/2020/07/Artistic_illustration_of_Rosalind_Franklin"
-    }
+      "year": 2020,
+      "genre": "Animación, Acción, Aventuras",
+      "studio": "ufotable",
+    
   }
+},    
+{ 
+    "id": "suzume",
+  "name": "Suzume",
+  "shortDescription": "Únete a Suzume en un emocionante viaje por Japón para cerrar puertas misteriosas y descubrir su madurez y libertad.",
+  "description": "Es una película de animación japonesa dirigida por Makoto Shinkai, estrenada en 2022. La historia sigue a Suzume Iwato, una joven de 17 años que descubre una misteriosa puerta en las montañas de Kyushu. Cuando la abre, se desencadenan una serie de desastres en todo Japón. Suzume se embarca en un viaje para cerrar estas puertas y salvar al país. Suzume se enfrenta a desafíos físicos y emocionales a lo largo de su viaje, pero aprende a superarlos con la ayuda de los que conoce en el camino.",
+  "imageUrl": "https://static.wikia.nocookie.net/doblaje/images/0/01/Suzume_poster.jpg/revision/latest?cb=20230318034052&path-prefix=es",
+  "facts": { 
+    "year": 2022,
+    "genre": "Fantasía, aventura",
+    "studio": "Studio Ghibli",
+    
+  } 
+},
+ 
+ { "id": "the-first-slam-dunk",
+   "name": "The First Slam Dunk",
+   "shortDescription": "Acompaña a Ryota Miyagi y su equipo de baloncesto en un emocionante enfrentamiento contra los campeones reinantes en Shohoku.",
+   "description": "Es una película de animación japonesa sobre un equipo de baloncesto de instituto que se enfrenta al campeón nacional. La película sigue la historia de Hanamichi Sakuragi, un jugador de baloncesto con un pasado turbulento, que se une al equipo de baloncesto de Shohoku para impresionar a Haruko Akagi, una chica que le gusta. Con la ayuda de su amigo y compañero de equipo Ryota Miyagi, Hanamichi aprende a jugar al baloncesto y a convertirse en un mejor jugador. La película es una historia de amistad, superación personal y el poder del baloncesto para unir a las personas.",
+   "imageUrl": "https://pics.filmaffinity.com/eiga_slam_dunk-142097472-mmed.jpg",
+   "facts": { 
+    "year": 2022,
+    "genre": "Animación, deportiva",
+    "studio": "Toei Animation",
+  }
+},
+{ "id": "one-piece-film-red",
+ "name": "One Piece Film: Red",
+ "shortDescription": "Un emocionante concierto en vivo donde la cantante Uta, la más querida del mundo, revela su impactante conexión con Shanks.",
+ "description": "Es una película de anime de acción y aventura basada en el manga del mismo nombre. La película sigue la historia de Luffy y sus amigos, que se embarcan en una aventura para encontrar a Uta, una cantante de fama mundial que resulta ser la hija de Shanks, el ex capitán de los Piratas de Sombrero de Paja. Uta tiene una voz poderosa que puede unir a las personas, pero también tiene un pasado misterioso que la pone en peligro.",
+ "imageUrl": "https://pics.filmaffinity.com/one_piece_film_red-407711303-mmed.jpg",
+ "facts": { 
+    "year": 2022,
+    "genre": "Animación, Aventuras",
+    "studio": "Toei Animation",
+    
+} 
+},
 ];
