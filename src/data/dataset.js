@@ -32,7 +32,7 @@ export default [
       "imageUrl": "https://www.ecartelera.com/carteles/6200/6288/003.jpg",
       "facts": {
         "year": 1988,
-        "genre": "Drama/Bélico",
+        "genre": "Drama, Bélico",
         "studio": "Studio Ghibli"
     },
   },
@@ -44,7 +44,7 @@ export default [
       "imageUrl": "https://www.ecartelera.com/carteles/6000/6061/001_p.jpg",
       "facts": {
         "year": 1993,
-        "genre": "Acción, Aventuras, Fantasía",
+        "genre": "Acción, Aventura, Fantasía",
         "studio": "Madhouse",
     },
   },
@@ -56,7 +56,7 @@ export default [
       "imageUrl": "http://misiontokyo.com/wp-content/uploads/2022/04/Ghost.jpg",
       "facts": {
         "year": 1995,
-        "genre": "Ciencia Ficción/Thriller",
+        "genre": "Ciencia Ficción, Thriller",
         "studio": "Production I.G"
     },
   },
@@ -80,7 +80,7 @@ export default [
       "imageUrl": "https://static.wikia.nocookie.net/doblaje/images/3/32/PerfectBlue.png/revision/latest/scale-to-width-down/338?cb=20230528031457&path-prefix=es",
       "facts": {
         "year": 1997,
-        "genre": "Thriller/Psicológico",
+        "genre": "Thriller, Psicológico",
         "studio": "Madhouse"
 
     },
@@ -93,7 +93,7 @@ export default [
       "imageUrl": "https://www.ecartelera.com/carteles/8000/8003/001_p.jpg",
       "facts": {
         "year": 2001,
-        "genre": "Ciencia Ficción/Thriller",
+        "genre": "Ciencia Ficción, Thriller",
         "studio": "Sunrise"
 
     },
@@ -107,7 +107,7 @@ export default [
     "imageUrl": "https://static.wikia.nocookie.net/doblaje/images/8/80/The_End_of_Evangelion_DVD.jpg/revision/latest/scale-to-width-down/340?cb=20200826040119&path-prefix=es",
     "facts": {
       "year": 1997,
-      "genre": "Mecha/Psicológico",
+      "genre": "Mecha, Psicológico",
       "studio": "Gainax"
     },
   },
@@ -131,7 +131,7 @@ export default [
     "imageUrl": "https://cl.buscafs.com/www.tomatazos.com/public/uploads/images/79205/79205_444x600.jpg",
     "facts": {
       "year": 1995,
-      "genre": "Drama/Romance",
+      "genre": "Drama, Romance",
       "studio": "Studio Ghibli"
     }
   },
@@ -143,7 +143,7 @@ export default [
     "imageUrl": "https://pics.filmaffinity.com/Paprika_detective_de_los_sueanos-186953258-large.jpg",
     "facts": {
       "year": 2006,
-      "genre": "Ciencia Ficción/Psicológico",
+      "genre": "Ciencia Ficción, Psicológico",
       "studio": "Madhouse"
     }
   },
@@ -155,7 +155,7 @@ export default [
     "imageUrl": "https://es.web.img2.acsta.net/r_1920_1080/img/49/e8/49e8fe683dd25ab1338340981c5f62ca.jpg",
     "facts": {
       "year": 2001,
-      "genre": "Animación, Aventuras, Fantasía",
+      "genre": "Animación, Aventura, Fantasía",
       "studio": "Studio Ghibli",
       
     }
@@ -168,7 +168,7 @@ export default [
     "imageUrl": "https://i.pinimg.com/564x/5c/88/35/5c88353ae652bed16e16fa47923aa903.jpg",
     "facts": {
       "year": 2004,
-      "genre": "Animación, Aventuras, Fantasía",
+      "genre": "Animación, Aventura, Fantasía",
       "studio": "Studio Ghibli",
      }
   },
@@ -180,7 +180,7 @@ export default [
     "imageUrl": "https://pics.filmaffinity.com/Your_Name-867860907-large.jpg",
     "facts": {
       "year": 2016,
-      "genre": "Drama/Romance",
+      "genre": "Drama, Romance",
       "studio": "CoMix Wave Films"
     }
   },
@@ -218,7 +218,7 @@ export default [
     "imageUrl": "https://i.pinimg.com/564x/8e/ec/3b/8eec3b6d566e087a113d310b300afe47.jpg",
     "facts": {
       "year": 1989,
-      "genre": "Fantasía/Aventura",
+      "genre": "Fantasía, Aventura",
       "studio": "Studio Ghibli"
     }
   },
@@ -242,7 +242,7 @@ export default [
     "imageUrl": "https://www.ecartelera.com/images/sets/30600/30631.jpg",
     "facts": {
       "year": 2016,
-      "genre": "Drama/Romance",
+      "genre": "Drama, Romance",
       "studio": "Kyoto Animation"
     }
   },      
@@ -267,8 +267,8 @@ export default [
     "imageUrl": "https://ramenparados.com/wp-content/uploads/2021/04/guardianes-de-la-noche.jpg",
     "facts": {
       "year": 2020,
-      "genre": "Animación, Acción, Aventuras",
-      "studio": "ufotable",
+      "genre": "Animación, Acción, Aventura",
+      "studio": "Ufotable",
     
   }
 },    
@@ -280,7 +280,7 @@ export default [
   "imageUrl": "https://static.wikia.nocookie.net/doblaje/images/0/01/Suzume_poster.jpg/revision/latest?cb=20230318034052&path-prefix=es",
   "facts": { 
     "year": 2022,
-    "genre": "Fantasía, aventura",
+    "genre": "Fantasía, Aventura",
     "studio": "Studio Ghibli",
     
   } 
@@ -293,7 +293,7 @@ export default [
    "imageUrl": "https://pics.filmaffinity.com/eiga_slam_dunk-142097472-mmed.jpg",
    "facts": { 
     "year": 2022,
-    "genre": "Animación, deportiva",
+    "genre": "Animación, Deportiva",
     "studio": "Toei Animation",
   }
 },
@@ -304,7 +304,7 @@ export default [
  "imageUrl": "https://pics.filmaffinity.com/one_piece_film_red-407711303-mmed.jpg",
  "facts": { 
     "year": 2022,
-    "genre": "Animación, Aventuras",
+    "genre": "Animación, Aventura",
     "studio": "Toei Animation",
     
 } 
