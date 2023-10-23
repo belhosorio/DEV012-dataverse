@@ -6,8 +6,7 @@ export default [
       "En un Neo-Tokio distópico, un joven con poderes psíquicos desencadena el caos mientras un grupo de amigos lucha por detenerlo",
     description:
       "Es una película de animación japonesa de 1988 dirigida por Katsuhiro Otomo, basada en su manga homónimo. La historia se desarrolla en Neo-Tokio, una ciudad pos apocalíptica, siguiendo a Kaneda y Tetsuo, dos jóvenes envueltos en un misterio relacionado con Akira, un niño con poderes psíquicos. La película combina una trama intrincada con una animación revolucionaria y efectos visuales sorprendentes. Akira es aclamada por su influencia en la cultura pop y su impacto en el género de la ciencia ficción, siendo una obra maestra del anime que continúa fascinando a audiencias en todo el mundo.",
-    imageUrl:
-      "https://www.ecartelera.com/carteles/4200/4244/001_m.jpg",
+    imageUrl: "https://www.ecartelera.com/carteles/4200/4244/001_m.jpg",
     facts: {
       year: 1988,
       genre: "Ciencia Ficción",
@@ -64,7 +63,8 @@ export default [
       "Adéntrate en un intrigante futuro cibernético donde una valiente agente busca la verdad en un mundo de alta tecnología.",
     description:
       "Es una película de anime revolucionaria dirigida por Mamoru Oshii. Ambientada en un futuro distópico, sigue a la Mayor Motoko Kusanagi y su equipo en la unidad de seguridad cibernética persiguiendo a un hacker conocido como el Puppet Master. La película explora cuestiones existenciales y filosóficas sobre la identidad y la tecnología, todo en un cautivador mundo cibernético. Con su impresionante animación y su enfoque en la fusión entre humanos y máquinas, Ghost in the Shell ha dejado una marca duradera en el género de ciencia ficción y anime.",
-    imageUrl: "https://d32qys9a6wm9no.cloudfront.net/images/movies/poster/f6/556701bc495974bec9e0431c10fa598a_300x442.jpg?t=1636102095",
+    imageUrl:
+      "https://d32qys9a6wm9no.cloudfront.net/images/movies/poster/f6/556701bc495974bec9e0431c10fa598a_300x442.jpg?t=1636102095",
     facts: {
       year: 1995,
       genre: "Ciencia Ficción, Thriller",
@@ -212,7 +212,8 @@ export default [
       "Dos almas destinadas se cruzan en un romance apasionante y misterioso que trasciende el tiempo y el espacio.",
     description:
       "Dirigida por Makoto Shinkai, es una película de animación japonesa que entrelaza dos destinos. La historia sigue a Mitsuha, una chica que anhela la vida en la ciudad, y Taki, un chico de Tokio. A través de un misterioso fenómeno, sus cuerpos intercambian lugares intermitentemente, lo que da lugar a una conmovedora conexión. La película es una exploración de la distancia, el tiempo y el destino, con un toque mágico y una narrativa emocional. Your Name es alabada por su animación impresionante y su capacidad para tocar el corazón de los espectadores con su historia de amor y conexión trascendental.",
-    imageUrl: "https://blog.audiomu.com/wp-content/uploads/2017/12/kimi-no-na-wa-poster.jpg",
+    imageUrl:
+      "https://blog.audiomu.com/wp-content/uploads/2017/12/kimi-no-na-wa-poster.jpg",
     facts: {
       year: 2016,
       genre: "Drama, Romance",
@@ -285,7 +286,8 @@ export default [
       "Una emotiva película que explora la redención y el poder del perdón mientras un acosador busca la amistad.",
     description:
       "Dirigida por Naoko Yamada, es una conmovedora película de animación japonesa que aborda el tema del bullying y la redención. La historia sigue a Shoya Ishida, quien busca la redención por haber acosado a una compañera sorda, Shoko Nishimiya, en la escuela primaria. La película explora temas de comunicación, aislamiento y perdón, mientras los personajes buscan reconciliarse con su pasado. A Silent Voice ofrece una narrativa compleja y emotiva que invita a la reflexión sobre la importancia de la empatía y la aceptación, y es un retrato profundamente conmovedor de la lucha por la redención personal.",
-    imageUrl: "https://blacknerdproblems.com/wp-content/uploads/2021/05/A-Silent-Voice-e1622441591313.jpg",
+    imageUrl:
+      "https://blacknerdproblems.com/wp-content/uploads/2021/05/A-Silent-Voice-e1622441591313.jpg",
     facts: {
       year: 2016,
       genre: "Drama, Romance",
@@ -359,8 +361,7 @@ export default [
       "Un emocionante concierto en vivo donde la cantante Uta, la más querida del mundo, revela su impactante conexión con Shanks.",
     description:
       "Es una película de anime de acción y aventura basada en el manga del mismo nombre. La película sigue la historia de Luffy y sus amigos, que se embarcan en una aventura para encontrar a Uta, una cantante de fama mundial que resulta ser la hija de Shanks, el ex capitán de los Piratas de Sombrero de Paja. Uta tiene una voz poderosa que puede unir a las personas, pero también tiene un pasado misterioso que la pone en peligro.",
-    imageUrl:
-      "https://picfiles.alphacoders.com/557/thumb-557074.jpg",
+    imageUrl: "https://picfiles.alphacoders.com/557/thumb-557074.jpg",
     facts: {
       year: 2022,
       genre: "Aventura",
