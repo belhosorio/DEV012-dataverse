@@ -4,76 +4,154 @@
     <meta charset="utf-8" />
     <title>Kaonashi Pelis</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon_logo.ico" />
+    <link rel="icon" type="img/ico" href="./favicon_logo.ico" />
   </head>
-  <header>
-    <h1>Kaonashi Pelis</h1>
-  </header>
-  <label for="nombre">Orden alfabético</label>
-  <!--orden alfabetico-->
-  <select data-testid="select-sort" name="ordenAlfabetico">
-    <option value="">Seleccione un orden</option>
-    <option value="asc">A-Z</option>
-    <option value="desc">Z-A</option>
-  </select>
-  <label for="genero">Genero</label>
-  <select data-testid="select-filter" name="genero">
-    <option value="">Seleccione un genero</option>
-    <option value="accion">Acción</option>
-    <option value="aventura">Aventura</option>
-    <option value="belico">Bélico</option>
-    <option value="cienciaFiccion">Ciencia Ficción</option>
-    <option value="deportiva">Deportiva</option>
-    <option value="drama">Drama</option>
-    <option value="fantasia">Fantasía</option>
-    <option value="Mecha">Mecha</option>
-    <option value="psicologico">Psicológico</option>
-    <option value="romance">Romance</option>
-    <option value="thriller">Thriller</option>
-  </select>
-  <label for="estudio">Estudio de animación</label>
-  <select data-testid="select-studio" name="estudio">
-    <option value="">Seleccione un estudio</option>
-    <option value="coMix">CoMix Wave Films</option>
-    <option value="gainax">Gainax</option>
-    <option value="kyotoAnimation">Kyoto Animation</option>
-    <option value="Madhouse">Madhouse</option>
-    <option value="productionIg">Production I.G</option>
-    <option value="studioGhibli">Studio Ghibli</option>
-    <option value="sunrise">Sunrise</option>
-    <option value="tmEntertainment">TMS Entertainment</option>
-    <option value="toeiAnimation">Toei Animation</option>
-    <option value="kyotoAnimation">Ufotable</option>
-    <option value="whyNot">Why Not Productions</option>
-    <option value="wildBunch">Wild Bunch</option>
-  </select>
-  <label for="año">Año</label>
-  <select data-testid="select-año" name="añoEstreno">
-    <option value="">Seleccione un año</option>
-    <option value="1988">1988</option>
-    <option value="1989">1989</option>
-    <option value="1992">1992</option>
-    <option value="1993">1993</option>
-    <option value="1995">1995</option>
-    <option value="1997">1997</option>
-    <option value="2001">2001</option>
-    <option value="2004">2004</option>
-    <option value="2006">2006</option>
-    <option value="2013">2013</option>
-    <option value="2016">2016</option>
-    <option value="2019">2019</option>
-    <option value="2020">2020</option>
-    <option value="2022">2022</option>
-  </select>
-  <button data-testid="button-clear">Limpiar</button>
   <body>
+    <header>
+      <h1>Kaonashi Pelis</h1>
+    </header>
+
+    <!--orden alfabetico-->
+    <section>
+      <label for="nombre">Orden alfabético</label>
+      <select data-testid="select-sort" name="ordenAlfabetico">
+        <option value="" selected>Seleccione un orden</option>
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+      </select>
+
+      <label for="genero">Genero:</label>
+      <select data-testid="select-filter" name="genero">
+        <option value="">Seleccione un genero</option>
+        <option value="accion">Acción</option>
+        <option value="aventura">Aventura</option>
+        <option value="belico">Bélico</option>
+        <option value="cienciaFiccion">Ciencia Ficción</option>
+        <option value="deportiva">Deportes</option>
+        <option value="drama">Drama</option>
+        <option value="fantasia">Fantasía</option>
+        <option value="Mecha">Mecha</option>
+        <option value="psicologico">Psicológico</option>
+        <option value="romance">Romance</option>
+        <option value="thriller">Thriller</option>
+      </select>
+      <label for="estudio">Estudio de animación:</label>
+      <select data-testid="select-studio" name="estudio">
+        <option value="">Seleccione un estudio</option>
+        <option value="coMix">CoMix Wave Films</option>
+        <option value="gainax">Gainax</option>
+        <option value="kyotoAnimation">Kyoto Animation</option>
+        <option value="Madhouse">Madhouse</option>
+        <option value="productionIg">Production I.G</option>
+        <option value="studioGhibli">Studio Ghibli</option>
+        <option value="sunrise">Sunrise</option>
+        <option value="tmEntertainment">TMS Entertainment</option>
+        <option value="toeiAnimation">Toei Animation</option>
+        <option value="kyotoAnimation">Ufotable</option>
+        <option value="whyNot">Why Not Productions</option>
+        <option value="wildBunch">Wild Bunch</option>
+      </select>
+      <label for="año">Año:</label>
+      <select data-testid="select-año" name="añoEstreno">
+        <option value="" selected>Seleccione un año</option>
+        <option value="1988">1988</option>
+        <option value="1989">1989</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+        <option value="1995">1995</option>
+        <option value="1997">1997</option>
+        <option value="2001">2001</option>
+        <option value="2004">2004</option>
+        <option value="2006">2006</option>
+        <option value="2013">2013</option>
+        <option value="2016">2016</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2022">2022</option>
+      </select>
+      <select data-testid="select-sort" name="nombre">
+        <option value="nombre">Nombre</option>
+      </select>
+      <select name="sort-order" name="AscDesc">
+        <option value="asc">Ascendente</option>
+        <option value="desc">Descendente</option>
+      </select>
+      <!--
+      <input type="radio" value="ascendente" />
+      <label for="inicio">Ascendente</label><br />
+      <input type="radio" value="descendente" />
+      <label for="descendente">Descendente</label><br />
+-->
+      <button data-testid="button-clear">Limpiar</button>
+</section> 
+    <div class="container">
+      <div class="cards">
+
+      </div>
+    </div>
+    <!--orden alfabetico-->
+    <!--
+      <br>
+    <label for="menu">Menu</label>
+    <select  multiple data-testid="select-sort" name="ordenAlfabetico">
+      <optgroup label="Orden alfabético">
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+      </optgroup>
+    
+      <optgroup label="Genero">
+        <option value="accion">Acción</option>
+        <option value="aventura">Aventura</option>
+        <option value="belico">Bélico</option>
+        <option value="cienciaFiccion">Ciencia Ficción</option>
+        <option value="deportiva">Deportiva</option>
+        <option value="drama">Drama</option>
+        <option value="fantasia">Fantasía</option>
+        <option value="Mecha">Mecha</option>
+        <option value="psicologico">Psicológico</option>
+        <option value="romance">Romance</option>
+        <option value="thriller">Thriller</option>
+      </optgroup>
+
+      <optgroup label="Estudio de animación">
+        <option value="coMix">CoMix Wave Films</option>
+        <option value="gainax">Gainax</option>
+        <option value="kyotoAnimation">Kyoto Animation</option>
+        <option value="Madhouse">Madhouse</option>
+        <option value="productionIg">Production I.G</option>
+        <option value="studioGhibli">Studio Ghibli</option>
+        <option value="sunrise">Sunrise</option>
+        <option value="tmEntertainment">TMS Entertainment</option>
+        <option value="toeiAnimation">Toei Animation</option>
+        <option value="kyotoAnimation">Ufotable</option>
+        <option value="whyNot">Why Not Productions</option>
+        <option value="wildBunch">Wild Bunch</option>
+      </optgroup>
+
+      <optgroup label="Año">
+        <option value="1988">1988</option>
+        <option value="1989">1989</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+        <option value="1995">1995</option>
+        <option value="1997">1997</option>
+        <option value="2001">2001</option>
+        <option value="2004">2004</option>
+        <option value="2006">2006</option>
+        <option value="2013">2013</option>
+        <option value="2016">2016</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2022">2022</option>
+      </optgroup>
+    </select>
+  -->
     <footer>
       <p>
-        Belén Osorio & Gineth Guáqueta
+        Belén Osorio & Gineth Guáqueta<br />
         <strong>Proyecto Dataverse de Laboratia</strong>
       </p>
     </footer>
-
     <script src="main.js" type="module"></script>
   </body>
 </html>
