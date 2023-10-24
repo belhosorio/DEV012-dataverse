@@ -32,6 +32,7 @@ option:hover {
 }
 .container {
   margin: 50px;
+  transition: all 0.3s ease-out;
 }
 .cards {
   display: grid;
@@ -41,7 +42,7 @@ option:hover {
   border-radius: 6px;
   background: rgb(255, 251, 251);
   box-shadow: 0px 1px 5px rgba(80, 80, 80, 0.125);
-  margin: 50px;
+  margin: 100px;
 }
 button {
   font-size: 15px;

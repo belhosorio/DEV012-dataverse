@@ -12,6 +12,9 @@
     </header>
 
     <!--orden alfabetico-->
+    <select data-testid="select-sort" name="nombre">
+      <option value="nombre">Nombre</option>
+    </select>
     <section>
       <label for="nombre">Orden alfabético</label>
       <select data-testid="select-sort" name="ordenAlfabetico">
@@ -20,10 +23,10 @@
         <option value="desc">Z-A</option>
       </select>
 
-      <label for="genero">Genero:</label>
-      <select data-testid="select-filter" name="genero">
+      <label for="genre">Genero:</label>
+      <select data-testid="select-filter" name="genre">
         <option value="">Seleccione un genero</option>
-        <option value="accion">Acción</option>
+        <option value="action">Acción</option>
         <option value="aventura">Aventura</option>
         <option value="belico">Bélico</option>
         <option value="cienciaFiccion">Ciencia Ficción</option>
@@ -35,8 +38,8 @@
         <option value="romance">Romance</option>
         <option value="thriller">Thriller</option>
       </select>
-      <label for="estudio">Estudio de animación:</label>
-      <select data-testid="select-studio" name="estudio">
+      <label for="studio">Estudio de animación:</label>
+      <select data-testid="select-studio" name="studio">
         <option value="">Seleccione un estudio</option>
         <option value="coMix">CoMix Wave Films</option>
         <option value="gainax">Gainax</option>
@@ -69,9 +72,6 @@
         <option value="2020">2020</option>
         <option value="2022">2022</option>
       </select>
-      <select data-testid="select-sort" name="nombre">
-        <option value="nombre">Nombre</option>
-      </select>
       <select name="sort-order" name="AscDesc">
         <option value="asc">Ascendente</option>
         <option value="desc">Descendente</option>
@@ -83,13 +83,12 @@
       <label for="descendente">Descendente</label><br />
 -->
       <button data-testid="button-clear">Limpiar</button>
-</section> 
-    <div class="container">
-      <div class="cards">
+    </section>
+  
+      <div id="root" class="container">
 
       </div>
-    </div>
-    <!--orden alfabetico-->
+        <!--orden alfabetico-->
     <!--
       <br>
     <label for="menu">Menu</label>
