@@ -2,6 +2,10 @@
 * {
   text-align: center;
 }
+section.menu{
+  max-width: 1400px;
+  align-items: center;
+}
 section {
   border: none;
   padding: 10px;
@@ -14,8 +18,9 @@ label {
 }
 select {
   /*No funciona*/
+  align-items: center;
   padding: 5px;
-  box-shadow: 10px 10px 10px rgba(22, 22, 22, 0.13);
+  box-shadow: 10px 10px 10px rgba(132, 132, 132, 0.13);
   border: 0;
   border-radius: 5px;
 }
@@ -30,21 +35,8 @@ option:hover {
   color: white;
   background-color: #ec004a;
 }
-.container {
-  margin: 50px;
-  transition: all 0.3s ease-out;
-}
-.cards {
-  display: grid;
-  grid-template-columns: 25% 25%;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  background: rgb(255, 251, 251);
-  box-shadow: 0px 1px 5px rgba(80, 80, 80, 0.125);
-  margin: 100px;
-}
 button {
+  margin-left: 30px;
   font-size: 15px;
   border: none;
   color: white;
@@ -54,4 +46,23 @@ button {
 }
 button:hover {
   background-color: #ec004a;
+}
+.container {
+  margin: 50px;
+  transition: all 0.3s ease-out;
+}
+ul.cards {
+  display: grid;
+  grid-template-columns: 25% 25%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: rgb(255, 251, 251);
+  box-shadow: 0px 1px 5px rgba(80, 80, 80, 0.125);
+  margin: 100px;
+}
+li.itemContainer{
+margin: 10px;
+background-color:black;
+
 }

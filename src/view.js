@@ -1,10 +1,11 @@
+
 export const renderItems = (data) => {
   console.log(data);
   // Aquí comienza tu código y puedes retornar lo que tu necesites
   let showInHtml = "";
   data.forEach((items) => {
     showInHtml += `
-
+<ul class="cards">
       <li class="itemContainer">
             <dl itemscope itemtype="WomenInTech">
             <img src="${items.imageUrl}" alt="" />
@@ -15,6 +16,7 @@ export const renderItems = (data) => {
             <dt>Esudio de animación:</dt><dd itemprop="shortDescription">${items.facts.studio}</dd>
           </dl>
         </li>
+        </ul>
     `;
   });
 

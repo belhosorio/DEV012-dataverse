@@ -11,21 +11,47 @@
       <h1>Kaonashi Pelis</h1>
     </header>
 
-    <!--orden alfabetico-->
+    <section class="menu">
     <select data-testid="select-sort" name="nombre">
-      <option value="nombre">Nombre</option>
-    </select>
-    <section>
-      <label for="nombre">Orden alfabético</label>
-      <select data-testid="select-sort" name="ordenAlfabetico">
-        <option value="" selected>Seleccione un orden</option>
-        <option value="asc">A-Z</option>
-        <option value="desc">Z-A</option>
+      <option disabled selected value="nombre">NOMBRE</option>
+        <option value="akira">Akira</option>
+        <option value="my-neighbor-totoro">My Neighbor Totoro</option>
+        <option value="grave-of-the-fireflies">Grave of the Fireflies</option>
+        <option value="ninja-scroll">Ninja Scroll</option>
+        <option value="ghost-in-the-shell">Ghost in the Shell</option>
+        <option value="princess-mononoke">Princess Mononoke</option>
+        <option value="perfect-blue">Perfect Blue</option>
+        <option value="cowboy-bebop-knockin-on-heavens-door">Cowboy Bebop: Knockin' on Heaven's Door</option>
+        <option value="neon-genesis-evangelion-the-end-of-evangelion">Neon Genesis Evangelion: The End of Evangelion</option>
+        <option value="porco-rosso">Porco Rosso</option>
+        <option value="whisper-of-the-heart">Whisper of the Heart</option>
+        <option value="paprika">Paprika</option>
+        <option value="spirited-away">Spirited Away</option>
+        <option value="howls-moving-castle">Howl's Moving Castle</option>
+        <option value="your-name">Your Name</option>
+        <option value="princess-kaguya">The Tale of the Princess Kaguya</option>
+        <option value="the-wind-rises">The Wind Rises</option>
+        <option value="kikis-delivery-service">Kiki's Delivery Service</option>
+        <option value="the-red-turtle">The Red Turtle</option>
+        <option value="a-silent-voice">A Silent Voice</option>
+        <option value="weathering-with-you">Weathering With You</option>
+        <option value="demon-slayer-mugen-train">Demon Slayer: Mugen Train</option>
+        <option value="suzume">Suzume</option>
+        <option value="the-first-slam-dunk">The First Slam Dunk</option>
+        <option value="one-piece-film-red">One Piece Film: Red</option>
       </select>
 
-      <label for="genre">Genero:</label>
+    
+      <label for="nombre"></label>
+      <select data-testid="select-sort" name="ordenAlfabetico">
+        <option disabled selected value="" selected>ORDENAR POR</option>
+        <option value="asc">Ascendente</option>
+        <option value="desc">Descendente</option>
+      </select>
+
+      <label for="genre"></label>
       <select data-testid="select-filter" name="genre">
-        <option value="">Seleccione un genero</option>
+        <option disabled selected value="">GENERO</option>
         <option value="action">Acción</option>
         <option value="aventura">Aventura</option>
         <option value="belico">Bélico</option>
@@ -38,9 +64,10 @@
         <option value="romance">Romance</option>
         <option value="thriller">Thriller</option>
       </select>
-      <label for="studio">Estudio de animación:</label>
+
+      <label for="studio"></label>
       <select data-testid="select-studio" name="studio">
-        <option value="">Seleccione un estudio</option>
+        <option disabled selected value="">ESTUDIO</option>
         <option value="coMix">CoMix Wave Films</option>
         <option value="gainax">Gainax</option>
         <option value="kyotoAnimation">Kyoto Animation</option>
@@ -54,9 +81,10 @@
         <option value="whyNot">Why Not Productions</option>
         <option value="wildBunch">Wild Bunch</option>
       </select>
-      <label for="año">Año:</label>
+
+      <label for="año"></label>
       <select data-testid="select-año" name="añoEstreno">
-        <option value="" selected>Seleccione un año</option>
+        <option disabled selected value="" selected>AÑO</option>
         <option value="1988">1988</option>
         <option value="1989">1989</option>
         <option value="1992">1992</option>
@@ -72,22 +100,24 @@
         <option value="2020">2020</option>
         <option value="2022">2022</option>
       </select>
-      <select name="sort-order" name="AscDesc">
+
+      <!--<select name="sort-order" name="AscDesc">
         <option value="asc">Ascendente</option>
         <option value="desc">Descendente</option>
       </select>
+      -->
       <!--
       <input type="radio" value="ascendente" />
       <label for="inicio">Ascendente</label><br />
       <input type="radio" value="descendente" />
       <label for="descendente">Descendente</label><br />
--->
-      <button data-testid="button-clear">Limpiar</button>
+      -->
+      <button id="button" data-testid="button-clear">LIMPIAR</button>
     </section>
-  
-      <div id="root" class="container">
+     
+  <div id="root" class="container"></div>
 
-      </div>
+    
         <!--orden alfabetico-->
     <!--
       <br>
