@@ -1,19 +1,14 @@
-import { example } from './dataFunctions.js';
-import { renderItems } from './view.js';
+import { example } from "./dataFunctions.js";
+import { renderItems } from "./view.js";
 
-import data from './data/dataset.js';
+import data from "./data/dataset.js";
 
-const cardsContainer = document.querySelector("#root")
-  cardsContainer.innerHTML = renderItems(data);
-
-
-
+const cardsContainer = document.querySelector("#root");
+cardsContainer.innerHTML = renderItems(data);
 
 console.log(example, renderItems(data), data);
 
-const clearButton = document.getElementById('#button')
+const clearButton = document.getElementById("#button");
 clearButton.addEventListener("click", function () {
-    cardsContainer.innerHTML = renderItems(data);
-    
-  });
-
+  cardsContainer.innerHTML = renderItems(data);
+});
