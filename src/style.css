@@ -1,6 +1,10 @@
 * {
   text-align: center;
 }
+section.menu{
+  max-width: 1400px;
+  align-items: center;
+}
 section {
   border: none;
   padding: 10px;
@@ -13,8 +17,9 @@ label {
 }
 select {
   /*No funciona*/
+  align-items: center;
   padding: 5px;
-  box-shadow: 10px 10px 10px rgba(22, 22, 22, 0.13);
+  box-shadow: 10px 10px 10px rgba(132, 132, 132, 0.13);
   border: 0;
   border-radius: 5px;
 }
@@ -50,6 +55,7 @@ option:hover {
   width: 100%;
 }
 button {
+  margin-left: 30px;
   font-size: 15px;
   border: none;
   color: white;

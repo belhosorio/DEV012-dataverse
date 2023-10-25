@@ -7,3 +7,8 @@ const cardsContainer = document.querySelector("#root");
 cardsContainer.innerHTML = renderItems(data);
 
 console.log(example, renderItems(data), data);
+
+const clearButton = document.getElementById("#button");
+clearButton.addEventListener("click", function () {
+  cardsContainer.innerHTML = renderItems(data);
+});
