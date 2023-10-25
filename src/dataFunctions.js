@@ -1,5 +1,10 @@
-// Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
 
+/*una función sortBy que tiene 3 parámetros (data, sortBy, sortOrder) y devuelve el arreglo ordenado
+ una función filterBy que tiene 3 parámetros (data, filterBy, value) y devuelve el arreglo filtrado
+ una función computeStats que tiene al menos un parámetro (data) y devuelve un valor computado */
+
+
+// Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
 export const example = () => {
   return 'example';
 };
@@ -8,10 +13,24 @@ export const anotherExample = () => {
   return [];
 };
 
-/*const Filter = data.filter((${items.name} ) {
-  return oneFilter
+/*
+
+export const nameFilter = renderItems(data).filter((data, filterBy, value ) =>{
+  return nameFilter
 });
 
+
+export const nameFilter = () => {
+  filterByID(data, filterBy, value)
+
+
+
+sintaxis
+var newArray = arr.filter(callback(currentValue[, index[, array]])[, thisArg])
+
+
+
+ejemplo 1
 /* const arr = [
   { id: 15 },
   { id: -1 },
