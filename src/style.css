@@ -1,15 +1,6 @@
 * {
   text-align: center;
 }
-section.menu{
-  max-width: 1400px;
-  align-items: center;
-}
-section {
-  border: none;
-  padding: 10px;
-  /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);*/
-}
 label {
   border: none;
   padding: 5px;
@@ -35,14 +26,6 @@ option:hover {
   background-color: #ec004a;
 }
 
-.container li {
-  margin: 50px;
-  color: white;
-  border-radius: 6px;
-  background: rgb(40, 40, 40);
-  box-shadow: 0px 1px 5px rgba(80, 80, 80, 0.125);
-  padding: 10px;
-}
 .cards {
   display: grid;
   grid-template-columns: 25% 25%;
