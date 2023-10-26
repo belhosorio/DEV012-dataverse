@@ -15,8 +15,8 @@ export const anotherExample = () => {
 
 /*
 
-export const nameFilter = renderItems(data).filter((data, filterBy, value ) =>{
-  return nameFilter
+export const genreFilter = renderItems.filter(function(data, filterBy, value ){
+  return renderItems.genre === genre
 });
 
 

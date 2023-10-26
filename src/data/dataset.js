@@ -347,7 +347,7 @@ export default [
       "Acompaña a Ryota Miyagi y su equipo de baloncesto en un emocionante enfrentamiento contra los campeones reinantes en Shohoku.",
     description:
       "Es una película de animación japonesa sobre un equipo de baloncesto de instituto que se enfrenta al campeón nacional. La película sigue la historia de Hanamichi Sakuragi, un jugador de baloncesto con un pasado turbulento, que se une al equipo de baloncesto de Shohoku para impresionar a Haruko Akagi, una chica que le gusta. Con la ayuda de su amigo y compañero de equipo Ryota Miyagi, Hanamichi aprende a jugar al baloncesto y a convertirse en un mejor jugador. La película es una historia de amistad, superación personal y el poder del baloncesto para unir a las personas.",
-    imageUrl: "https://pics.filmaffinity.com/eiga_slam_dunk-142097472-mmed.jpg",
+    imageUrl: "https://elcomercio.pe/resizer/-vQnh5e9WNzefPT4aNAglKBQ8bQ=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/2URNXYOLONFQPGPXGMJNSGQMBY.webp",
     facts: {
       year: 2022,
       genre: "Deportes",
