@@ -1,12 +1,13 @@
-
 * {
   text-align: center;
 }
- /* section {
-  border: none;
-  padding: 10px;
- box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
-}*/
+input{
+  align-items: center;
+  padding: 5px;
+  box-shadow: 10px 10px 10px rgba(132, 132, 132, 0.13);
+  border: 0;
+  border-radius: 5px;
+}
 label {
   border: none;
   padding: 5px;
@@ -45,17 +46,14 @@ button:hover {
 }
 .container {
   margin-top: 50px;
-align-items: center;
+  align-items: center;
 }
 .cards {
-display: grid;
-grid-template-columns:  33.3% 33.3% 33.3%;
-margin-right: 10px;
-align-items: center;
-justify-content: center;
-}
-.itemContainer{
-background-color:#ec004a;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
 }
 .container img {
   height: 100%;
@@ -65,13 +63,14 @@ background-color:#ec004a;
   width: 300px;
   align-items: center;
   margin: 10px;
-  transition: all 0.3s ease-out;	  color: white;
+  transition: all 0.3s ease-out;
+  color: white;
   border-radius: 6px;
   background: rgb(40, 40, 40);
   box-shadow: 0px 1px 5px rgba(80, 80, 80, 0.125);
   padding: 10px;
 }
-footer{
+footer {
   margin-top: 80px;
   padding-bottom: 30px;
 }
