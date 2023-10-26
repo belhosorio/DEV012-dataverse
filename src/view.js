@@ -12,7 +12,7 @@ export const renderItems = (data) => {
             <dt>Descripción:</dt><dd itemprop="shortDescription">${items.shortDescription}</dd>
             <dt>Año:</dt><dd itemprop="year">${items.facts.year}</dd>
             <dt>Genero:</dt><dd itemprop="genre">${items.facts.genre}</dd>
-            <dt>Esudio de animación:</dt><dd itemprop="studio">${items.facts.studio}</dd>
+            <dt>Estudio de animación:</dt><dd itemprop="studio">${items.facts.studio}</dd>
             </dl>  <section>
         </li>
         </ul>

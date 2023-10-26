@@ -12,42 +12,7 @@
     </header>
 
     <section>
-    <select data-testid="select-sort" name="nombre">
-      <option disabled selected value="nombre">NOMBRE</option>
-        <option value="akira">Akira</option>
-        <option value="my-neighbor-totoro">My Neighbor Totoro</option>
-        <option value="grave-of-the-fireflies">Grave of the Fireflies</option>
-        <option value="ninja-scroll">Ninja Scroll</option>
-        <option value="ghost-in-the-shell">Ghost in the Shell</option>
-        <option value="princess-mononoke">Princess Mononoke</option>
-        <option value="perfect-blue">Perfect Blue</option>
-        <option value="cowboy-bebop-knockin-on-heavens-door">Cowboy Bebop: Knockin' on Heaven's Door</option>
-        <option value="neon-genesis-evangelion-the-end-of-evangelion">Neon Genesis Evangelion: The End of Evangelion</option>
-        <option value="porco-rosso">Porco Rosso</option>
-        <option value="whisper-of-the-heart">Whisper of the Heart</option>
-        <option value="paprika">Paprika</option>
-        <option value="spirited-away">Spirited Away</option>
-        <option value="howls-moving-castle">Howl's Moving Castle</option>
-        <option value="your-name">Your Name</option>
-        <option value="princess-kaguya">The Tale of the Princess Kaguya</option>
-        <option value="the-wind-rises">The Wind Rises</option>
-        <option value="kikis-delivery-service">Kiki's Delivery Service</option>
-        <option value="the-red-turtle">The Red Turtle</option>
-        <option value="a-silent-voice">A Silent Voice</option>
-        <option value="weathering-with-you">Weathering With You</option>
-        <option value="demon-slayer-mugen-train">Demon Slayer: Mugen Train</option>
-        <option value="suzume">Suzume</option>
-        <option value="the-first-slam-dunk">The First Slam Dunk</option>
-        <option value="one-piece-film-red">One Piece Film: Red</option>
-      </select>
-
-    
-      <label for="nombre"></label>
-      <select data-testid="select-sort" name="ordenAlfabetico">
-        <option disabled selected value="" selected>ORDENAR POR</option>
-        <option value="asc">Ascendente</option>
-        <option value="desc">Descendente</option>
-      </select>
+      <input id="input" name="search-button" type="text" placeholder="BUSCAR PELÍCULA" autofocus onkeyup="search"/>  
 
       <label for="genre"></label>
       <select data-testid="select-filter" name="genre">
@@ -101,17 +66,13 @@
         <option value="2022">2022</option>
       </select>
 
-      <!--<select name="sort-order" name="AscDesc">
+      <label for="nombre"></label>
+      <select data-testid="select-sort" name="ordenAlfabetico">
+        <option disabled selected value="" selected>ORDENAR POR</option>
         <option value="asc">Ascendente</option>
         <option value="desc">Descendente</option>
       </select>
-      -->
-      <!--
-      <input type="radio" value="ascendente" />
-      <label for="inicio">Ascendente</label><br />
-      <input type="radio" value="descendente" />
-      <label for="descendente">Descendente</label><br />
-      -->
+
       <button id="button" data-testid="button-clear">LIMPIAR</button>
     </section>
      
