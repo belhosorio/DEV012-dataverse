@@ -8,7 +8,7 @@ export const renderItems = (data) => {
       <li class="itemContainer">
             <dl itemscope itemtype="PeliculasAnimacionJaponesa">
             <img src="${items.imageUrl}" alt="" />
-            <dt>Nombre:</dt><dd itemprop="name">${items.name}</dd>
+            <dt class="nombre">Nombre:</dt><dd itemprop="name">${items.name}</dd>
             <dt>Descripción:</dt><dd itemprop="shortDescription">${items.shortDescription}</dd>
             <dt>Año:</dt><dd itemprop="shortDescription">${items.facts.year}</dd>
             <dt>Genero:</dt><dd itemprop="shortDescription">${items.facts.genre}</dd>
