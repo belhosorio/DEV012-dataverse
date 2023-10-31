@@ -1,32 +1,39 @@
-import { example } from "./dataFunctions.js";
+import { filterByStudio } from "./dataFunctions.js";
+import { filterByGenre } from "./dataFunctions.js";
+import { filterByYear } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 
 import data from "./data/dataset.js";
 
-console.log(example, renderItems(data), data);
-
 const cardsContainer = document.querySelector("#root");
 cardsContainer.innerHTML = renderItems(data);
 
+const buttonStudio = document.querySelector('[name="studio"]');
+buttonStudio.addEventListener("change", (e) => {
+  const studioFilter = e.target.value;
+  const filterData = filterByStudio(data, "studio", studioFilter);
+  cardsContainer.innerHTML = renderItems(filterData);
+});
+
+const buttonGenre = document.querySelector('[name="genre"]');
+buttonGenre.addEventListener("change", (e) => {
+  const genreFilter = e.target.value;
+  const filterDataGen = filterByGenre(data, "genre", genreFilter);
+  cardsContainer.innerHTML = renderItems(filterDataGen);
+});
+
+const buttonYear = document.querySelector('[name="year"]');
+buttonYear.addEventListener("change", (e) => {
+  const yearFilter = e.target.value;
+  const filterDataYea = filterByYear(data, "year", yearFilter);
+  cardsContainer.innerHTML = renderItems(filterDataYea);
+});
 
 
-
+console.log(filterByStudio, renderItems(data), data);
 
 const clearButton = document.getElementById("button");
 clearButton.addEventListener("click", function () {
   cardsContainer.innerHTML = renderItems(data);
 });
 
-/*main
-
-  datosFiltrados.forEach(function(renderItems) {
-        let genero = document.createElement('option[value="genero-op"]');
-        let accion = document.createElement('option[value="action"]');
-        accion.innerHTML = showInHtml.accion;
-      accion.innerHTML = items.accion;
-    };
-
-function filtrarDatos() {
-    let filtrogenero = document.querySelector('label[for="genre"]').value;
-    mostrarDatos(filtrogenero);
-};
