@@ -1,16 +1,72 @@
 /*una función sortBy que tiene 3 parámetros (data, sortBy, sortOrder) y devuelve el arreglo ordenado
  una función filterBy que tiene 3 parámetros (data, filterBy, value) y devuelve el arreglo filtrado
  una función computeStats que tiene al menos un parámetro (data) y devuelve un valor computado */
+//Unicamente se hará uso de funciones puras
 
-// Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
-export const example = () => {
-  return "example";
+export const searchByName = (data, searchBy, input) => {
+  if (searchBy === "input") {
+    const filteredDataByName = data.filter((item) => {
+      return item.name.toLowerCase().includes(input.toLowerCase());
+    });
+    return filteredDataByName;
+  }
 };
 
-export const anotherExample = () => {
-  return [];
+export const filterByYear = (data, filterBy, value) => {
+  if (filterBy === "year") {
+    const filteredDataByYear = [];
+    for (let i = 0; i < data.length; i++) {
+      const storesMovieByYear = data[i].facts.year;
+
+      if (Number(storesMovieByYear) === Number(value)) {
+        filteredDataByYear.push(data[i]);
+      }
+    }
+    return filteredDataByYear;
+  }
+};
+export const filterByGenre = (data, filterBy, value) => {
+  if (filterBy === "genre") {
+    const selectedGenre = value.split(",").map((genre) => genre.trim());
+    const resultFilterByGenre = data.filter((item) => {
+      const storesMovieGenre = item.facts.genre
+        .split(",")
+        .map((genre) => genre.trim());
+      return selectedGenre.some((selectedGenre) =>
+        storesMovieGenre.includes(selectedGenre)
+      );
+    });
+    return resultFilterByGenre;
+  }
 };
 
+export const filterByStudio = (data, filterBy, value) => {
+  if (filterBy === "studio") {
+    const selectedStudio = value.split(",").map((studio) => studio.trim());
+    const resultFilterByStudio = data.filter((item) => {
+      const storesMovieStudio = item.facts.studio
+        .split(",")
+        .map((studio) => studio.trim());
+      return selectedStudio.some((selectedStudio) =>
+        storesMovieStudio.includes(selectedStudio)
+      );
+    });
+    return resultFilterByStudio;
+  }
+};
+/*
+    export const filterByGenre = (data, filterBy, value) => {
+      if (filterBy === "genre") {
+        const resultFilterByGenre = [];
+        for (let i = 0; i < data.length; i++) {
+          const filterGenre = data[i].facts.genre;
+      
+          if (filterGenre === value) {
+            resultFilterByGenre.push(data[i]);
+          }
+        }
+        return resultFilterByGenre;
+      }
 export const filterByStudio = (data, filterBy, value) => {
   if (filterBy === "studio") {
     const resultFilterByStudio = [];
@@ -23,61 +79,4 @@ export const filterByStudio = (data, filterBy, value) => {
     }
     return resultFilterByStudio;
   }
-};
-/*
-  inputElement.addEventListener("keyup", (e) =>{
-    if{e.target.matches(input){
-      console.log(e.target.value)
-      inputElement.querySelectorAll(".nombre")
-    }
-  });
-
-}
-
-
-export const genreFilter = renderItems.filter(function(data, filterBy, value ){
-  return renderItems.genre === genre
-});
-
-
-export const nameFilter = () => {
-  filterByID(data, filterBy, value)
-
-*/
-/*
-sintaxis
-var newArray = arr.filter(callback(currentValue[, index[, array]])[, thisArg])
-
-
-
-ejemplo 1
-const arr = [
-  { id: 15 },
-  { id: -1 },
-  { id: 0 },
-  { id: 3 },
-  { id: 12.2 },
-  {},
-  { id: null },
-  { id: NaN },
-  { id: "undefined" },
-];
-
-let invalidEntries = 0;
-
-function filterByID(item) {
-  if (Number.isFinite(item.id) && item.id !== 0) {
-    return true;
-  }
-  invalidEntries++;
-  return false;
-}
-
-const arrByID = arr.filter(filterByID);
-
-console.log("Filtered Array\n", arrByID);
-// Filtered Array
-// [{ id: 15 }, { id: -1 }, { id: 3 }, { id: 12.2 }]
-
-console.log("Number of Invalid Entries =", invalidEntries);
-// Number of Invalid Entries = 5 */
+};*/

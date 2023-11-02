@@ -7,12 +7,12 @@ export const renderItems = (data) => {
 <ul class="cards">
       <li class="itemContainer">
             <dl itemscope itemtype="PeliculasAnimacionJaponesa">
-            <img src="${items.imageUrl}" alt="" />
-            <dt class="nombre">Nombre:</dt><dd itemprop="name">${items.name}</dd>
-            <dt>Descripción:</dt><dd itemprop="shortDescription">${items.shortDescription}</dd>
-            <dt>Año:</dt><dd itemprop="shortDescription">${items.facts.year}</dd>
-            <dt>Genero:</dt><dd itemprop="shortDescription">${items.facts.genre}</dd>
-            <dt>Estudio de animación:</dt><dd itemprop="shortDescription">${items.facts.studio}</dd>
+            <img src="${items.imageUrl}" alt="${items.name}"/>
+            <dt></dt><dd itemprop="name">${items.name}</dd>
+            <dt></dt><dd itemprop="shortDescription">${items.shortDescription}</dd>
+            <dt>Año de estreno:</dt><dd itemprop="year">${items.facts.year}</dd>
+            <dt></dt><dd itemprop="genre">${items.facts.genre}</dd>
+            <dt></dt><dd itemprop="studio">${items.facts.studio}</dd>
           </dl>
         </li>
         </ul>
