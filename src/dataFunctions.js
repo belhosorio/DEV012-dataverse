@@ -1,15 +1,4 @@
-/*una función sortBy que tiene 3 parámetros (data, sortBy, sortOrder) y devuelve el arreglo ordenado
- una función filterBy que tiene 3 parámetros (data, filterBy, value) y devuelve el arreglo filtrado
- una función computeStats que tiene al menos un parámetro (data) y devuelve un valor computado 
-
- Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
-export const example = () => {
-  return "example";
-}; 
-export const anotherExample = () => {
-  return [];
-};
-*/
+// una función filterBy que tiene 3 parámetros (data, filterBy, value) y devuelve el arreglo filtrado
 
 /*
 export const filterByStudio = (data, filterBy, value) => {
@@ -17,7 +6,7 @@ export const filterByStudio = (data, filterBy, value) => {
     const resultFilterByStudio = [];
     for (let i = 0; i < data.length; i++) {
       const filterStudio = data[i].facts.studio;
-      //console.log(filterByStudio)
+    
       if (filterStudio === value) {
         resultFilterByStudio.push(data[i]);
       }
@@ -26,7 +15,6 @@ export const filterByStudio = (data, filterBy, value) => {
   }
 };
 */
-
 
 export const filterByStudio = (data, filterBy, value) => {
   if (filterBy === "studio") {
@@ -80,3 +68,18 @@ export const filterByYear = (data, filterBy, value) => {
     return resultFilterByYear;
   }
 };
+
+//una función computeStats que tiene al menos un parámetro (data) y devuelve un valor computado 
+
+
+export const fijaData = (data) => {
+  for(let i = 0; i < data.length; i++){
+    return fijaData;
+  }
+}
+
+
+
+//una función sortBy que tiene 3 parámetros (data, sortBy, sortOrder) y devuelve el arreglo ordenado
+
+
