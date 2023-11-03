@@ -37,28 +37,25 @@ buttonYear.addEventListener("change", (e) => {
 const clearButton = document.getElementById("button");
 clearButton.addEventListener("click", function () {
   cardsContainer.innerHTML = renderItems(data);
-  pDataFija.innerHTML = "Resultado de Busqueda: 0";
+  pDataFija.innerHTML = "";
 });
 
 //Data fija
-/*const pDataFija = document.querySelector('.data-fija');
+
+const pDataFija = document.querySelector('.data-fija');
 const resultadoP = (filterData, filterDataGen, filterDataYea) => {
   resultadoP = renderItems(filterData) + renderItems(filterDataGen) + renderItems(filterDataYea);
   return resultadoP.length;
 }; 
 
+
+/*
+const pDataFija = document.querySelector('.data-fija');
 pDataFija.addEventListener("input", function () {
- pDataFija.innerHTML = "Resultados de Busqueda: " + resultadoP;
-});
+  const resultadoP = pDataFija.value;
+  const fijaDt = fijaData(data);
+  pDataFija.innerHTML = "Resultados de Busqueda: " + fijaDt;
+ });
 */
 
-const pDataFija = document.querySelector('.data-fija');
-const resultadoP = (filterData, filterDataGen, filterDataYea) => {
-  
-  const filterDataYea = fijaData(data);
-  cardsContainer.innerHTML = renderItems(filterDataYea);
-};
-
 console.log(filterByStudio, renderItems(data), data);
-
-
