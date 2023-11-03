@@ -7,7 +7,9 @@ import { fijaData } from "./dataFunctions.js";
 
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
-
+let filtroAcumulativo = data;
+const pDataFija = document.querySelector(".data-fija");
+pDataFija.innerHTML="Total de películas: " + fijaData(filtroAcumulativo);
 //------------------------Invocar  el container-----------------------
 const cardsContainer = document.querySelector("#root");
 cardsContainer.innerHTML = renderItems(data);
@@ -36,16 +38,17 @@ inputSearch.addEventListener("input", () => {
 const selectYear = document.querySelector('[name="year"]');
 selectYear.addEventListener("change", (e) => {
   const yearSelected = e.target.value;
-  const filteredDataByYear = filterByYear(data, "year", yearSelected);
-  cardsContainer.innerHTML = renderItems(filteredDataByYear);
+  filtroAcumulativo = filterByYear(filtroAcumulativo, "year", yearSelected);
+  cardsContainer.innerHTML = renderItems(filtroAcumulativo);
+  pDataFija.innerHTML="Total de películas: " + fijaData(filtroAcumulativo);
 });
 
 //------------------------Filtro por genero---------------------------
 const selectGenre = document.querySelector('[name="genre"]');
 selectGenre.addEventListener("change", (e) => {
   const genreSelected = e.target.value;
-  const filteredDataByGenre = filterByGenre(data, "genre", genreSelected);
-  cardsContainer.innerHTML = renderItems(filteredDataByGenre);
+  filtroAcumulativo = filterByGenre(filtroAcumulativo, "genre", genreSelected);
+  cardsContainer.innerHTML = renderItems(filtroAcumulativo);
 });
 
 //------------------------Filtro por studio------------------------
@@ -79,8 +82,8 @@ clearButton.addEventListener("click", function () {
     selector.value = selector.options[0].value; // Establece la opción predeterminada
     searchInput.value = ""; //Era para limpiar el textContent pero no funciona
   });
-
-  cardsContainer.innerHTML = renderItems(data);
+  filtroAcumulativo = data;
+  cardsContainer.innerHTML = renderItems(filtroAcumulativo);
   pDataFija.innerHTML = "Resultado de Busqueda: 0";
 });
 
@@ -96,15 +99,6 @@ pDataFija.addEventListener("input", function () {
 });
 */
 
-const pDataFija = document.querySelector(".data-fija");
-const resultadoP = (
-  filteredDataByYear,
-  filteredDataByGenre,
-  filteredDataByStudio
-) => {
-  // (filterData, filterDataGen, filterDataYea)
-  const filteredDataByYear = fijaData(data);
-  cardsContainer.innerHTML = renderItems(filteredDataByYear);
-};
+
 
 console.log(filterByStudio, renderItems(data), data);
