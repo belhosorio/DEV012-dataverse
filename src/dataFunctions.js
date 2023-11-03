@@ -5,7 +5,10 @@
 
 export const searchByName = (data, searchBy, input) => {
   if (searchBy === "input") {
+    //El metodo filter crea un nuevo arreglo que contiene solo los elementos que cumplan con una condición especifica
+    // La condición que se evaluaen filter es por una función flecha
     const filteredDataByName = data.filter((item) => {
+
       return item.name.toLowerCase().includes(input.toLowerCase());
     });
     return filteredDataByName;
@@ -54,6 +57,55 @@ export const filterByStudio = (data, filterBy, value) => {
     return resultFilterByStudio;
   }
 };
+export const sortData = (data, sortBy, sortOrder) => {
+  // Crear una copia del array original, porque al hacer uso de sort editara el original
+  const copyData = [...data];
+  // Ordenar la copia del array utilizando el método "sort"
+  copyData.sort((a, b) => {
+    // Obtener el valor de la propiedad "sortBy" para los elementos "a" y "b"
+    const valueA = a[sortBy];
+    const valueB = b[sortBy];
+
+    if (valueA === valueB) {
+      return 0;
+    }
+
+    if (sortOrder === "asc") {
+      // Determinar el orden ascendente
+      if (valueA < valueB) {
+        return -1;
+      }
+      return 1;
+    }
+
+    if (sortOrder === "desc") {
+      // Determinar el orden descendente
+      if (valueA > valueB) {
+        return -1;
+      }
+      return 1;
+    }
+  });
+
+  console.log(copyData);
+  return copyData;
+};
+  /*if (sortBy === "studio") {
+    copyData.sort((a, b) => {
+      const studioA = a.facts.studio;
+      const studioB = b.facts.studio;
+
+      if (studioA === studioB) {
+        return 0;
+      }
+      if (studioA > studioB) {
+        return -1;
+      }
+      return 1;
+    });
+  }
+  return copyData; // Devuelve el conjunto de datos ordenado
+};*/
 /*
     export const filterByGenre = (data, filterBy, value) => {
       if (filterBy === "genre") {
