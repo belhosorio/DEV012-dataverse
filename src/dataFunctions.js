@@ -57,6 +57,34 @@ export const filterByStudio = (data, filterBy, value) => {
     return resultFilterByStudio;
   }
 };
+
+/* ------------Uso de for en genero--------------
+    export const filterByGenre = (data, filterBy, value) => {
+      if (filterBy === "genre") {
+        const resultFilterByGenre = [];
+        for (let i = 0; i < data.length; i++) {
+          const filterGenre = data[i].facts.genre;
+      
+          if (filterGenre === value) {
+            resultFilterByGenre.push(data[i]);
+          }
+        }
+        return resultFilterByGenre;
+      }
+      ---------------uso de for en studio
+export const filterByStudio = (data, filterBy, value) => {
+  if (filterBy === "studio") {
+    const resultFilterByStudio = [];
+    for (let i = 0; i < data.length; i++) {
+      const filterStudio = data[i].facts.studio;
+    
+      if (filterStudio === value) {
+        resultFilterByStudio.push(data[i]);
+      }
+    }
+    return resultFilterByStudio;
+  }
+};*/
 export const sortData = (data, sortBy, sortOrder) => {
   // Crear una copia del array original, porque al hacer uso de sort editara el original
   const copyData = [...data];
@@ -90,45 +118,17 @@ export const sortData = (data, sortBy, sortOrder) => {
   console.log(copyData);
   return copyData;
 };
-  /*if (sortBy === "studio") {
-    copyData.sort((a, b) => {
-      const studioA = a.facts.studio;
-      const studioB = b.facts.studio;
 
-      if (studioA === studioB) {
-        return 0;
-      }
-      if (studioA > studioB) {
-        return -1;
-      }
-      return 1;
-    });
+
+//una función computeStats que tiene al menos un parámetro (data) y devuelve un valor computado 
+export const fijaData = (data) => {
+  for(let i = 0; i < data.length; i++){
+    return fijaData;
   }
-  return copyData; // Devuelve el conjunto de datos ordenado
-};*/
-/*
-    export const filterByGenre = (data, filterBy, value) => {
-      if (filterBy === "genre") {
-        const resultFilterByGenre = [];
-        for (let i = 0; i < data.length; i++) {
-          const filterGenre = data[i].facts.genre;
-      
-          if (filterGenre === value) {
-            resultFilterByGenre.push(data[i]);
-          }
-        }
-        return resultFilterByGenre;
-      }
-export const filterByStudio = (data, filterBy, value) => {
-  if (filterBy === "studio") {
-    const resultFilterByStudio = [];
-    for (let i = 0; i < data.length; i++) {
-      const filterStudio = data[i].facts.studio;
-      //console.log(filterByStudio)
-      if (filterStudio === value) {
-        resultFilterByStudio.push(data[i]);
-      }
-    }
-    return resultFilterByStudio;
-  }
-};*/
+}
+
+
+
+//una función sortBy que tiene 3 parámetros (data, sortBy, sortOrder) y devuelve el arreglo ordenado
+
+
