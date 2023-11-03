@@ -12,7 +12,7 @@
     </header>
 
     <section>
-      <input id="inputFilter" name="searchButton" type="text" placeholder="BUSCAR PELÍCULA"/>  
+      <input id="inputFilter" name="searchButton" type="search" placeholder="BUSCAR PELÍCULA"/>  
 
       <label for="genre"></label>
       <select data-testid="select-filter" name="genre">
@@ -27,7 +27,7 @@
         <option value="Mecha">Mecha</option>
         <option value="Psicológico">Psicológico</option>
         <option value="Romance">Romance</option>
-        <option value="Thriller">Thriller</option>
+        <option value="thriller">Thriller</option>
       </select>
 
       <label for="studio"></label>
@@ -49,7 +49,7 @@
 
       <label for="año"></label>
       <select data-testid="select-año" name="year">
-        <option disabled selected value="" selected>AÑO</option>
+        <option disabled selected value="" selected>AÑO DE ESTRENO</option>
         <option value="1988">1988</option>
         <option value="1989">1989</option>
         <option value="1992">1992</option>
@@ -81,6 +81,7 @@
   <div id="root" class="container">
     
   </div>
+  <div id="noResultsFound" ></div>
 
     
         <!--orden alfabetico-->
