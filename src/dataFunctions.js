@@ -8,7 +8,6 @@ export const searchByName = (data, searchBy, input) => {
     //El metodo filter crea un nuevo arreglo que contiene solo los elementos que cumplan con una condición especifica
     // La condición que se evaluaen filter es por una función flecha
     const filteredDataByName = data.filter((item) => {
-
       return item.name.toLowerCase().includes(input.toLowerCase());
     });
     return filteredDataByName;
@@ -29,7 +28,8 @@ export const filterByYear = (data, filterBy, value) => {
   }
 };
 export const filterByGenre = (data, filterBy, value) => {
-  if (filterBy === "genre") {
+  /* if (filterBy === "genre") {
+
     const selectedGenre = value.split(",").map((genre) => genre.trim());
     const resultFilterByGenre = data.filter((item) => {
       const storesMovieGenre = item.facts.genre
@@ -38,9 +38,8 @@ export const filterByGenre = (data, filterBy, value) => {
       return selectedGenre.some((selectedGenre) =>
         storesMovieGenre.includes(selectedGenre)
       );
-    });
-    return resultFilterByGenre;
-  }
+    });*/
+  return data.filter((item) => item.facts[filterBy].includes(value));
 };
 
 export const filterByStudio = (data, filterBy, value) => {
@@ -119,16 +118,10 @@ export const sortData = (data, sortBy, sortOrder) => {
   return copyData;
 };
 
-
-//una función computeStats que tiene al menos un parámetro (data) y devuelve un valor computado 
+//una función computeStats que tiene al menos un parámetro (data) y devuelve un valor computado
 export const fijaData = (data) => {
-  for(let i = 0; i < data.length; i++){
-    return fijaData;
-  }
-}
-
-
+  const longitud = data.reduce((acumulador) => acumulador + 1, 0);
+  return longitud;
+};
 
 //una función sortBy que tiene 3 parámetros (data, sortBy, sortOrder) y devuelve el arreglo ordenado
-
-
