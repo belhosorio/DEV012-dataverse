@@ -39,7 +39,7 @@ selectYear.addEventListener("change", (e) => {
   const yearSelected = e.target.value;
   filtroAcumulativo = filterByYear(filtroAcumulativo, "year", yearSelected);
   cardsContainer.innerHTML = renderItems(filtroAcumulativo);
-  pDataFija.innerHTML="Total de películas: " + fijaData(filtroAcumulativo);
+  pDataFija.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
 });
 
 //------------------------Filtro por genero---------------------------

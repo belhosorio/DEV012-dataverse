@@ -38,7 +38,7 @@ export default [
     imageUrl: "https://www.ecartelera.com/carteles/6200/6288/003.jpg",
     facts: {
       year: 1988,
-      genre: "Drama, Bélico",
+      genre: "Drama · Bélico",
       studio: "Studio Ghibli",
     },
   },
@@ -52,7 +52,7 @@ export default [
     imageUrl: "https://www.ecartelera.com/carteles/6000/6061/001_p.jpg",
     facts: {
       year: 1993,
-      genre: "Acción, Aventura, Fantasía",
+      genre: "Acción · Aventura · Fantasía",
       studio: "Madhouse",
     },
   },
@@ -67,7 +67,7 @@ export default [
       "https://d32qys9a6wm9no.cloudfront.net/images/movies/poster/f6/556701bc495974bec9e0431c10fa598a_300x442.jpg?t=1636102095",
     facts: {
       year: 1995,
-      genre: "Ciencia Ficción, Thriller",
+      genre: "Ciencia Ficción · Thriller",
       studio: "Production I.G",
     },
   },
@@ -82,7 +82,7 @@ export default [
       "https://wallpapers.com/images/high/princess-mononoke-studio-ghibli-4uc8he3kk9uur0dj.webp",
     facts: {
       year: 1997,
-      genre: "Fantasía, Aventura",
+      genre: "Fantasía · Aventura",
       studio: "Studio Ghibli",
     },
   },
@@ -97,7 +97,7 @@ export default [
       "https://m.media-amazon.com/images/M/MV5BN2RkMjQ3ZjItNWNlMC00ZTZlLTg3OTQtMzJjYjMwOTQ1ODg4XkEyXkFqcGdeQXVyMDc2NTEzMw@@._V1_.jpg",
     facts: {
       year: 1997,
-      genre: "Thriller, Psicológico",
+      genre: "Thriller · Psicológico",
       studio: "Madhouse",
     },
   },
@@ -111,7 +111,7 @@ export default [
     imageUrl: "https://www.ecartelera.com/carteles/8000/8003/001_p.jpg",
     facts: {
       year: 2001,
-      genre: "Ciencia Ficción, Thriller",
+      genre: "Ciencia Ficción · Thriller",
       studio: "Sunrise",
     },
   },
@@ -126,7 +126,7 @@ export default [
       "https://m.media-amazon.com/images/M/MV5BMjU0MzQwMmMtMWU3OS00MDc0LWIzOTItZmE1MjZlYmExMGJiXkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_.jpg",
     facts: {
       year: 1997,
-      genre: "Mecha, Psicológico",
+      genre: "Mecha · Psicológico",
       studio: "Gainax",
     },
   },
@@ -156,7 +156,7 @@ export default [
       "https://play-lh.googleusercontent.com/UnXdxbMaOoyax8EypJfIR-gibJ2UiHEIcx06Qwd5u8hsHb69Iw1DXsVG352EoDzmHZvzNhzqZWd3iv2tcg",
     facts: {
       year: 1995,
-      genre: "Drama, Romance",
+      genre: "Drama · Romance",
       studio: "Studio Ghibli",
     },
   },
@@ -171,7 +171,7 @@ export default [
       "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdeH6W5bSU4T4L2J2BELJ6Jfuli_bPkpHzjgTEyxvJ_UEqfZxb",
     facts: {
       year: 2006,
-      genre: "Ciencia Ficción, Psicológico",
+      genre: "Ciencia Ficción · Psicológico",
       studio: "Madhouse",
     },
   },
@@ -186,7 +186,7 @@ export default [
       "https://es.web.img2.acsta.net/r_1920_1080/img/49/e8/49e8fe683dd25ab1338340981c5f62ca.jpg",
     facts: {
       year: 2001,
-      genre: "Aventura, Fantasía",
+      genre: "Aventura · Fantasía",
       studio: "Studio Ghibli",
     },
   },
@@ -201,7 +201,7 @@ export default [
       "https://i.pinimg.com/564x/5c/88/35/5c88353ae652bed16e16fa47923aa903.jpg",
     facts: {
       year: 2004,
-      genre: "Aventura, Fantasía",
+      genre: "Aventura · Fantasía",
       studio: "Studio Ghibli",
     },
   },
@@ -216,7 +216,7 @@ export default [
       "https://blog.audiomu.com/wp-content/uploads/2017/12/kimi-no-na-wa-poster.jpg",
     facts: {
       year: 2016,
-      genre: "Drama, Romance",
+      genre: "Drama · Romance",
       studio: "CoMix Wave Films",
     },
   },
@@ -231,7 +231,7 @@ export default [
       "https://mundo-ghibli.com/wp-content/uploads/2023/02/the-tale-of-the-princess-kaguya-wallpaper-71.jpg.webp",
     facts: {
       year: 2013,
-      genre: "Fantasía, Drama",
+      genre: "Fantasía · Drama",
       studio: "Studio Ghibli",
     },
   },
@@ -246,7 +246,7 @@ export default [
       "https://2.bp.blogspot.com/-NQtphumFrWk/UtWZml6uGZI/AAAAAAAAC-o/geHvU_WeG08/s1600/kaze-tachinu-cartel-usa-2.jpg",
     facts: {
       year: 2013,
-      genre: "Drama, Romance",
+      genre: "Drama · Romance",
       studio: "Studio Ghibli",
     },
   },
@@ -261,7 +261,7 @@ export default [
       "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/130/2023/03/02145053/kikis-delivery-service-poster-Ghibli-scaled.jpg",
     facts: {
       year: 1989,
-      genre: "Fantasía, Aventura",
+      genre: "Fantasía · Aventura",
       studio: "Studio Ghibli",
     },
   },
@@ -275,8 +275,8 @@ export default [
     imageUrl: "https://static.tvtropes.org/pmwiki/pub/images/red_turtle.png",
     facts: {
       year: 2016,
-      genre: "Drama, Fantasía",
-      studio: "Studio Ghibli, Wild Bunch, Why Not Productions",
+      genre: "Drama · Fantasía",
+      studio: "Studio Ghibli · Wild Bunch · Why Not Productions",
     },
   },
   {
@@ -290,7 +290,7 @@ export default [
       "https://blacknerdproblems.com/wp-content/uploads/2021/05/A-Silent-Voice-e1622441591313.jpg",
     facts: {
       year: 2016,
-      genre: "Drama, Romance",
+      genre: "Drama · Romance",
       studio: "Kyoto Animation",
     },
   },
@@ -305,7 +305,7 @@ export default [
       "https://pbs.twimg.com/media/Ep9GOlrXEAATOYx?format=jpg&name=900x900",
     facts: {
       year: 2019,
-      genre: "Romance, Fantasía",
+      genre: "Romance · Fantasía",
       studio: "CoMix Wave Films",
     },
   },
@@ -320,7 +320,7 @@ export default [
       "https://m.media-amazon.com/images/M/MV5BODI2NjdlYWItMTE1ZC00YzI2LTlhZGQtNzE3NzA4MWM0ODYzXkEyXkFqcGdeQXVyNjU1OTg4OTM@._V1_FMjpg_UX1000_.jpg",
     facts: {
       year: 2020,
-      genre: "Acción, Aventura",
+      genre: "Acción · Aventura",
       studio: "Ufotable",
     },
   },
@@ -335,7 +335,7 @@ export default [
       "https://m.media-amazon.com/images/M/MV5BNGVkNDc3NjUtNTY5ZS00ZmE0LWE3YzctMDk2OTRlNTdiZWQwXkEyXkFqcGdeQXVyMTU3NDg0OTgx._V1_.jpg",
     facts: {
       year: 2022,
-      genre: "Fantasía, Aventura",
+      genre: "Fantasía · Aventura",
       studio: "Studio Ghibli",
     },
   },

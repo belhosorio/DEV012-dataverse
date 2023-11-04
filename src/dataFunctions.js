@@ -80,7 +80,8 @@ export const sortData = (data, sortBy, sortOrder) => {
 
 
 //una función computeStats que tiene al menos un parámetro (data) y devuelve un valor computado
-export const fijaData = (data) => {
+//fijaData
+export const computeStats = (data) => {
   const longitud = data.reduce((acumulador) => acumulador + 1, 0);
   return longitud;
 };
