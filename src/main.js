@@ -1,23 +1,19 @@
 import { searchByName } from "./dataFunctions.js";
-import { filterByYear } from "./dataFunctions.js";
-import { filterByGenre } from "./dataFunctions.js";
-import { filterByStudio } from "./dataFunctions.js";
-import { computeStats } from "./dataFunctions.js";
+import { filterByGenre, filterByStudio, filterByYear, fijaData } from "./dataFunctions.js";
 //import { sortData } from "./dataFunctions.js";
-
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
 
-//------------------------Filtro acumulativo------------------------
+//------------------------Data-----------------------
 let filtroAcumulativo = data;
 const pDataFija = document.querySelector(".data-fija");
-pDataFija.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
+pDataFija.innerHTML="Total de películas: " + fijaData(filtroAcumulativo);
 
-//-------------------------Invoca el container-----------------------
+//------------------------Invocar  el container-----------------------
 const cardsContainer = document.querySelector("#root");
-cardsContainer.innerHTML = renderItems(data);
+cardsContainer.innerHTML = renderItems(filtroAcumulativo);
 
-//------------------------Filtro de busqueda por iput-----------------
+//------------------------Filtro de busqueda por input-----------------
 const inputSearch = document.querySelector("#inputFilter");
 inputSearch.addEventListener("input", () => {
   // Se obtiene el valor del campo de busqueda y se convierte en minuscula para que la busqueda no distinga entre minusculas y mayusculas
@@ -52,7 +48,7 @@ selectGenre.addEventListener("change", (e) => {
   const genreSelected = e.target.value;
   filtroAcumulativo = filterByGenre(filtroAcumulativo, "genre", genreSelected);
   cardsContainer.innerHTML = renderItems(filtroAcumulativo);
-  pDataFija.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
+  pDataFija.innerHTML="Total de películas: " + fijaData(filtroAcumulativo);
 });
 
 //------------------------Filtro por studio------------------------
@@ -61,10 +57,10 @@ selectStudio.addEventListener("change", (e) => {
   const studioSelected = e.target.value;
   filtroAcumulativo = filterByStudio(data, "studio", studioSelected);
   cardsContainer.innerHTML = renderItems(filtroAcumulativo);
-  pDataFija.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
+  pDataFija.innerHTML="Total de películas: " + fijaData(filtroAcumulativo);
 });
 
-console.log(filterByStudio, filterByYear, renderItems(data), data);
+
 
 //------------------------En construcción----------------------------- No esta leyendo el sortData
 const selectOrder = document.querySelector('[name="ordenAlfabetico"]');
@@ -86,24 +82,13 @@ clearButton.addEventListener("click", function () {
     // Establecemos el valor del elemento select (actual selector) en la primera opción en la lista de opciones, restableciendo el elmento select a su opción predeterminda
     selector.value = selector.options[0].value; // Establece la opción predeterminada
     searchInput.value = ""; //Era para limpiar el textContent pero no funciona
+    noResultsFound.innerHTML = "";
+    filtroAcumulativo = data;
+    cardsContainer.innerHTML = renderItems(filtroAcumulativo);
+    pDataFija.innerHTML = "Total de películas: " + fijaData(filtroAcumulativo);
   });
-  filtroAcumulativo = data;
-  cardsContainer.innerHTML = renderItems(filtroAcumulativo);
-  pDataFija.innerHTML = "Resultado de Busqueda: 0";
+
 });
-
-//Data fija
-/*const pDataFija = document.querySelector('.data-fija');
-const resultadoP = (filterData, filterDataGen, filterDataYea) => {
-  resultadoP = renderItems(filterData) + renderItems(filterDataGen) + renderItems(filterDataYea);
-  return resultadoP.length;
-}; 
-
-pDataFija.addEventListener("input", function () {
- pDataFija.innerHTML = "Resultados de Busqueda: " + resultadoP;
-});
-*/
-
-
-
-console.log(filterByStudio, renderItems(data), data);
+// metricas en proceso ---------------------------------
+//" El Estudio que más peliculas tiene es: " + FijaDataStudio;
+//console.log(filterByStudio, filterByYear, renderItems(data), data);
