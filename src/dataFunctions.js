@@ -28,62 +28,12 @@ export const filterByYear = (data, filterBy, value) => {
   }
 };
 export const filterByGenre = (data, filterBy, value) => {
-  /* if (filterBy === "genre") {
-
-    const selectedGenre = value.split(",").map((genre) => genre.trim());
-    const resultFilterByGenre = data.filter((item) => {
-      const storesMovieGenre = item.facts.genre
-        .split(",")
-        .map((genre) => genre.trim());
-      return selectedGenre.some((selectedGenre) =>
-        storesMovieGenre.includes(selectedGenre)
-      );
-    });*/
   return data.filter((item) => item.facts[filterBy].includes(value));
 };
 
 export const filterByStudio = (data, filterBy, value) => {
-  if (filterBy === "studio") {
-    const selectedStudio = value.split(",").map((studio) => studio.trim());
-    const resultFilterByStudio = data.filter((item) => {
-      const storesMovieStudio = item.facts.studio
-        .split(",")
-        .map((studio) => studio.trim());
-      return selectedStudio.some((selectedStudio) =>
-        storesMovieStudio.includes(selectedStudio)
-      );
-    });
-    return resultFilterByStudio;
-  }
+  return data.filter((item) => item.facts[filterBy].includes(value));
 };
-
-/* ------------Uso de for en genero--------------
-    export const filterByGenre = (data, filterBy, value) => {
-      if (filterBy === "genre") {
-        const resultFilterByGenre = [];
-        for (let i = 0; i < data.length; i++) {
-          const filterGenre = data[i].facts.genre;
-      
-          if (filterGenre === value) {
-            resultFilterByGenre.push(data[i]);
-          }
-        }
-        return resultFilterByGenre;
-      }
-      ---------------uso de for en studio
-export const filterByStudio = (data, filterBy, value) => {
-  if (filterBy === "studio") {
-    const resultFilterByStudio = [];
-    for (let i = 0; i < data.length; i++) {
-      const filterStudio = data[i].facts.studio;
-    
-      if (filterStudio === value) {
-        resultFilterByStudio.push(data[i]);
-      }
-    }
-    return resultFilterByStudio;
-  }
-};*/
 export const sortData = (data, sortBy, sortOrder) => {
   // Crear una copia del array original, porque al hacer uso de sort editara el original
   const copyData = [...data];
@@ -119,7 +69,8 @@ export const sortData = (data, sortBy, sortOrder) => {
 };
 
 //una función computeStats que tiene al menos un parámetro (data) y devuelve un valor computado
-export const fijaData = (data) => {
+//fijaData
+export const computeStats = (data) => {
   const longitud = data.reduce((acumulador) => acumulador + 1, 0);
   return longitud;
 };

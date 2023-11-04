@@ -2,15 +2,18 @@ import { searchByName } from "./dataFunctions.js";
 import { filterByYear } from "./dataFunctions.js";
 import { filterByGenre } from "./dataFunctions.js";
 import { filterByStudio } from "./dataFunctions.js";
-import { fijaData } from "./dataFunctions.js";
+import { computeStats } from "./dataFunctions.js";
 //import { sortData } from "./dataFunctions.js";
 
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
+
+//------------------------Filtro acumulativo------------------------
 let filtroAcumulativo = data;
 const pDataFija = document.querySelector(".data-fija");
-pDataFija.innerHTML="Total de películas: " + fijaData(filtroAcumulativo);
-//------------------------Invocar  el container-----------------------
+pDataFija.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
+
+//-------------------------Invoca el container-----------------------
 const cardsContainer = document.querySelector("#root");
 cardsContainer.innerHTML = renderItems(data);
 
@@ -40,7 +43,7 @@ selectYear.addEventListener("change", (e) => {
   const yearSelected = e.target.value;
   filtroAcumulativo = filterByYear(filtroAcumulativo, "year", yearSelected);
   cardsContainer.innerHTML = renderItems(filtroAcumulativo);
-  pDataFija.innerHTML="Total de películas: " + fijaData(filtroAcumulativo);
+  pDataFija.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
 });
 
 //------------------------Filtro por genero---------------------------
@@ -49,14 +52,16 @@ selectGenre.addEventListener("change", (e) => {
   const genreSelected = e.target.value;
   filtroAcumulativo = filterByGenre(filtroAcumulativo, "genre", genreSelected);
   cardsContainer.innerHTML = renderItems(filtroAcumulativo);
+  pDataFija.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
 });
 
 //------------------------Filtro por studio------------------------
 const selectStudio = document.querySelector('[name="studio"]');
 selectStudio.addEventListener("change", (e) => {
   const studioSelected = e.target.value;
-  const filteredDataByStudio = filterByStudio(data, "studio", studioSelected);
-  cardsContainer.innerHTML = renderItems(filteredDataByStudio);
+  filtroAcumulativo = filterByStudio(data, "studio", studioSelected);
+  cardsContainer.innerHTML = renderItems(filtroAcumulativo);
+  pDataFija.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
 });
 
 console.log(filterByStudio, filterByYear, renderItems(data), data);
