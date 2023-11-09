@@ -39,7 +39,7 @@ inputSearch.addEventListener("input", () => {
   } 
   // Actualiza el contenido de cards con los resultados de busqueda
   cardsContainer.innerHTML = renderItems(filteredDataByName, noResultsFound);
-  pcomputeStats.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
+  pcomputeStats.innerHTML="Total de películas: " + computeStats(filteredDataByName);
 });
 
 //------------------------Filtro por año-----------------------------
