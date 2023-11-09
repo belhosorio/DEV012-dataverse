@@ -8,12 +8,12 @@ export const renderItems = (data) => {
       <li class="itemContainer">
             <dl itemscope itemtype="PeliculasAnimacionJaponesa">
             <img src="${items.imageUrl}" alt="${items.name}"/>
-            <div>
+            <div class="texto">
+            <dt></dt><dd itemprop="studio">${items.facts.studio}</dd>
             <dt></dt><dd itemprop="name">${items.name}</dd>
             <dt></dt><dd itemprop="shortDescription">${items.shortDescription}</dd>
-            <dt>Año de estreno:</dt><dd itemprop="year">${items.facts.year}</dd>
             <dt></dt><dd itemprop="genre">${items.facts.genre}</dd>
-            <dt></dt><dd itemprop="studio">${items.facts.studio}</dd>
+            <dt></dt><dd itemprop="year">${items.facts.year}</dd>
             </div>
           </dl>
         </li>
