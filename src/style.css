@@ -59,8 +59,10 @@ button:hover {
   height: 100%;
   width: 100%;
 }
-.container li {
+#root li{
+  
   width: 300px;
+  display: flex;
   align-items: center;
   margin: 10px;
   transition: all 0.3s ease-out;

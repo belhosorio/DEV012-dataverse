@@ -45,11 +45,9 @@ export const filterByYear = (data, filterBy, value) => {
 
 //una función sortBy que tiene 3 parámetros (data, sortBy, sortOrder) y devuelve el arreglo ordenado
 export const sortData = (data, sortBy, sortOrder) => {
-  // Crear una copia del array original, porque al hacer uso de sort editara el original
   const copyData = [...data];
-  // Ordenar la copia del array utilizando el método "sort"
+
   copyData.sort((a, b) => {
-    // Obtener el valor de la propiedad "sortBy" para los elementos "a" y "b"
     const valueA = a[sortBy];
     const valueB = b[sortBy];
 
@@ -58,23 +56,14 @@ export const sortData = (data, sortBy, sortOrder) => {
     }
 
     if (sortOrder === "asc") {
-      // Determinar el orden ascendente
-      if (valueA < valueB) {
-        return -1;
-      }
-      return 1;
+      return valueA < valueB ? -1 : 1;
     }
 
     if (sortOrder === "desc") {
-      // Determinar el orden descendente
-      if (valueA > valueB) {
-        return -1;
-      }
-      return 1;
+      return valueA < valueB ? 1 : -1;
     }
   });
 
-  console.log(copyData);
   return copyData;
 };
 

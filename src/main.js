@@ -1,13 +1,13 @@
 import { searchByName } from "./dataFunctions.js";
-import { filterByGenre, filterByStudio, filterByYear, fijaData } from "./dataFunctions.js";
-//import { sortData } from "./dataFunctions.js";
+import { filterByGenre, filterByStudio, filterByYear, computeStats } from "./dataFunctions.js";
+import { sortData } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
 
 //------------------------Data-----------------------
 let filtroAcumulativo = data;
 const pDataFija = document.querySelector(".data-fija");
-pDataFija.innerHTML="Total de películas: " + fijaData(filtroAcumulativo);
+pDataFija.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
 
 //------------------------Invocar  el container-----------------------
 const cardsContainer = document.querySelector("#root");
@@ -48,7 +48,7 @@ selectGenre.addEventListener("change", (e) => {
   const genreSelected = e.target.value;
   filtroAcumulativo = filterByGenre(filtroAcumulativo, "genre", genreSelected);
   cardsContainer.innerHTML = renderItems(filtroAcumulativo);
-  pDataFija.innerHTML="Total de películas: " + fijaData(filtroAcumulativo);
+  pDataFija.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
 });
 
 //------------------------Filtro por studio------------------------
@@ -57,7 +57,7 @@ selectStudio.addEventListener("change", (e) => {
   const studioSelected = e.target.value;
   filtroAcumulativo = filterByStudio(data, "studio", studioSelected);
   cardsContainer.innerHTML = renderItems(filtroAcumulativo);
-  pDataFija.innerHTML="Total de películas: " + fijaData(filtroAcumulativo);
+  pDataFija.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
 });
 
 
@@ -85,7 +85,7 @@ clearButton.addEventListener("click", function () {
     noResultsFound.innerHTML = "";
     filtroAcumulativo = data;
     cardsContainer.innerHTML = renderItems(filtroAcumulativo);
-    pDataFija.innerHTML = "Total de películas: " + fijaData(filtroAcumulativo);
+    pDataFija.innerHTML = "Total de películas: " + computeStats(filtroAcumulativo);
   });
 
 });
