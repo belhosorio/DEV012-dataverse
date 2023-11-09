@@ -67,7 +67,7 @@ export const sortData = (data, sortBy, sortOrder) => {
 
     if (sortOrder === "desc") {
       // Determinar el orden descendente
-      if (valueA > valueB) {
+      if (valueB < valueA) {
         return -1;
       }
       return 1;
@@ -80,7 +80,6 @@ export const sortData = (data, sortBy, sortOrder) => {
 
 
 //una función computeStats que tiene al menos un parámetro (data) y devuelve un valor computado
-//fijaData
 export const computeStats = (data) => {
   const longitud = data.reduce((acumulador) => acumulador + 1, 0);
   return longitud;
@@ -89,8 +88,27 @@ export const computeStats = (data) => {
 
 // metricas en proceso ---------------------------------
 /*
-export const FijaDataStudio = (data) => {
-  const studioLongitud = (data.facts.studio).reduce((acumulador) => acumulador + 1, 0);
-  return studioLongitud;
+
+export const computeStatsStudio = (data) => {
+  const contadorStudio = data['facts']['studio'].reduce((contador, studio) => {
+    contador[studio] = (contador[studio] || 0) + 1;
+    return contador;
+  }, {});
+
+  const maximoStudio = Math.max(...Object.values(contadorStudio));
+  return maximoStudio;
+};
+
+____
+
+export const computeStatsStudio = (data) => {
+  const contadorStudio = data['facts']['studio'].reduce((contador, studio) => {
+    contador[studio] = (contador[studio] || 0) + 1;
+    return contador;
+  }, {});
+
+  const valoresNumericos = contadorStudio.filter(item => typeof item === Number);
+  const maximoNumerico = Math.max(...valoresNumericos);
+  return maximoNumerico;
 };
 */

@@ -1,36 +1,45 @@
 import { searchByName } from "./dataFunctions.js";
-import { filterByGenre, filterByStudio, filterByYear, fijaData } from "./dataFunctions.js";
-//import { sortData } from "./dataFunctions.js";
+import { filterByGenre, filterByStudio, filterByYear, computeStats } from "./dataFunctions.js";
+import { sortData } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
 
-//------------------------Data-----------------------
+//------------------------Data(Conteo de peliculas)-----------------------
 let filtroAcumulativo = data;
-const pDataFija = document.querySelector(".data-fija");
-pDataFija.innerHTML="Total de películas: " + fijaData(filtroAcumulativo);
+const pcomputeStats = document.querySelector(".compute-stats");
+pcomputeStats.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
+
+//------------------------Metricas(enconstruccion)-----------------------
+
+// const metricasGenre = document.querySelector("li.metricas:nth-child(1)");
+// metricasGenre.innerHTML="Genero es " + /*aa*/ + " con " + /*bb*/ + " peliculas";
+// const metricasStudio = document.querySelector("li.metricas:nth-child(2)");
+// metricasStudio.innerHTML="Estudio es " + computeStatsStudio(filtroAcumulativo);
+// const metricasYear = document.querySelector("li.metricas:nth-child(3)");
+// metricasYear.innerHTML="Año es " + /*aa*/ + " con " + /*bb*/ + " peliculas"
 
 //------------------------Invocar  el container-----------------------
 const cardsContainer = document.querySelector("#root");
 cardsContainer.innerHTML = renderItems(filtroAcumulativo);
 
+
 //------------------------Filtro de busqueda por input-----------------
 const inputSearch = document.querySelector("#inputFilter");
+// Seleccionamos un elemento del DOM para mostrar un mensaje cuando no hay resultados
+const noResultsFound = document.querySelector("#noResultsFound");
 inputSearch.addEventListener("input", () => {
   // Se obtiene el valor del campo de busqueda y se convierte en minuscula para que la busqueda no distinga entre minusculas y mayusculas
   const inputValue = inputSearch.value.toLowerCase();
-  // Seleccionamos un elemento del DOM para mostrar un mensaje cuando no hay resultados
-  const noResultsFound = document.querySelector("#noResultsFound");
   // Traemos la data con searchByName, la busqueda por input y el valor en minuscula. Busca y devuelve un arreglo con los elementos que coinciden con la busqueda
-  const filteredDataByName = searchByName(data, "input", inputValue);
+  const filteredDataByName = searchByName(filtroAcumulativo, "input", inputValue);
   // Verifica si la longitud del arreglo  es igual a 0, indicando que no se encontraron resultados
   if (filteredDataByName.length === 0) {
     noResultsFound.textContent =
       "No se encontraron resultados que coincidan con la búsqueda";
-  } else {
-    noResultsFound.textContent = "";
-  }
+  } 
   // Actualiza el contenido de cards con los resultados de busqueda
   cardsContainer.innerHTML = renderItems(filteredDataByName, noResultsFound);
+  pcomputeStats.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
 });
 
 //------------------------Filtro por año-----------------------------
@@ -39,7 +48,7 @@ selectYear.addEventListener("change", (e) => {
   const yearSelected = e.target.value;
   filtroAcumulativo = filterByYear(filtroAcumulativo, "year", yearSelected);
   cardsContainer.innerHTML = renderItems(filtroAcumulativo);
-  pDataFija.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
+  pcomputeStats.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
 });
 
 //------------------------Filtro por genero---------------------------
@@ -48,26 +57,27 @@ selectGenre.addEventListener("change", (e) => {
   const genreSelected = e.target.value;
   filtroAcumulativo = filterByGenre(filtroAcumulativo, "genre", genreSelected);
   cardsContainer.innerHTML = renderItems(filtroAcumulativo);
-  pDataFija.innerHTML="Total de películas: " + fijaData(filtroAcumulativo);
+  pcomputeStats.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
 });
 
 //------------------------Filtro por studio------------------------
 const selectStudio = document.querySelector('[name="studio"]');
 selectStudio.addEventListener("change", (e) => {
   const studioSelected = e.target.value;
-  filtroAcumulativo = filterByStudio(data, "studio", studioSelected);
+  filtroAcumulativo = filterByStudio(filtroAcumulativo, "studio", studioSelected);
   cardsContainer.innerHTML = renderItems(filtroAcumulativo);
-  pDataFija.innerHTML="Total de películas: " + fijaData(filtroAcumulativo);
+  pcomputeStats.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
 });
 
 
 
-//------------------------En construcción----------------------------- No esta leyendo el sortData
+//------------------------ascendente y descendente----------------------------- 
 const selectOrder = document.querySelector('[name="ordenAlfabetico"]');
 selectOrder.addEventListener("change", (e) => {
   const orderSelected = e.target.value;
-  const sortedData = sortData(data, "name", orderSelected);
-  cardsContainer.innerHTML = renderItems(sortedData);
+  filtroAcumulativo = sortData(filtroAcumulativo, "name", orderSelected);
+  cardsContainer.innerHTML = renderItems(filtroAcumulativo);
+  pcomputeStats.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
 });
 
 //------------------------Boton limpiar-----------------------------
@@ -85,10 +95,9 @@ clearButton.addEventListener("click", function () {
     noResultsFound.innerHTML = "";
     filtroAcumulativo = data;
     cardsContainer.innerHTML = renderItems(filtroAcumulativo);
-    pDataFija.innerHTML = "Total de películas: " + fijaData(filtroAcumulativo);
+    pcomputeStats.innerHTML = "Total de películas: " + computeStats(filtroAcumulativo);
   });
 
 });
-// metricas en proceso ---------------------------------
-//" El Estudio que más peliculas tiene es: " + FijaDataStudio;
+
 //console.log(filterByStudio, filterByYear, renderItems(data), data);
