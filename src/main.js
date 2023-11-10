@@ -35,7 +35,7 @@ inputSearch.addEventListener("input", () => {
   // Verifica si la longitud del arreglo  es igual a 0, indicando que no se encontraron resultados
   if (filteredDataByName.length === 0) {
     noResultsFound.textContent =
-      "No se encontraron resultados que coincidan con la búsqueda";
+      "Lo sentimos, no se encontraron resultados que coincidan con la búsqueda.";
   } 
   // Actualiza el contenido de cards con los resultados de busqueda
   cardsContainer.innerHTML = renderItems(filteredDataByName, noResultsFound);
