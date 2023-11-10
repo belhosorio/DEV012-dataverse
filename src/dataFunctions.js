@@ -85,28 +85,31 @@ export const computeStats = (data) => {
   return longitud;
 };
 
-
-// metricas en proceso ---------------------------------
 /*
+export const computeStatsStudios = (data) => {
+  const estudios = data['facts']['studio'];
 
-export const computeStatsStudio = (data) => {
-  const contadorStudio = data['facts']['studio'].reduce((contador, studio) => {
-    contador[studio] = (contador[studio] || 0) + 1;
+  const conteoEstudios = estudios.reduce((contador, estudio) => {
+    const regex = /CoMix Wave Films|Gainax|Kyoto Animation|Madhouse|Production I.G|Studio Ghibli|Sunrise|TMS Entertainment|Toei Animation|Ufotable|Why Not Productions|Wild Bunch/g;
+    if (regex.test(estudio)) {
+      contador[estudio] = (contador[estudio] || 0) + 1;
+    }
     return contador;
   }, {});
 
-  const maximoStudio = Math.max(...Object.values(contadorStudio));
-  return maximoStudio;
+  const sortedEstudios = Object.entries(conteoEstudios)
+    .sort((a, b) => b[1] - a[1])
+    .map(([estudio, count]) => `${estudio}: ${count}`);
+
+return sortedEstudios
 };
 
-____
-
+_______________________________________ antiguo
 export const computeStatsStudio = (data) => {
   const contadorStudio = data['facts']['studio'].reduce((contador, studio) => {
     contador[studio] = (contador[studio] || 0) + 1;
     return contador;
   }, {});
-
   const valoresNumericos = contadorStudio.filter(item => typeof item === Number);
   const maximoNumerico = Math.max(...valoresNumericos);
   return maximoNumerico;

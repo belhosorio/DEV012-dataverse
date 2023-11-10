@@ -9,14 +9,14 @@
   <body>
     <nav>
     <header>
-      <img id="logo" src="./logo data verse-02.png"/>
+      <img id="logo" src="./logo data versesin texto-02-02.png"/><h1>Kaonashi Pelis</h1>
     </header>
 
     <section>
       <input id="inputFilter" name="searchButton" type="search" placeholder="BUSCAR PELÍCULA"/>  
 
       <label for="genre"></label>
-      <select data-testid="select-filter" name="genre">
+      <select id ="genre" data-testid="select-filter" name="genre">
         <option disabled selected value="">GENERO</option>
         <option value="Acción">Acción</option>
         <option value="Aventura">Aventura</option>
@@ -32,7 +32,7 @@
       </select>
 
       <label for="studio"></label>
-      <select data-testid="select-studio" name="studio">
+      <select id="studio" data-testid="select-studio" name="studio">
         <option disabled selected value="">ESTUDIO</option>
         <option value="CoMix Wave Films">CoMix Wave Films</option>
         <option value="Gainax">Gainax</option>
@@ -49,8 +49,8 @@
       </select>
 
       <label for="año"></label>
-      <select data-testid="select-año" name="year">
-        <option disabled selected value="" selected>AÑO DE ESTRENO</option>
+      <select id="year" data-testid="select-año" name="year">
+        <option disabled selected value="">AÑO DE ESTRENO</option>
         <option value="1988">1988</option>
         <option value="1989">1989</option>
         <option value="1992">1992</option>
@@ -68,19 +68,15 @@
       </select>
 
       <label for="nombre"></label>
-      <select data-testid="select-sort" name="ordenAlfabetico">
-        <option disabled selected value="" selected>ORDENAR POR</option>
+      <select id="orden-alfabetico" data-testid="select-sort" name="name">
+        <option disabled selected value="">ORDENAR POR</option>
         <option value="asc">Ascendente</option>
         <option value="desc">Descendente</option>
       </select>
 
       <button id="button" data-testid="button-clear">LIMPIAR</button>
 
-      <!---<ul class="metricas-peliculas"> Estadisticas de las Peliculas. Las que más tiene por:
-        <li class="metricas"></li>
-        <li class="metricas"></li>
-        <li class="metricas"></li>
-      </ul>-->
+      <p class ="metricas"></p>
       <p class ="compute-stats"></p>
     </section>
   </nav>
@@ -149,7 +145,7 @@
   -->
     <footer>
       <p>
-        Belén Osorio & Gineth Guáqueta<br />
+        Belén Osorio y Gineth Guáqueta<br>
         <strong>Proyecto Dataverse de Laboratia</strong>
       </p>
     </footer>

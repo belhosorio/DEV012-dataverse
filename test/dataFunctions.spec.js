@@ -1,18 +1,26 @@
-import { example, anotherExample } from '../src/dataFunctions.js';
-import { data as fakeData } from './data.js';
+import { filterByGenre, filterByStudio } from "../src/dataFunctions.js";
+import { data as fakeData } from "./data.js";
 
-console.log(fakeData);
-
-describe('example', () => {
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+//filtro por Genero
+describe("filterByGenre", () => {
+  it("returns an array of movies by genre", () => {
+    const genreByAdventure = filterByGenre(fakeData, "genre", "Aventura");
+    expect(genreByAdventure.length).toBe(2);
   });
 });
 
-describe('anotherExample', () => {
+describe("filterByStudio", () => {
+  it("return an array of movies by studio", () => {
+    const studioByGhibli = filterByStudio(fakeData, "studio", "Studio Ghibli");
+    expect(studioByGhibli.length).toBe(1);
+  });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it("return zero array of movies by studio", () => {
+    const studioNotGhibli = filterByStudio(
+      fakeData,
+      "studio",
+      "Toei Animation"
+    );
+    expect(studioNotGhibli.length).toBe(0);
   });
 });

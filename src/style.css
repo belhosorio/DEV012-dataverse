@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@font-face {
+  font-family: "Bleak Chop";
+  src: url("./Bleak\ Chop.ttf");
+}
 * {
 text-align: center;
 margin: 0px;
-
-
+}
+header{
+  font-family: 'Bleak Chop';
+}
+h1{
+color: black;
+font-family: 'Bleak Chop';
+margin-top: -15px;
+margin-bottom: 40px;
+letter-spacing: 2px;
 }
 #logo{
 height: 10%;
 width: 10%;
 margin-top: 25px;
-margin-bottom: 30px;
+
 }
 nav{
 background-color: #FEBF4E;  
@@ -99,29 +111,33 @@ button:hover {
   justify-content: center;
   padding: 10px;
 }
-.itemContainer{
-  columns: 2;
-  width: 500px;
-  height: 300px;
+.itemcontainer {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+  width: 520px;
+  height: 280px;
   margin: 10px;
-  transition: all 0.3s ease-out;
   color: white;
   border-radius: 6px;
   background: rgb(40, 40, 40);
-  padding-top: 5px;
   font-size: 3;
+  word-wrap: break-word;
+  position: relative;
 }
 .container img {
+  position: absolute;
   align-items: left;
-  height: 75%;
-  width: 75%;
-  padding-top: 13px;
+  max-height: 260px;
+  top:10px;
+  left: 10px;
 }
 .texto{
-  padding-top: 5px;
-  padding-left: 0px;
-  margin-left: 0px;
-  padding-right: 20px;
+  position: absolute;
+  top:8px;
+  left: 225px;
+  padding-right: 30px;
+
 }
 
 dd[itemprop="studio"]{
@@ -129,34 +145,45 @@ dd[itemprop="studio"]{
   margin-top: 15px;
   color: #FEBF4E;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   text-align: left;
+  letter-spacing: 1px;
 }
 
 dd[itemprop="name"]{
   font-weight: bold;
   font-family: 'Hammersmith One', sans-serif;
-  margin-top: 20px;
+  margin-top: 30px;
+  font-size: 16px;
+  letter-spacing: 1.5px;
 }
 dd[itemprop="shortDescription"]{
   text-align: left;
-  margin-top: 15px;
+  margin-top: 35px;
   color: #ACA6A6;
   font-family: Arial, Helvetica, sans-serif;
-  font-size:medium;
+  font-size:14px;
+  
 }
 dd[itemprop="genre"]{
   text-align: left;
   margin-top: 15px;
+  color: #ACA6A6;
   font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top:210px;
+  left: 10px;
+  font-size: 14px;
 }
 dd[itemprop="year"]{
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  text-align: right;
-  padding-right: 10px;
- padding-top: 30px;
+  position: absolute;
+  top:225px;
+  left: 235px;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 footer {
   margin-top: 80px;

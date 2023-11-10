@@ -1,5 +1,5 @@
 import { searchByName } from "./dataFunctions.js";
-import { filterByGenre, filterByStudio, filterByYear, computeStats } from "./dataFunctions.js";
+import { filterByGenre, filterByStudio, filterByYear, computeStats, /*computeStatsStudios*/ } from "./dataFunctions.js";
 import { sortData } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
@@ -11,13 +11,12 @@ pcomputeStats.innerHTML="Total de películas: " + computeStats(filtroAcumulativo
 
 //------------------------Metricas(enconstruccion)-----------------------
 
-// const metricasGenre = document.querySelector("li.metricas:nth-child(1)");
-// metricasGenre.innerHTML="Genero es " + /*aa*/ + " con " + /*bb*/ + " peliculas";
-// const metricasStudio = document.querySelector("li.metricas:nth-child(2)");
-// metricasStudio.innerHTML="Estudio es " + computeStatsStudio(filtroAcumulativo);
-// const metricasYear = document.querySelector("li.metricas:nth-child(3)");
-// metricasYear.innerHTML="Año es " + /*aa*/ + " con " + /*bb*/ + " peliculas"
-
+/*const pmetricas = document.querySelector(".metricas");
+const studiosMovies = document.createElement("p");
+const sortedEstudios = computeStatsStudios(data); 
+studiosMovies.textContent = `Estudios que más películas tienen son ${sortedEstudios.join(", ")}`;
+pmetricas.appendChild(studiosMovies);
+*/
 //------------------------Invocar  el container-----------------------
 const cardsContainer = document.querySelector("#root");
 cardsContainer.innerHTML = renderItems(filtroAcumulativo);
@@ -39,7 +38,7 @@ inputSearch.addEventListener("input", () => {
   } 
   // Actualiza el contenido de cards con los resultados de busqueda
   cardsContainer.innerHTML = renderItems(filteredDataByName, noResultsFound);
-  pcomputeStats.innerHTML="Total de películas: " + computeStats(filtroAcumulativo);
+  pcomputeStats.innerHTML="Total de películas: " + computeStats(filteredDataByName);
 });
 
 //------------------------Filtro por año-----------------------------
@@ -72,7 +71,7 @@ selectStudio.addEventListener("change", (e) => {
 
 
 //------------------------ascendente y descendente----------------------------- 
-const selectOrder = document.querySelector('[name="ordenAlfabetico"]');
+const selectOrder = document.querySelector('[name="name"]');
 selectOrder.addEventListener("change", (e) => {
   const orderSelected = e.target.value;
   filtroAcumulativo = sortData(filtroAcumulativo, "name", orderSelected);
@@ -100,4 +99,3 @@ clearButton.addEventListener("click", function () {
 
 });
 
-//console.log(filterByStudio, filterByYear, renderItems(data), data);
