@@ -1,5 +1,5 @@
 import { searchByName } from "./dataFunctions.js";
-import { filterByGenre, filterByStudio, filterByYear, computeStats, /*computeStatsStudios*/ } from "./dataFunctions.js";
+import { filterByGenre, filterByStudio, filterByYear, computeStats, metricasTotales } from "./dataFunctions.js";
 import { sortData } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
@@ -11,16 +11,14 @@ pcomputeStats.innerHTML="Total de películas: " + computeStats(filtroAcumulativo
 
 //------------------------Metricas(enconstruccion)-----------------------
 
-/*const pmetricas = document.querySelector(".metricas");
-const studiosMovies = document.createElement("p");
-const sortedEstudios = computeStatsStudios(data); 
-studiosMovies.textContent = `Estudios que más películas tienen son ${sortedEstudios.join(", ")}`;
-pmetricas.appendChild(studiosMovies);
-*/
+const pmetricas = document.querySelector(".metricas");
+const totalesMetricas = document.createElement("p")
+totalesMetricas.textContent = metricasTotales(data);
+pmetricas.appendChild(totalesMetricas);
+
 //------------------------Invocar  el container-----------------------
 const cardsContainer = document.querySelector("#root");
 cardsContainer.innerHTML = renderItems(filtroAcumulativo);
-
 
 //------------------------Filtro de busqueda por input-----------------
 const inputSearch = document.querySelector("#inputFilter");

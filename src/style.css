@@ -83,19 +83,17 @@ button {
 button:hover {
   background-color: #ec004a;
 }
-.compute-stats{
-  padding-top: 20px;
-  font-family: 'Hammersmith One', sans-serif;
-}
-.metricas-peliculas{
-  text-align: center;
-  margin: 10px  0px;
-  padding: 8px 0px;
-  background-color: bisque;
-}
 .metricas{
-  display: block;
-  padding: 3px 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-style: unset;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.compute-stats{
+  font-family: 'Hammersmith One', sans-serif;
+  border-radius: 1px;
 }
 .container {
   display: flex;

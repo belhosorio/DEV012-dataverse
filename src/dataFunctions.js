@@ -1,4 +1,3 @@
-
 // una función filterBy que tiene 3 parámetros (data, filterBy, value) y devuelve el arreglo filtrado
 //Unicamente se hará uso de funciones puras
 
@@ -78,40 +77,34 @@ export const sortData = (data, sortBy, sortOrder) => {
   return copyData;
 };
 
-
 //una función computeStats que tiene al menos un parámetro (data) y devuelve un valor computado
 export const computeStats = (data) => {
   const longitud = data.reduce((acumulador) => acumulador + 1, 0);
   return longitud;
 };
 
-/*
-export const computeStatsStudios = (data) => {
-  const estudios = data['facts']['studio'];
+// metricas
 
-  const conteoEstudios = estudios.reduce((contador, estudio) => {
-    const regex = /CoMix Wave Films|Gainax|Kyoto Animation|Madhouse|Production I.G|Studio Ghibli|Sunrise|TMS Entertainment|Toei Animation|Ufotable|Why Not Productions|Wild Bunch/g;
-    if (regex.test(estudio)) {
-      contador[estudio] = (contador[estudio] || 0) + 1;
+export const metricasTotales = (data) => {
+  const cantidadStudioGhibli = data.reduce((acc, el) => {
+    if (el.facts.studio.includes("Studio Ghibli")) {
+      return acc + 1;
+    } else {
+      return acc;
     }
-    return contador;
-  }, {});
+  }, 0);
 
-  const sortedEstudios = Object.entries(conteoEstudios)
-    .sort((a, b) => b[1] - a[1])
-    .map(([estudio, count]) => `${estudio}: ${count}`);
+  const cantidadFantasia = data.reduce((acc, el) => {
+    if (el.facts.genre.includes("Fantasía")) {
+      return acc + 1;
+    } else {
+      return acc;
+    }
+  }, 0);
 
-return sortedEstudios
+  const metricasCantidad = [cantidadStudioGhibli, cantidadFantasia];
+
+  const metricasMap = metricasCantidad.map((x) => x + " películas");
+
+  return ` · La mayor cantidad de peliculas son del Studio Ghibli con ${metricasMap[0]} y del género Fantasía con ${metricasMap[1]} respectivamente · `;
 };
-
-_______________________________________ antiguo
-export const computeStatsStudio = (data) => {
-  const contadorStudio = data['facts']['studio'].reduce((contador, studio) => {
-    contador[studio] = (contador[studio] || 0) + 1;
-    return contador;
-  }, {});
-  const valoresNumericos = contadorStudio.filter(item => typeof item === Number);
-  const maximoNumerico = Math.max(...valoresNumericos);
-  return maximoNumerico;
-};
-*/
