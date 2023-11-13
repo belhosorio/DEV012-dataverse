@@ -13,13 +13,6 @@
       </header>
 
       <section>
-        <input
-          id="inputFilter"
-          name="searchButton"
-          type="search"
-          placeholder="Buscar película"
-        />
-
         <label for="genre"></label>
         <select id="genre" data-testid="select-filter" name="genre">
           <option disabled selected value="">Genero</option>
@@ -78,6 +71,12 @@
           <option value="asc">Ascendente</option>
           <option value="desc">Descendente</option>
         </select>
+        <input
+        id="inputFilter"
+        name="searchButton"
+        type="search"
+        placeholder="Buscar película"
+      />
 
         <button id="button" data-testid="button-clear">Limpiar</button>
 
@@ -93,7 +92,7 @@
     <div id="noResultsFound"></div>
 
     <!--orden alfabetico-->
-    <!--
+ <!--
       <br>
     <label for="menu">Menu</label>
     <select  multiple data-testid="select-sort" name="ordenAlfabetico">

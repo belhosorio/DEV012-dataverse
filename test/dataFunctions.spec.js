@@ -8,13 +8,13 @@ describe("filterByGenre", () => {
     const genreByAdventure = filterByGenre(fakeData, "genre", "Aventura");
     expect(genreByAdventure.length).toBe(2);
   });
-  it("returns null if the genre is not found", () => {
+  it("returns 0 if the genre is not found", () => {
     const genreNotFound = filterByGenre(fakeData, "genre", "Ciencia Ficción");
-    expect(genreNotFound).toBeNull();
+    expect(genreNotFound).toBe(0);
   });
-  it('returns undefined if Ciencia Ficción genre is not found', () => {
+  it('returns 0 if Ciencia Ficción genre is not found', () => {
     const genreUndefined = filterByGenre(fakeData, 'Ciencia Ficción');
-    expect(genreUndefined).toBeUndefined();
+    expect(genreUndefined).toBe(0);
   });
 });
 

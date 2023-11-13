@@ -4,7 +4,6 @@ export const renderItems = (data) => {
   let showInHtml = "";
   data.forEach((items) => {
     showInHtml += `
-<ul class="cards">
       <li class="itemContainer">
             <dl itemscope itemtype="PeliculasAnimacionJaponesa">
             <img src="${items.imageUrl}" alt="${items.name}"/>
@@ -17,7 +16,6 @@ export const renderItems = (data) => {
             </div>
           </dl>
         </li>
-        </ul>
     `;
   });
 

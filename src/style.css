@@ -13,65 +13,70 @@ nav {
   padding: 10px 10px;
 }
 input {
-  font-size: 15px;
-  align-items: center;
-  padding: 8px 12px 8px 12px;
+  font-size: 18px;
+  text-align: left;
+  padding: 10px 14px 10px 14px;
+  margin: 0px 25px 0px 25px;
   box-shadow: 3px 3px 3px rgba(132, 132, 132, 0.13);
   border: 0;
-  border-radius: 20px;
+  border-radius: 8px;
   outline: none;
+}
+input:hover {
+  border: #c90040;
 }
 label {
   padding: 5px;
   border: none;
-  flex-wrap: wrap;
   font-family: "Hammersmith One", sans-serif;
 }
 select {
   /*No funciona*/
+  font-size: 18px;
+  font-family: "Hammersmith One", sans-serif;
   background-color: #febf4e;
-  flex-direction: row;
   align-items: center;
   padding: 8px 10px 8px 10px;
   box-shadow: 2px rgba(132, 132, 132, 0.13);
   border: 0;
   border-radius: 5px;
-  font-size: 15px;
-  font-family: "Hammersmith One", sans-serif;
 }
 select[name="year"] {
   padding: 8px 12px 8px 12px;
 }
 /*section select */
-select option {
-  padding: 8px;
-  margin: 8px;
+select{
+  padding: 8px 0px 8px 0px;
   border-radius: 5px;
 }
 /*No funciona*/
-select option:hover {
-  color: white;
-  background-color: #ec004a;
+option {
+  color: #080808;
+  background-color: #febf4e;
 }
-select:hover {
-  background-color: #fdb42e;
+option:hover {
+  background-color: #fe9a4e;
 }
 button {
   font-size: 15px;
   font-weight: bold;
   border: none;
   color: white;
-  background-color: #ec004a;
+  background-color: #c90040;
   padding: 8px 10px 8px 10px;
   border-radius: 5px;
   margin-left: 15px;
 }
+/*#ec004a*/
 button:hover {
   background-color: rgba(255, 12, 89, 0.902);
 }
 .compute-stats {
-  padding-top: 30px;
+  font-size: 18px;
+  color: white;
+  padding: 10px 10px;
   font-family: "Hammersmith One", sans-serif;
+  background-color: #c90040;
 }
 .metricas-peliculas {
   text-align: center;
@@ -87,7 +92,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 li.itemContainer {
   columns: 2;
@@ -133,7 +138,7 @@ dd[itemprop="shortDescription"] {
 }
 dd[itemprop="genre"] {
   font-size: 14px;
- padding-top: 10px;
+  padding-top: 10px;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
 }
