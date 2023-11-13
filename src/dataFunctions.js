@@ -77,37 +77,34 @@ export const sortData = (data, sortBy, sortOrder) => {
   return copyData;
 };
 
-
 //una función computeStats que tiene al menos un parámetro (data) y devuelve un valor computado
 export const computeStats = (data) => {
   const longitud = data.reduce((acumulador) => acumulador + 1, 0);
   return longitud;
 };
 
+// metricas
 
-// metricas en proceso ---------------------------------
-/*
+export const metricasTotales = (data) => {
+  const cantidadStudioGhibli = data.reduce((acc, el) => {
+    if (el.facts.studio.includes("Studio Ghibli")) {
+      return acc + 1;
+    } else {
+      return acc;
+    }
+  }, 0);
 
-export const computeStatsStudio = (data) => {
-  const contadorStudio = data['facts']['studio'].reduce((contador, studio) => {
-    contador[studio] = (contador[studio] || 0) + 1;
-    return contador;
-  }, {});
+  const cantidadFantasia = data.reduce((acc, el) => {
+    if (el.facts.genre.includes("Fantasía")) {
+      return acc + 1;
+    } else {
+      return acc;
+    }
+  }, 0);
 
-  const maximoStudio = Math.max(...Object.values(contadorStudio));
-  return maximoStudio;
+  const metricasCantidad = [cantidadStudioGhibli, cantidadFantasia];
+
+  const metricasMap = metricasCantidad.map((x) => x + " películas");
+
+  return ` · La mayor cantidad de peliculas son del Studio Ghibli con ${metricasMap[0]} y del género Fantasía con ${metricasMap[1]} respectivamente · `;
 };
-
-____
-
-export const computeStatsStudio = (data) => {
-  const contadorStudio = data['facts']['studio'].reduce((contador, studio) => {
-    contador[studio] = (contador[studio] || 0) + 1;
-    return contador;
-  }, {});
-
-  const valoresNumericos = contadorStudio.filter(item => typeof item === Number);
-  const maximoNumerico = Math.max(...valoresNumericos);
-  return maximoNumerico;
-};
-*/

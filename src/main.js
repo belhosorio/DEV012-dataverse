@@ -1,5 +1,5 @@
 import { searchByName } from "./dataFunctions.js";
-import { filterByGenre, filterByStudio, filterByYear, computeStats } from "./dataFunctions.js";
+import { filterByGenre, filterByStudio, filterByYear, computeStats, metricasTotales } from "./dataFunctions.js";
 import { sortData } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
@@ -11,17 +11,14 @@ pcomputeStats.innerHTML="Total de películas: " + computeStats(filtroAcumulativo
 
 //------------------------Metricas(enconstruccion)-----------------------
 
-// const metricasGenre = document.querySelector("li.metricas:nth-child(1)");
-// metricasGenre.innerHTML="Genero es " + /*aa*/ + " con " + /*bb*/ + " peliculas";
-// const metricasStudio = document.querySelector("li.metricas:nth-child(2)");
-// metricasStudio.innerHTML="Estudio es " + computeStatsStudio(filtroAcumulativo);
-// const metricasYear = document.querySelector("li.metricas:nth-child(3)");
-// metricasYear.innerHTML="Año es " + /*aa*/ + " con " + /*bb*/ + " peliculas"
+const pmetricas = document.querySelector(".metricas");
+const totalesMetricas = document.createElement("p")
+totalesMetricas.textContent = metricasTotales(data);
+pmetricas.appendChild(totalesMetricas);
 
 //------------------------Invocar  el container-----------------------
 const cardsContainer = document.querySelector("#root");
 cardsContainer.innerHTML = renderItems(filtroAcumulativo);
-
 
 //------------------------Filtro de busqueda por input-----------------
 const inputSearch = document.querySelector("#inputFilter");
@@ -72,7 +69,7 @@ selectStudio.addEventListener("change", (e) => {
 
 
 //------------------------ascendente y descendente----------------------------- 
-const selectOrder = document.querySelector('[name="ordenAlfabetico"]');
+const selectOrder = document.querySelector('[name="name"]');
 selectOrder.addEventListener("change", (e) => {
   const orderSelected = e.target.value;
   filtroAcumulativo = sortData(filtroAcumulativo, "name", orderSelected);
@@ -100,4 +97,3 @@ clearButton.addEventListener("click", function () {
 
 });
 
-//console.log(filterByStudio, filterByYear, renderItems(data), data);

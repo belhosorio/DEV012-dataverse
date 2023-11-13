@@ -4,7 +4,7 @@ export const renderItems = (data) => {
   let showInHtml = "";
   data.forEach((items) => {
     showInHtml += `
-      <li class="itemContainer">
+      <li itemscope itemtype="PeliculasAnimacionJaponesa" class="itemcontainer">
             <dl itemscope itemtype="PeliculasAnimacionJaponesa">
             <img src="${items.imageUrl}" alt="${items.name}"/>
             <div class="texto">

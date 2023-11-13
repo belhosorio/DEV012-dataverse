@@ -1,4 +1,4 @@
-import { filterByGenre, filterByYear } from "../src/dataFunctions.js";
+import { filterByGenre, filterByYear, filterByStudio } from "../src/dataFunctions.js";
 import { data as fakeData } from "./data.js";
 console.log(fakeData);
 
@@ -18,6 +18,21 @@ describe("filterByGenre", () => {
   });
 });
 
+describe("filterByStudio", () => {
+  it("return an array of movies by studio", () => {
+    const studioByGhibli = filterByStudio(fakeData, "studio", "Studio Ghibli");
+    expect(studioByGhibli.length).toBe(1);
+  });
+
+  it("return zero array of movies by studio", () => {
+    const studioNotGhibli = filterByStudio(
+      fakeData,
+      "studio",
+      "Toei Animation"
+    );
+    expect(studioNotGhibli.length).toBe(0);
+  });
+});
 //---------------------------Filtro por año----------------------
 describe("filterByYear", () => {
   it("returns an array of movies by year", () => {
