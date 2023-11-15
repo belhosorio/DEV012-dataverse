@@ -28,7 +28,7 @@ inputSearch.addEventListener("input", () => {
   const filteredDataByName = searchByName(filtroAcumulativo, "input", inputValue);
   if (filteredDataByName.length === 0) {
     noResultsFound.textContent =
-      "No se encontraron resultados que coincidan con la búsqueda";
+      "Lo sentimos, no se encontraron resultados que coincidan con la búsqueda.";
   } 
   cardsContainer.innerHTML = renderItems(filteredDataByName, noResultsFound);
   pcomputeStats.innerHTML="Total de películas: " + computeStats(filteredDataByName);

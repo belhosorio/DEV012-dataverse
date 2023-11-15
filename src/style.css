@@ -1,192 +1,223 @@
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
 @font-face {
   font-family: "Bleak Chop";
   src: url("./Bleak\ Chop.ttf");
 }
 * {
-text-align: center;
-margin: 0px;
+  text-align: center;
+  margin: 0px;
 }
-header{
-  font-family: 'Bleak Chop';
+body {
+  height: 100vh;
+  position: relative;
 }
-h1{
-color: black;
-font-family: 'Bleak Chop';
-margin-top: -15px;
-margin-bottom: 40px;
-letter-spacing: 2px;
+header {
+  height: 250px;
+  font-family: "Bleak Chop";
+  background-color: #febf4e;
+  padding-bottom: 40px;
 }
-#logo{
-height: 10%;
-width: 10%;
-margin-top: 25px;
-
+h1 {
+  font-size: 40px;
+  color: black;
+  font-family: "Bleak Chop";
+  margin-top: -15px;
+  letter-spacing: 2px;
 }
-nav{
-background-color: #FEBF4E;  
-padding-top: 10px;
-padding-bottom: 20px;
-
+#logo {
+  height: 200px;
+  width: 200px;
+  margin-top: 25px;
 }
-input{
-  align-items: center;
-  padding: 5px;
-  box-shadow: 10px 10px 10px rgba(132, 132, 132, 0.13);
+nav {
+  height: 40px;
+  width: 100%;
+  background-color: #febf4e;
+  padding: 10px 0px;
+}
+nav label {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 5px;
+}
+/*------------------*/
+input[type="checkbox"] {
+  font-size: 18px;
+  color: red;
+  float: right;
+  line-height: 50px;
+  margin-right: 200px;
+  display: none;
+}
+input {
+  font-size: 18px;
+  text-align: left;
+  padding: 8px 10px 6px 8px;
+  margin: 0px 6px 0px 10px;
+  box-shadow: 3px 3px 3px rgba(132, 132, 132, 0.13);
   border: 0;
-  border-radius: 5px;
+  border-radius: 8px;
+  outline: none;
 }
 label {
-  border: none;
   padding: 5px;
   border: none;
-  flex-wrap: wrap;
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: "Hammersmith One", sans-serif;
 }
 select {
-  /*No funciona*/
-  background-color: #FEBF4E;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  align-items: center;
-  padding: 5px;
-  box-shadow: 10px 10px 10px rgba(132, 132, 132, 0.13);
+  font-size: 18px;
+  font-family: "Hammersmith One", sans-serif;
+  background-color: #febf4e;
+  padding: 6px 10px 6px 10px;
+  box-shadow: 2px rgba(132, 132, 132, 0.13);
   border: 0;
   border-radius: 5px;
-  font-family: 'Hammersmith One', sans-serif;
 }
-/*section select */
-select option {
-  color: white;
-  background-color: #ec004a;
-  padding: 8px;
-  margin: 8px;
-  border-radius: 5px;
+select[name="year"] {
+  padding: 8px 12px 8px 12px;
 }
-
-select option:hover {
-  color: white;
-  background-color: #ec004a;
+select:hover {
+  background-color: #f8b943;
+  transition: 5ms;
+}
+/*No funciona*/
+option {
+  color: #080808;
+  background-color: #febf4e;
+}
+option:hover {
+  background-color: #fe9a4e;
 }
 button {
-  margin-left: 30px;
   font-size: 15px;
+  font-weight: bold;
   border: none;
   color: white;
-  padding: 8px 12px 8px 12px;
-  background-color: #393737;
-  font-weight: bold;
-  border-radius: 10px;
+  background-color: #c90040;
+  padding: 8px 10px 8px 10px;
+  border-radius: 5px;
+  margin-left: 15px;
 }
 button:hover {
-  background-color: #ec004a;
+  background-color: rgba(255, 12, 89, 0.902);
 }
-.metricas{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  font-size: 14px;
-  font-style: unset;
+.metricas {
+  height: 40px;
+  color: white;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #c90040;
+  padding-bottom: 15px;
+  /*
+  font-style: unset;
+*/
 }
-.compute-stats{
-  font-family: 'Hammersmith One', sans-serif;
-  border-radius: 1px;
-}
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 30px;
+.compute-stats {
+  font-size: 18px;
+  color: wheat;
+  text-align: center;
+  padding: 10px 0px;
+  background-color: rgb(40, 40, 40);
 }
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 10px;
   justify-content: center;
-  padding: 10px;
+  margin-top: 40px;
 }
 .itemcontainer {
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
-  width: 520px;
-  height: 280px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  width: 500px;
+  height: 260px;
   margin: 10px;
   color: white;
   border-radius: 6px;
+  padding: 15px 5px 0px 15px;
   background: rgb(40, 40, 40);
-  font-size: 3;
-  word-wrap: break-word;
   position: relative;
 }
 .container img {
-  position: absolute;
-  align-items: left;
-  max-height: 260px;
-  top:10px;
-  left: 10px;
+  height: 240px;
+  border-radius: 6px;
 }
-.texto{
+
+.texto {
   position: absolute;
-  top:8px;
-  left: 225px;
+  top: 8px;
+  left: 210px;
   padding-right: 30px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-dd[itemprop="studio"]{
-  text-align: left;
-  margin-top: 15px;
-  color: #FEBF4E;
-  font-family: Arial, Helvetica, sans-serif;
+dd[itemprop="studio"] {
+  color: #febf4e;
   font-size: 13px;
-  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  margin-top: 25px;
+}
+
+dd[itemprop="name"] {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Hammersmith One", sans-serif;
+  margin-top: 30px;
   letter-spacing: 1px;
 }
-
-dd[itemprop="name"]{
-  font-weight: bold;
-  font-family: 'Hammersmith One', sans-serif;
-  margin-top: 30px;
-  font-size: 16px;
-  letter-spacing: 1.5px;
-}
-dd[itemprop="shortDescription"]{
+dd[itemprop="shortDescription"] {
+  font-size: 14px;
   text-align: left;
-  margin-top: 35px;
-  color: #ACA6A6;
+  margin-top: 30px;
+  color: #aca6a6;
   font-family: Arial, Helvetica, sans-serif;
-  font-size:14px;
-  
 }
-dd[itemprop="genre"]{
+dd[itemprop="genre"] {
+  font-size: 14px;
+  padding-top: 10px;
   text-align: left;
   margin-top: 15px;
-  color: #ACA6A6;
+  color: #aca6a6;
   font-family: Arial, Helvetica, sans-serif;
   position: absolute;
-  top:210px;
-  left: 10px;
-  font-size: 14px;
+  top: 195px;
 }
-dd[itemprop="year"]{
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  position: absolute;
-  top:225px;
-  left: 235px;
+dd[itemprop="year"] {
   font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 220px;
+  left: 240px;
   letter-spacing: 1px;
 }
 footer {
-  margin-top: 80px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #FEBF4E;  
-  font-family: 'Hammersmith One', sans-serif;
+  font-size: 16px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 20px;
+  background-color: #febf4e;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+@media (max-width: 600px) {
+  .itemcontainer {
+    width: 100%;
+  }
+  input label {
+    font-size: 14px;
+  display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    left: -100%;
+    transition: all 0.5s;
+  }
 }

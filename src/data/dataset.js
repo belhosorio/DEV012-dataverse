@@ -302,28 +302,14 @@ export default [
     description:
       "El Tiempo Contigo es una película de animación japonesa dirigida por Makoto Shinkai. La película se lanzó en el año 2019 y es conocida por su hermosa animación y su historia romántica y fantástica. La trama sigue a un joven llamado Hodaka que se muda a Tokio y se encuentra con una chica llamada Hina, que tiene el poder de controlar el clima. Juntos, enfrentan desafíos y descubren el significado de la conexión humana en un mundo donde el clima es impredecible.",
     imageUrl:
-      "https://pbs.twimg.com/media/Ep9GOlrXEAATOYx?format=jpg&name=900x900",
+      "https://fesapusewebsite.blob.core.windows.net/fathom/wwy-6489619c29fb58fcfe879a5043a6ed35.jpg",
     facts: {
       year: 2019,
       genre: "Romance · Fantasía",
       studio: "CoMix Wave Films",
     },
   },
-  {
-    id: "demon-slayer-mugen-train",
-    name: "Demon Slayer: Mugen Train",
-    shortDescription:
-      "Un grupo de cazadores de demonios aborda un tren infernal en una épica aventura para vencer a un demonio poderoso.",
-    description:
-      "Dirigida por Haruo Sotozaki, es una película de anime que continúa la historia de la popular serie Demon Slayer. La trama sigue a Tanjiro Kamado y sus compañeros cazadores de demonios mientras abordan un tren misterioso infestado de demonios. La película ofrece espectaculares secuencias de acción, una animación impresionante y profundiza en los personajes mientras enfrentan desafíos personales y peligros mortales. Mugen Train se convirtió en un fenómeno en Japón y en todo el mundo, estableciendo récords de taquilla y encantando a los fanáticos con su emocionante continuación de la historia de Tanjiro y Nezuko.",
-    imageUrl:
-      "https://m.media-amazon.com/images/M/MV5BODI2NjdlYWItMTE1ZC00YzI2LTlhZGQtNzE3NzA4MWM0ODYzXkEyXkFqcGdeQXVyNjU1OTg4OTM@._V1_FMjpg_UX1000_.jpg",
-    facts: {
-      year: 2020,
-      genre: "Acción · Aventura",
-      studio: "Ufotable",
-    },
-  },
+ 
   {
     id: "suzume",
     name: "Suzume",
@@ -339,7 +325,7 @@ export default [
       studio: "Studio Ghibli",
     },
   },
-
+ 
   {
     id: "the-first-slam-dunk",
     name: "The First Slam Dunk",
@@ -347,11 +333,42 @@ export default [
       "Acompaña a Ryota Miyagi y su equipo de baloncesto en un emocionante enfrentamiento contra los campeones reinantes en Shohoku.",
     description:
       "Es una película de animación japonesa sobre un equipo de baloncesto de instituto que se enfrenta al campeón nacional. La película sigue la historia de Hanamichi Sakuragi, un jugador de baloncesto con un pasado turbulento, que se une al equipo de baloncesto de Shohoku para impresionar a Haruko Akagi, una chica que le gusta. Con la ayuda de su amigo y compañero de equipo Ryota Miyagi, Hanamichi aprende a jugar al baloncesto y a convertirse en un mejor jugador. La película es una historia de amistad, superación personal y el poder del baloncesto para unir a las personas.",
-    imageUrl: "https://elcomercio.pe/resizer/-vQnh5e9WNzefPT4aNAglKBQ8bQ=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/2URNXYOLONFQPGPXGMJNSGQMBY.webp",
+    imageUrl:
+      "https://elcomercio.pe/resizer/-vQnh5e9WNzefPT4aNAglKBQ8bQ=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/2URNXYOLONFQPGPXGMJNSGQMBY.webp",
     facts: {
       year: 2022,
       genre: "Deportes",
       studio: "Toei Animation",
+    },
+  },
+  {
+    id: "tokyo-godfathers",
+    name: "Tokyo Godfathers",
+    shortDescription:
+      "Acompaña a Hana, Gin, y Miyuki en una travesía inolvidable por las calles de Tokio mientras buscan el significado de la verdadera familia en la víspera de Navidad.",
+    description:
+      "Tokyo Godfathers es una película de animación japonesa dirigida por Satoshi Kon, estrenada en 2003. La historia sigue a tres personas sin hogar, Hana, Gin y Miyuki, que encuentran a un bebé abandonado en la víspera de Navidad. Deciden emprender una travesía por las calles de Tokio para reunir al bebé con su familia biológica y, en el camino, descubren el verdadero significado de la familia. A medida que enfrentan desafíos y revelaciones, la película explora temas de redención, perdón y la importancia de los lazos familiares.",
+    imageUrl:
+      "https://m.media-amazon.com/images/M/MV5BMTkyNmU2ZjUtNzIwMy00MWRlLWE4ZWQtYzJhYjU0MmUxZjhiXkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_.jpg",
+    facts: {
+      year: 2003,
+      genre: "Drama",
+      studio: "Madhouse",
+    },
+  },
+  {
+    id: "demon-slayer-mugen-train",
+    name: "Demon Slayer: Mugen Train",
+    shortDescription:
+      "Un grupo de cazadores de demonios aborda un tren infernal en una épica aventura para vencer a un demonio poderoso.",
+    description:
+      "Dirigida por Haruo Sotozaki, es una película de anime que continúa la historia de la popular serie Demon Slayer. La trama sigue a Tanjiro Kamado y sus compañeros cazadores de demonios mientras abordan un tren misterioso infestado de demonios. La película ofrece espectaculares secuencias de acción, una animación impresionante y profundiza en los personajes mientras enfrentan desafíos personales y peligros mortales. Mugen Train se convirtió en un fenómeno en Japón y en todo el mundo, estableciendo récords de taquilla y encantando a los fanáticos con su emocionante continuación de la historia de Tanjiro y Nezuko.",
+    imageUrl:
+      "https://m.media-amazon.com/images/M/MV5BODI2NjdlYWItMTE1ZC00YzI2LTlhZGQtNzE3NzA4MWM0ODYzXkEyXkFqcGdeQXVyNjU1OTg4OTM@._V1_FMjpg_UX1000_.jpg",
+    facts: {
+      year: 2020,
+      genre: "Acción · Aventura",
+      studio: "Ufotable",
     },
   },
   {
