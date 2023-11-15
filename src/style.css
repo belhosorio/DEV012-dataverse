@@ -12,20 +12,21 @@ body {
   position: relative;
 }
 header {
-  height: 200px;
+  height: 250px;
   font-family: "Bleak Chop";
   background-color: #febf4e;
   padding-bottom: 40px;
 }
 h1 {
+  font-size: 40px;
   color: black;
   font-family: "Bleak Chop";
   margin-top: -15px;
   letter-spacing: 2px;
 }
 #logo {
-  height: 80%;
-  width: 10%;
+  height: 200px;
+  width: 200px;
   margin-top: 25px;
 }
 nav {
@@ -33,22 +34,20 @@ nav {
   width: 100%;
   background-color: #febf4e;
   padding: 10px 0px;
-  
 }
-nav label{
+nav label {
   display: inline-block;
   line-height: 40px;
-  margin: 0 5px
+  margin: 0 5px;
 }
 /*------------------*/
-input[type="checkbox" i]{
+input[type="checkbox"] {
   font-size: 18px;
   color: red;
   float: right;
-  line-height: 40px;
-  margin-right: 40px;
-  display: none; /*Para verse unicamente en celular*/
-
+  line-height: 50px;
+  margin-right: 200px;
+  display: none;
 }
 input {
   font-size: 18px;
@@ -77,8 +76,8 @@ select {
 select[name="year"] {
   padding: 8px 12px 8px 12px;
 }
-select:hover{
-  background-color:#f8b943;
+select:hover {
+  background-color: #f8b943;
   transition: 5ms;
 }
 /*No funciona*/
@@ -109,7 +108,7 @@ button:hover {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #c90040;
   padding-bottom: 15px;
-/*
+  /*
   font-style: unset;
 */
 }
@@ -138,11 +137,10 @@ button:hover {
   border-radius: 6px;
   padding: 15px 5px 0px 15px;
   background: rgb(40, 40, 40);
-  
   position: relative;
 }
 .container img {
-height: 240px;
+  height: 240px;
   border-radius: 6px;
 }
 
@@ -208,40 +206,18 @@ footer {
   font-family: "Hammersmith One", sans-serif;
 }
 
-@media (max-width: 600px){
-  .itemcontainer{
-     width: 100%;
+@media (max-width: 600px) {
+  .itemcontainer {
+    width: 100%;
   }
-  nav select{
+  input label {
     font-size: 14px;
-   /* display: block;*/
+  display: block;
     position: fixed;
-width: 100%;
-height: 100vh;
-background-color: aliceblue;
-left: -100%;
-transition: all 0.5s;
-  }
-nav label{
-
-  }
-}
-
-  /*
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 40px;
-  }
-  .texto {
-    position: absolute;
-    top: 8px;
-    left: 210px;
-    padding-right: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    left: -100%;
+    transition: all 0.5s;
   }
 }
