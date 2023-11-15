@@ -104,7 +104,7 @@ export const metricasTotales = (data) => {
 
   const metricasCantidad = [cantidadStudioGhibli, cantidadFantasia];
 
-  const metricasMap = metricasCantidad.map((x) => x + " películas");
+  const metricasMap = metricasCantidad.map((x) => x );
 
-  return ` · La mayor cantidad de peliculas son del Studio Ghibli con ${metricasMap[0]} y del género Fantasía con ${metricasMap[1]} respectivamente · `;
+  return ` · Studio Ghibli nos deslumbra con la mayor cantidad de películas en nuestra estadística: ¡un impresionante total de ${metricasMap[0]}! Y no es todo, ¡${metricasMap[1]} de ellas te llevan a mundos de fantasía!   · `;
 };

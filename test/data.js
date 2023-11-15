@@ -45,8 +45,6 @@ export const data = [
       studio: "CoMix Wave Films",
     },
   },
-];
-export const data = [
   {
     id: "ninja-scroll",
     name: "Ninja Scroll",

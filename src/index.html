@@ -2,22 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaonashi Pelis</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="img/ico" href="./favicon_logo.ico" />
+    
   </head>
   <body>
-    <nav>
+  
     <header>
-      <img id="logo" src="./logo data versesin texto-02-02.png"/><h1>Kaonashi Pelis</h1>
+      <img id="logo" src="./logokaonashi.png"/>
+      <h1>Kaonashi Pelis</h1>
     </header>
-
+  <nav>
     <section>
-      <input id="inputFilter" name="searchButton" type="search" placeholder="BUSCAR PELÍCULA"/>  
 
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn"></label>
+      <i class="fa-solid fa-bars"></i>
+      
+      <input id="inputFilter" name="searchButton" type="search" placeholder="Buscar película"/>
+      
       <label for="genre"></label>
       <select id ="genre" data-testid="select-filter" name="genre">
-        <option disabled selected value="">GENERO</option>
+        <option disabled selected value="">Genero</option>
         <option value="Acción">Acción</option>
         <option value="Aventura">Aventura</option>
         <option value="Bélico">Bélico</option>
@@ -33,7 +41,7 @@
 
       <label for="studio"></label>
       <select id="studio" data-testid="select-studio" name="studio">
-        <option disabled selected value="">ESTUDIO</option>
+        <option disabled selected value="">Estudio</option>
         <option value="CoMix Wave Films">CoMix Wave Films</option>
         <option value="Gainax">Gainax</option>
         <option value="Kyoto Animation">Kyoto Animation</option>
@@ -50,7 +58,7 @@
 
       <label for="year"></label>
       <select id="year" data-testid="select-año" name="year">
-        <option disabled selected value="">AÑO DE ESTRENO</option>
+        <option disabled selected value="">Año de estreno</option>
         <option value="1988">1988</option>
         <option value="1989">1989</option>
         <option value="1992">1992</option>
@@ -69,17 +77,18 @@
 
       <label for="orden-alfabetico"></label>
       <select id="orden-alfabetico" data-testid="select-sort" name="name">
-        <option disabled selected value="">ORDENAR POR</option>
+        <option disabled selected value="">Ordenar</option>
         <option value="asc">Ascendente</option>
         <option value="desc">Descendente</option>
       </select>
 
-      <button id="button" data-testid="button-clear">LIMPIAR</button>
-    </section>
-      <div class ="metricas">DATA KAONASHIPELIS<br></div>
+      <button id="button" data-testid="button-clear">Limpiar</button>
+  </section> 
+</nav> 
+      <div class ="metricas"><br></div>
       <p class ="compute-stats"></p>
    
-  </nav>
+  
 
   <div id="root" class="container">
   </div>
