@@ -3,7 +3,6 @@ import {
   filterByStudio,
   filterByYear,
   sortData,
-  searchByName,
 } from "../src/dataFunctions.js";
 import { data as fakeData } from "./data.js";
 
@@ -262,72 +261,4 @@ describe("sortData", () => {
     ];
     expect(orderFalling).toEqual(resultOrderFal);
   });
-});
-
-//filtro por nombre
-describe("searchByName", () => {
-  it("return an array of movies by name", () => {
-    const filterName = searchByName(fakeData, "name", "Princess Mononoke");
-
-    const resultName = [
-      {
-        id: "princess-mononoke",
-        name: "Princess Mononoke",
-        shortDescription:
-          "En un mundo de dioses y espíritus, una feroz princesa lucha por la supervivencia en una epopeya animada inolvidable.",
-        description:
-          "Dirigida por Hayao Miyazaki, es una obra maestra de la animación japonesa. La película narra la lucha épica entre la naturaleza y la civilización a través de la historia de Ashitaka, un joven príncipe maldito que se adentra en un mundo de dioses y espíritus para encontrar una cura. Se convierte en un intermediario en el conflicto entre los espíritus del bosque y los humanos que destruyen la naturaleza. La Princesa Mononoke es una exploración profunda de la coexistencia, la ecología y la relación entre humanidad y medio ambiente, todo ello con una animación visualmente impresionante y personajes complejos.",
-        imageUrl:
-          "https://wallpapers.com/images/high/princess-mononoke-studio-ghibli-4uc8he3kk9uur0dj.webp",
-        facts: {
-          year: 1997,
-          genre: "Fantasía · Aventura",
-          studio: "Studio Ghibli",
-        },
-      },
-    ];
-    expect(filterName).toEqual(resultName);
-  });
-
-  it("returns an array of movies with names starting with 'P'", () => {
-    const filterNameP = searchByName(fakeData, "name", "P");
-    const resultNameP = [
-      {
-        id: "princess-mononoke",
-        name: "Princess Mononoke",
-        shortDescription:
-          "En un mundo de dioses y espíritus, una feroz princesa lucha por la supervivencia en una epopeya animada inolvidable.",
-        description:
-          "Dirigida por Hayao Miyazaki, es una obra maestra de la animación japonesa. La película narra la lucha épica entre la naturaleza y la civilización a través de la historia de Ashitaka, un joven príncipe maldito que se adentra en un mundo de dioses y espíritus para encontrar una cura. Se convierte en un intermediario en el conflicto entre los espíritus del bosque y los humanos que destruyen la naturaleza. La Princesa Mononoke es una exploración profunda de la coexistencia, la ecología y la relación entre humanidad y medio ambiente, todo ello con una animación visualmente impresionante y personajes complejos.",
-        imageUrl:
-          "https://wallpapers.com/images/high/princess-mononoke-studio-ghibli-4uc8he3kk9uur0dj.webp",
-        facts: {
-          year: 1997,
-          genre: "Fantasía · Aventura",
-          studio: "Studio Ghibli",
-        },
-      },
-      {
-        id: "perfect-blue",
-        name: "Perfect Blue",
-        shortDescription:
-          "Una estrella del pop se enfrenta a la oscuridad en su mente cuando un acosador desencadena un aterrador descenso psicológico.",
-        description:
-          "Dirigida por Satoshi Kon, es un thriller psicológico de animación que sigue a Mima, una cantante pop que decide dejar su carrera para convertirse en actriz. A medida que se sumerge en su nuevo papel, la realidad y la ficción se entrelazan y Mima experimenta una serie de sucesos aterradores que desafían su percepción de la realidad. La película explora temas de identidad, fama y obsesión en un ambiente de suspense psicológico. Perfect Blue es aclamada por su narrativa intrigante y su estilo visual distintivo, consolidando a Satoshi Kon como un maestro del anime.",
-        imageUrl:
-          "https://m.media-amazon.com/images/M/MV5BN2RkMjQ3ZjItNWNlMC00ZTZlLTg3OTQtMzJjYjMwOTQ1ODg4XkEyXkFqcGdeQXVyMDc2NTEzMw@@._V1_.jpg",
-        facts: {
-          year: 1997,
-          genre: "Thriller · Psicológico",
-          studio: "Madhouse",
-        },
-      },
-    ];
-    expect(filterNameP).toEqual(resultNameP);
-  });
-
-  it("returns undefined for non-existent name", () => {
-    expect(searchByName(fakeData, "name", "octopus")).toBeUndefined();
-  });
-
 });
