@@ -38,9 +38,9 @@ identificar los principales aspectos de nuestro proyecto.</p>
   
 
 <p>Como ejemplo tenemos a Netflix.<br>
-<img id="ejemplo01" src="./ejemplo01.jpg" width="300px" /></p>
+<img id="ejemplo01" src="./ejemplo01.jpg" width="400px" /></p>
 <p>Y a Amazon Prime.<br>
-<img id="ejemplo02" src="./ejemplo02.jpg" width="300px" /></p>
+<img id="ejemplo02" src="./ejemplo02.jpg" width="400px" /></p>
 
 <li>¿Cuándo utilizan o utilizarían el producto?</li>
 Cuando quieran buscar información sobre alguna película en específico o quieran saber sobre más películas de algún género, director, año, etc. (sus intereses)
@@ -149,16 +149,16 @@ export default [<br>
 <br>
 <p>Listado de peliculas generado por la IA (usando ChatGPT y Bard)<br>
 
-<img id="iachatgpt" src="./chatgpt.jpg" width="500px"/><br>
-<img id="iachatgpt" src="./bard.jpg" width="500px"/></p>
+<img id="iachatgpt" src="./chatgpt.jpg" width="600px"/><br>
+<img id="iachatgpt" src="./dataset con ia bard.jpg" width="600px"/></p>
 
 <h2>4. Prototipos</h2>
 
 <p>Se hicieron prototipos acorde a las historias de usuarios identificadas con anterioridad, de esto se crearon un wireframe (prototipo en baja) y un mockup (prototipo en alta), donde pudimos identificar las diferentes caracteristicas graficas de nuestro proyecto.</p>
 <p>Wireframe</p>
-<img id="wireframe" src="./wireframe.jpg" width="500px" /><br>
+<img id="wireframe" src="./wireframe.jpg" width="600px" /><br>
 <p>Mockup trabajado en figma</p>
-<img id="wireframe" src="./mockup.jpg" width="500px" /><br>
+<img id="wireframe" src="./mockup.jpg" width="600px" /><br>
 
 <h2>5. Consideraciones técnicas</h2>
 
@@ -217,10 +217,10 @@ a obtener, procesar y manipular datos (funciones). Por ejemplo:</p>
 <h2>6. Test Unitarios</h2>
 
 <p>En este proyecto se crearon una serie de test unitarios de las funciones implementadas en el archivo dataFunctions.js. (filterBy, sortBy, etc.)</p><br>
-<img id="test" src="./test unitarios.jpg" width="500px" /><br>
+<img id="test" src="./test unitarios.jpg" width="600px" /><br>
 
 <h2>7. Proyecto</h2>
 
 <p>Finalmente el proyecto se realizo en 5 sprints(cada uno de 1 semana de duracion) donde se hicieron algunas modificaciones, pero sin perder la escencia del proyecto, donde su funcionalidad es el filtrar por distintas peliculas de animación japonesa por el rango de genero, estudio y año, ademas de mostrarlas por rango ascendentes y descendente o buscarlas directamente por su nombre en el buscador dispuesto, mientras que el boton "limpiar", como bien dice su nombre nos sirve para limpiar los filtros implementados. Ademas cuenta con informacion relevante, como cuantas son las peliculas del estudio y genero que mas se tienen y un contador donde nos muestra en tiempo real las peliculas mostradas segun los diferentes filtros implementados. De esta forma se obtiene un sitio de facil manipulacion y entendimiento para el usuario.</p>
-<img id="sitio" src="./sitioweb.jpg" width="500px" /><br>
+<img id="sitio" src="./sitioweb.jpg" width="600px" /><br>
 
