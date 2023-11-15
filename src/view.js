@@ -1,10 +1,8 @@
 export const renderItems = (data) => {
-  console.log(data);
-  // Aquí comienza tu código y puedes retornar lo que tu necesites
   let showInHtml = "";
   data.forEach((items) => {
     showInHtml += `
-      <li itemscope itemtype="PeliculasAnimacionJaponesa" class="itemcontainer">
+      <li itemscope itemtype="PeliculasAnimacionJaponesa" class="itemcontainer" data-id="${items.id}">
             <dl itemscope itemtype="PeliculasAnimacionJaponesa">
             <img src="${items.imageUrl}" alt="${items.name}"/>
             <div class="texto">

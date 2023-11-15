@@ -1,10 +1,8 @@
-// una función filterBy que tiene 3 parámetros (data, filterBy, value) y devuelve el arreglo filtrado
 //Unicamente se hará uso de funciones puras
 
+// una función filterBy que tiene 3 parámetros (data, filterBy, value) y devuelve el arreglo filtrado
 export const searchByName = (data, searchBy, input) => {
   if (searchBy === "input") {
-    //El metodo filter crea un nuevo arreglo que contiene solo los elementos que cumplan con una condición especifica
-    // La condición que se evaluaen filter es por una función flecha
     const filteredDataByName = data.filter((item) => {
       return item.name.toLowerCase().includes(input.toLowerCase());
     });
@@ -12,6 +10,7 @@ export const searchByName = (data, searchBy, input) => {
   }
 };
 
+// una función filterBy que tiene 3 parámetros (data, filterBy, value) y devuelve el arreglo filtrado
 export const filterByGenre = (data, filterBy, value) => {
   return data.filter((item) => item.facts[filterBy].includes(value));
 };
@@ -26,29 +25,10 @@ export const filterByYear = (data, filterBy, value) => {
   }
 };
 
-/*
-export const filterByYear = (data, filterBy, value) => {
-  if (filterBy === "year") {
-    const filteredDataByYear = [];
-    for (let i = 0; i < data.length; i++) {
-      const storesMovieByYear = data[i].facts.year;
-
-      if (Number(storesMovieByYear) === Number(value)) {
-        filteredDataByYear.push(data[i]);
-      }
-    }
-    return filteredDataByYear;
-  }
-};
-*/
-
 //una función sortBy que tiene 3 parámetros (data, sortBy, sortOrder) y devuelve el arreglo ordenado
 export const sortData = (data, sortBy, sortOrder) => {
-  // Crear una copia del array original, porque al hacer uso de sort editara el original
   const copyData = [...data];
-  // Ordenar la copia del array utilizando el método "sort"
   copyData.sort((a, b) => {
-    // Obtener el valor de la propiedad "sortBy" para los elementos "a" y "b"
     const valueA = a[sortBy];
     const valueB = b[sortBy];
 
@@ -57,7 +37,6 @@ export const sortData = (data, sortBy, sortOrder) => {
     }
 
     if (sortOrder === "asc") {
-      // Determinar el orden ascendente
       if (valueA < valueB) {
         return -1;
       }
@@ -65,7 +44,6 @@ export const sortData = (data, sortBy, sortOrder) => {
     }
 
     if (sortOrder === "desc") {
-      // Determinar el orden descendente
       if (valueB < valueA) {
         return -1;
       }
@@ -73,7 +51,6 @@ export const sortData = (data, sortBy, sortOrder) => {
     }
   });
 
-  console.log(copyData);
   return copyData;
 };
 
@@ -83,8 +60,7 @@ export const computeStats = (data) => {
   return longitud;
 };
 
-// metricas
-
+// metricas (con metodo map y template strings)
 export const metricasTotales = (data) => {
   const cantidadStudioGhibli = data.reduce((acc, el) => {
     if (el.facts.studio.includes("Studio Ghibli")) {
@@ -103,8 +79,6 @@ export const metricasTotales = (data) => {
   }, 0);
 
   const metricasCantidad = [cantidadStudioGhibli, cantidadFantasia];
-
   const metricasMap = metricasCantidad.map((x) => x + " películas");
-
   return ` · La mayor cantidad de peliculas son del Studio Ghibli con ${metricasMap[0]} y del género Fantasía con ${metricasMap[1]} respectivamente · `;
 };
