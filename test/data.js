@@ -17,49 +17,6 @@ export const data = [
     },
   },
   {
-    id: "one-piece-film-red",
-    name: "One Piece Film: Red",
-    shortDescription:
-      "Un emocionante concierto en vivo donde la cantante Uta, la más querida del mundo, revela su impactante conexión con Shanks.",
-    description:
-      "Es una película de anime de acción y aventura basada en el manga del mismo nombre. La película sigue la historia de Luffy y sus amigos, que se embarcan en una aventura para encontrar a Uta, una cantante de fama mundial que resulta ser la hija de Shanks, el ex capitán de los Piratas de Sombrero de Paja. Uta tiene una voz poderosa que puede unir a las personas, pero también tiene un pasado misterioso que la pone en peligro.",
-    imageUrl: "https://picfiles.alphacoders.com/557/thumb-557074.jpg",
-    facts: {
-      year: 2022,
-      genre: "Aventura",
-      studio: "Toei Animation",
-    },
-  },
-  {
-    id: "weathering-with-you",
-    name: "Weathering With You",
-    shortDescription:
-      "En un mundo donde la lluvia es mágica, dos jóvenes buscan un amor imposible bajo los cielos cambiantes.",
-    description:
-      "El Tiempo Contigo es una película de animación japonesa dirigida por Makoto Shinkai. La película se lanzó en el año 2019 y es conocida por su hermosa animación y su historia romántica y fantástica. La trama sigue a un joven llamado Hodaka que se muda a Tokio y se encuentra con una chica llamada Hina, que tiene el poder de controlar el clima. Juntos, enfrentan desafíos y descubren el significado de la conexión humana en un mundo donde el clima es impredecible.",
-    imageUrl:
-      "https://pbs.twimg.com/media/Ep9GOlrXEAATOYx?format=jpg&name=900x900",
-    facts: {
-      year: 2019,
-      genre: "Romance · Fantasía",
-      studio: "CoMix Wave Films",
-    },
-  },
-  {
-    id: "ninja-scroll",
-    name: "Ninja Scroll",
-    shortDescription:
-      "Un ninja solitario debe enfrentarse a demonios y asesinos mortales en un emocionante viaje lleno de acción y misterio.",
-    description:
-      "Ninja Scroll es una película de anime que combina acción y aventuras, lanzada en 1993 y dirigida por Yoshiaki Kawajiri. La historia sigue a Jubei Kibagami, un ninja solitario, mientras se ve envuelto en una trama mortal que involucra a un grupo de guerreros sobrenaturales y un misterioso oro. Con combates emocionantes y una trama llena de giros, la película se ha convertido en un clásico del anime y es conocida por su estilo visual distintivo y su trama intensa.",
-    imageUrl: "https://www.ecartelera.com/carteles/6000/6061/001_p.jpg",
-    facts: {
-      year: 1993,
-      genre: "Acción · Aventura · Fantasía",
-      studio: "Madhouse",
-    },
-  },
-  {
     id: "princess-mononoke",
     name: "Princess Mononoke",
     shortDescription:
@@ -86,6 +43,21 @@ export const data = [
       year: 1988,
       genre: "Ciencia Ficción",
       studio: "TMS Entertainment",
+    },
+  },
+  {
+    id: "perfect-blue",
+    name: "Perfect Blue",
+    shortDescription:
+      "Una estrella del pop se enfrenta a la oscuridad en su mente cuando un acosador desencadena un aterrador descenso psicológico.",
+    description:
+      "Dirigida por Satoshi Kon, es un thriller psicológico de animación que sigue a Mima, una cantante pop que decide dejar su carrera para convertirse en actriz. A medida que se sumerge en su nuevo papel, la realidad y la ficción se entrelazan y Mima experimenta una serie de sucesos aterradores que desafían su percepción de la realidad. La película explora temas de identidad, fama y obsesión en un ambiente de suspense psicológico. Perfect Blue es aclamada por su narrativa intrigante y su estilo visual distintivo, consolidando a Satoshi Kon como un maestro del anime.",
+    imageUrl:
+      "https://m.media-amazon.com/images/M/MV5BN2RkMjQ3ZjItNWNlMC00ZTZlLTg3OTQtMzJjYjMwOTQ1ODg4XkEyXkFqcGdeQXVyMDc2NTEzMw@@._V1_.jpg",
+    facts: {
+      year: 1997,
+      genre: "Thriller · Psicológico",
+      studio: "Madhouse",
     },
   },
 ];

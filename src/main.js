@@ -22,19 +22,14 @@ cardsContainer.innerHTML = renderItems(filtroAcumulativo);
 
 //------------------------Filtro de busqueda por input-----------------
 const inputSearch = document.querySelector("#inputFilter");
-// Seleccionamos un elemento del DOM para mostrar un mensaje cuando no hay resultados
 const noResultsFound = document.querySelector("#noResultsFound");
 inputSearch.addEventListener("input", () => {
-  // Se obtiene el valor del campo de busqueda y se convierte en minuscula para que la busqueda no distinga entre minusculas y mayusculas
   const inputValue = inputSearch.value.toLowerCase();
-  // Traemos la data con searchByName, la busqueda por input y el valor en minuscula. Busca y devuelve un arreglo con los elementos que coinciden con la busqueda
   const filteredDataByName = searchByName(filtroAcumulativo, "input", inputValue);
-  // Verifica si la longitud del arreglo  es igual a 0, indicando que no se encontraron resultados
   if (filteredDataByName.length === 0) {
     noResultsFound.textContent =
       "Lo sentimos, no se encontraron resultados que coincidan con la búsqueda.";
   } 
-  // Actualiza el contenido de cards con los resultados de busqueda
   cardsContainer.innerHTML = renderItems(filteredDataByName, noResultsFound);
   pcomputeStats.innerHTML="Total de películas: " + computeStats(filteredDataByName);
 });
@@ -80,15 +75,11 @@ selectOrder.addEventListener("change", (e) => {
 //------------------------Boton limpiar-----------------------------
 const clearButton = document.getElementById("button");
 clearButton.addEventListener("click", function () {
-  //Selecciona todos los elementos select y los alamacena en la variable selectores para acceder a todos los elementos
   const selectores = document.querySelectorAll("select");
-  //Aquí buscaba restablecer el botón de busqueda por nombre en el textContent pero no funciona, unicamente funciona si se le da x en el cuadro de busqueda
   const searchInput = document.querySelector('[name="searchButton"]');
-  // Se utiliza un bucle forEach para recorrer todos los select
   selectores.forEach((selector) => {
-    // Establecemos el valor del elemento select (actual selector) en la primera opción en la lista de opciones, restableciendo el elmento select a su opción predeterminda
-    selector.value = selector.options[0].value; // Establece la opción predeterminada
-    searchInput.value = ""; //Era para limpiar el textContent pero no funciona
+    selector.value = selector.options[0].value;
+    searchInput.value = "";
     noResultsFound.innerHTML = "";
     filtroAcumulativo = data;
     cardsContainer.innerHTML = renderItems(filtroAcumulativo);
