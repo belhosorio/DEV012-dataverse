@@ -12,14 +12,15 @@
   
     <header>
       <img id="logo" src="./logokaonashi.png"/>
-      <h1>Kaonashi Pelis</h1>
+      <h1>Kaonashi Pelis</h1> 
+      
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+      <img class="menuIcon" src="img/iconoMenu.png">
+    </label>
     </header>
   <nav>
-    <section>
-
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn"></label>
-      <i class="fa-solid fa-bars"></i>
+     
       
       <input id="inputFilter" name="searchButton" type="search" placeholder="Buscar película"/>
       
@@ -83,7 +84,6 @@
       </select>
 
       <button id="button" data-testid="button-clear">Limpiar</button>
-  </section> 
 </nav> 
       <div class ="metricas"><br></div>
       <p class ="compute-stats"></p>
@@ -94,10 +94,8 @@
   </div>
   <div id="noResultsFound" ></div>
 
+ <!-- <section class="menuResposive">*/
     
-        <!--orden alfabetico-->
-    <!--
-      <br>
     <label for="menu">Menu</label>
     <select  multiple data-testid="select-sort" name="ordenAlfabetico">
       <optgroup label="Orden alfabético">
@@ -151,7 +149,7 @@
         <option value="2022">2022</option>
       </optgroup>
     </select>
-  -->
+    </section>-->
     <footer>
       <p>
         Belén Osorio y Gineth Guáqueta<br>

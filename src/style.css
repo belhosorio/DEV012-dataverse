@@ -7,46 +7,45 @@
   text-align: center;
   margin: 0px;
 }
+html,
 body {
   height: 100vh;
   position: relative;
+  overflow-y: scroll;
 }
 header {
-  height: 250px;
+  height: 230px;
   font-family: "Bleak Chop";
   background-color: #febf4e;
   padding-bottom: 40px;
 }
 h1 {
-  font-size: 40px;
+  font-size: 35px;
   color: black;
   font-family: "Bleak Chop";
   margin-top: -15px;
   letter-spacing: 2px;
 }
 #logo {
-  height: 200px;
-  width: 200px;
+  max-height: 180px;
+  max-width: 180px;
   margin-top: 25px;
 }
 nav {
-  height: 40px;
+  height: auto;
   width: 100%;
   background-color: #febf4e;
   padding: 10px 0px;
 }
-nav label {
-  display: inline-block;
-  line-height: 40px;
-  margin: 0 5px;
-}
-/*------------------*/
-input[type="checkbox"] {
-  font-size: 18px;
-  color: red;
+/* falta un float*/
+.menuIcon {
+  width: 30px;
+  height: 30px;
   float: right;
-  line-height: 50px;
-  margin-right: 200px;
+  margin: 15px 20px 15px 0px;
+  display: none;
+}
+#check {
   display: none;
 }
 input {
@@ -80,14 +79,14 @@ select:hover {
   background-color: #f8b943;
   transition: 5ms;
 }
-/*No funciona*/
+/*No funciona
 option {
   color: #080808;
   background-color: #febf4e;
 }
 option:hover {
   background-color: #fe9a4e;
-}
+}*/
 button {
   font-size: 15px;
   font-weight: bold;
@@ -102,7 +101,7 @@ button:hover {
   background-color: rgba(255, 12, 89, 0.902);
 }
 .metricas {
-  height: 40px;
+  height: auto;
   color: white;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
@@ -113,8 +112,8 @@ button:hover {
 */
 }
 .compute-stats {
-  font-size: 18px;
-  color: wheat;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 10px 0px;
   background-color: rgb(40, 40, 40);
@@ -131,7 +130,7 @@ button:hover {
   flex-wrap: wrap;
   word-wrap: break-word;
   width: 500px;
-  height: 260px;
+  height: 280px;
   margin: 10px;
   color: white;
   border-radius: 6px;
@@ -140,14 +139,15 @@ button:hover {
   position: relative;
 }
 .container img {
-  height: 240px;
+  max-width: 220px;
+  max-height: 264px;
   border-radius: 6px;
 }
 
 .texto {
   position: absolute;
   top: 8px;
-  left: 210px;
+  left: 220px;
   padding-right: 30px;
   display: flex;
   flex-direction: column;
@@ -171,53 +171,125 @@ dd[itemprop="name"] {
   letter-spacing: 1px;
 }
 dd[itemprop="shortDescription"] {
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   margin-top: 30px;
   color: #aca6a6;
   font-family: Arial, Helvetica, sans-serif;
 }
 dd[itemprop="genre"] {
-  font-size: 14px;
+  font-size: 15px;
   padding-top: 10px;
   text-align: left;
   margin-top: 15px;
   color: #aca6a6;
   font-family: Arial, Helvetica, sans-serif;
   position: absolute;
-  top: 195px;
+  top: 220px;
 }
 dd[itemprop="year"] {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   position: absolute;
-  top: 220px;
+  top: 245px;
   left: 240px;
   letter-spacing: 1px;
 }
 footer {
   font-size: 16px;
-  position: relative;
+  position: static;
   bottom: 0;
   left: 0;
   right: 0;
+  margin-top: 30px;
   padding: 20px 20px;
   background-color: #febf4e;
   font-family: "Hammersmith One", sans-serif;
 }
 
-@media (max-width: 600px) {
-  .itemcontainer {
+@media (max-width: 400px) {
+  header {
+    height: 20px;
     width: 100%;
+    background-color: #febf4e;
   }
-  input label {
-    font-size: 14px;
-  display: block;
+  #logo {
+    max-height: 70px;
+    max-width: 70px;
+    position: absolute;
+    left: 5px;
+    top: 1px;
+  }
+  h1 {
+    display: none;
+  }
+  .menuIcon {
+    display: block;
+  }
+  nav select {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: aliceblue;
+    background-color: white;
+    top: 60px;
     left: -100%;
+    text-align: center;
     transition: all 0.5s;
+  }
+  nav select option {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    font-size: 20px;
+  }
+  option:hover {
+    background: none;
+    color: #f8b943;
+  }
+  #check:checked ~ select {
+    left: 0;
+  }
+  .metricas {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .itemcontainer {
+    flex-direction: column;
+    width: 300px;
+    height: 540px;
+    justify-content: flex-start;
+  }
+  .container img {
+    max-width: 180px;
+    max-height: 240px;
+    border-radius: 6px;
+  }
+  .texto {
+    position: relative;
+    padding: 0;
+    left: 0;
+  }
+  dd[itemprop="name"] {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  dd[itemprop="shortDescription"] {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  dd[itemprop="genre"] {
+    position: absolute;
+    top: 230px;
+  }
+  dd[itemprop="year"] {
+    line-height: 15px;
+    position: absolute;
+    top: 256px;
   }
 }

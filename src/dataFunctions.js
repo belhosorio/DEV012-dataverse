@@ -80,7 +80,7 @@ export const metricasTotales = (data) => {
 
   const metricasCantidad = [cantidadStudioGhibli, cantidadFantasia];
 
-  const metricasMap = metricasCantidad.map((x) => x );
+  const metricasMap = metricasCantidad.map((x) => x);
 
-  return ` · Studio Ghibli nos deslumbra con la mayor cantidad de películas en nuestra estadística: ¡un impresionante total de ${metricasMap[0]}! Y no es todo, ¡${metricasMap[1]} de ellas te llevan a mundos de fantasía!   · `;
+  return `· Studio Ghibli nos deslumbra con la mayor cantidad de películas en nuestra estadística: ¡un impresionante total de ${metricasMap[0]}! Y no es todo, ¡${metricasMap[1]} de ellas te llevan a mundos de fantasía! ·`;
 };
