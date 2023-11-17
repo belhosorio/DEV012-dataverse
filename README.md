@@ -158,7 +158,7 @@ export default [<br>
 <p>Wireframe</p>
 <img id="wireframe" src="./wireframe.jpg" width="600px" /><br>
 <p>Mockup trabajado en figma</p>
-<img id="wireframe" src="./mockup.jpg" width="600px" /><br>
+<img id="wireframe" src="./mockupf.jpg" width="600px" /><br>
 
 <h2>5. Consideraciones técnicas</h2>
 
