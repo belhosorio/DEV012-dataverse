@@ -17,25 +17,33 @@
 <p>Para poder identificar mejor nuestra navegación y la experiencia del usuario, respondimos las siguientes preguntas para identificar los principales aspectos de nuestro proyecto.</p>
 <ul>
   <li>¿Quiénes son las principales usuarias del producto?</li>
+
   Personas que les guste las peliculas de animacion japonesa
   
   <li>¿Cuáles son los objetivos de estas usuarias en relación con el producto?</li>
+
     Identificar las distintas películas que existen según diferentes categorías
     (directorio)
   
   <li>¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?</li>
-      Son el Título, Año, Categoría (edad), Director, Género, Estudio de
+
+    El Título, Año, Edad recomendada para verla, Director, Género, Estudio de
     animación, entre otros, ya que de esta forma podrán filtrar según sus
     intereses o la información que tengan de alguna película en especial.
 
 
 <p>Como referentes tenemos a Netflix<br>
+
 <img id="ejemplo01" src="./src/img/ejemplo01.jpg" width="400px" /></p>
+
 <p>Y Amazon Prime<br>
+
 <img id="ejemplo02" src="./src/img/ejemplo02.jpg" width="400px" /></p>
 
 <li>¿Cuándo utilizan o utilizarían el producto?</li>
+
 Cuando quieran buscar información sobre alguna película en específico o quieran saber sobre más películas de algún género, director, año, etc. Dependiendo de sus intereses.
+
 </ul>
 <h2>2. Historias de Usuario</h2>
 
@@ -50,9 +58,9 @@ Deben tener el estándar de las características de las películas. <br>
 Se debe visualizar la imagen de la película.<br>
 Contar con jerarquía tipográfica.<br>
 <h4>Definición de terminación</h4>
--Que las historias de usuarios sean funcionales, es decir, que si bien no cuente con su parte gráfica completa, pero que el usuario ya pueda ejecutarlas o interactuar con el sitio web según los criterios de aceptación anteriormente indicados.<br>
--Testeo con usuario, recopilando información de las opiniones para luego modificar aquellos parámetros que deban cambiarse y aplicar las sugerencias que indico el usuario.<br>
--Realizar las pruebas unitarias y que salgan aprobadas en su totalidad.<br>
+- Que las historias de usuarios sean funcionales, es decir, que si bien no cuente con su parte gráfica completa, pero que el usuario ya pueda ejecutarlas o interactuar con el sitio web según los criterios de aceptación anteriormente indicados.<br>
+- Testeo con usuario, recopilando información de las opiniones para luego modificar aquellos parámetros que deban cambiarse y aplicar las sugerencias que indico el usuario.<br>
+- Realizar las pruebas unitarias y que salgan aprobadas en su totalidad.<br>
 <h3>Historia de Usuario n° 2</h3>
 <h4>Filtrar por nombre</h4>
 Como: Persona que le gusta las peliculas de animación japonesa<br>
@@ -70,9 +78,9 @@ La usuaria selecciona filtros por año<br>
 Se visualizan las opcion disponibles en la búsqueda por estudio de animación<br>
 La usuaria selecciona filtros por estudio de animación<br>
 <h4>Definición de terminación</h4>
--Que las historias de usuarios estén funcionales, es decir, que si bien no cuente con su parte gráfica completa, pero que el usuario ya pueda ejecutarlas o interactuar con el sitio web según los criterios de aceptación anteriormente indicados.<br>
--Testeo con usuario, recopilando información de las opiniones para luego modificar aquellos parámetros que deban cambiarse y se aplican las sugerencias que indico el usuario.<br>
--Que se realicen las pruebas unitarias y que salgan aprobadas en su totalidad.<br>
+- Que las historias de usuarios estén funcionales, es decir, que si bien no cuente con su parte gráfica completa, pero que el usuario ya pueda ejecutarlas o interactuar con el sitio web según los criterios de aceptación anteriormente indicados.<br>
+- Testeo con usuario, recopilando información de las opiniones para luego modificar aquellos parámetros que deban cambiarse y se aplican las sugerencias que indico el usuario.<br>
+- Que se realicen las pruebas unitarias y que salgan aprobadas en su totalidad.<br>
 <h3>Historia de Usuario n° 3</h3>
 <h4>Filtrar por ascendente y descendente</h4>
 Como: Persona que le gusta las peliculas de animación japonesa<br>
@@ -84,9 +92,9 @@ Se visualizan las películas por la selección de ascendente o descendente depen
 La usuario puede seleccionar el filtro por ascendente y descendente<br>
 La usuaria puede quitar la selección de filtro elegida anteriormente<br>
 <h4>Definición de terminación</h4>
--Que las historias de usuarios estén funcionales, es decir, que si bien no cuente con su parte gráfica completa, pero que el usuario ya pueda ejecutarlas o interactuar con el sitio web según los criterios de aceptación anteriormente indicados.<br>
--Testeo con usuario, recopilando información de las opiniones para luego modificar aquellos parámetros que deban cambiarse y se aplican las sugerencias que indico el usuario.<br>
--Que se realicen las pruebas unitarias y que salgan aprobadas en su totalidad.<br>
+- Que las historias de usuarios estén funcionales, es decir, que si bien no cuente con su parte gráfica completa, pero que el usuario ya pueda ejecutarlas o interactuar con el sitio web según los criterios de aceptación anteriormente indicados.<br>
+- Testeo con usuario, recopilando información de las opiniones para luego modificar aquellos parámetros que deban cambiarse y se aplican las sugerencias que indico el usuario.<br>
+- Que se realicen las pruebas unitarias y que salgan aprobadas en su totalidad.<br>
 <h3>Historia de Usuario n° 4</h3>
 <h4>Filtrar por género</h4>
 Como: Persona que le gusta las peliculas de animacion japonesa<br>
@@ -99,9 +107,9 @@ La usuaria selecciona filtros por género elegido<br>
 La usuaria puede quitar la selección de filtro elegida anteriormente<br>
 Las películas se organizan en el orden definido de inicio deshaciendo la selección de filtrado<br>
 <h4>Definición de terminación</h4>
--Que las historias de usuarios estén funcionales, es decir, que si bien no cuente con su parte gráfica completa, pero que el usuario ya pueda ejecutarlas o interactuar con el sitio web según los criterios de aceptación anteriormente indicados.<br>
--Testeo con usuario, recopilando información de las opiniones para luego modificar aquellos parámetros que deban cambiarse y se aplican las sugerencias que indico el usuario.<br>
--Que se realicen las pruebas unitarias y que salgan aprobadas en su totalidad.<br>
+- Que las historias de usuarios estén funcionales, es decir, que si bien no cuente con su parte gráfica completa, pero que el usuario ya pueda ejecutarlas o interactuar con el sitio web según los criterios de aceptación anteriormente indicados.<br>
+- Testeo con usuario, recopilando información de las opiniones para luego modificar aquellos parámetros que deban cambiarse y se aplican las sugerencias que indico el usuario.<br>
+- Que se realicen las pruebas unitarias y que salgan aprobadas en su totalidad.<br>
 <h3>Historia de Usuario n° 5</h3>
 <h4>Visualmente agradable para el usuario</h4>
 Como: Persona que le gusta las peliculas de animación japonesa<br>
@@ -116,8 +124,8 @@ Cuenta con botones de cambio de estado <br>
 La letra es legible.<br>
 Es responsive <br>
 <h4>Definición de terminación</h4>
--Testeo con usuario, recopilando información de las opiniones para luego modificar aquellos parámetros que deban cambiarse y se aplican las sugerencias que indico el usuario.<br>
--Que se realicen las pruebas unitarias y que salgan aprobadas en su totalidad.<br>
+- Testeo con usuario, recopilando información de las opiniones para luego modificar aquellos parámetros que deban cambiarse y se aplican las sugerencias que indico el usuario.<br>
+- Que se realicen las pruebas unitarias y que salgan aprobadas en su totalidad.<br>
 <h2>3. Prompting </h2>
 Preguntas generadas a la IA: <br>
 <p>Se hicieron una serie de consultas a IA para conseguir la data que se ocupo en el proyecto, adaptandolo al formato del dataset.js.</p>
