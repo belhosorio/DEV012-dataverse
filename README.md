@@ -7,10 +7,13 @@
   que el usuario necesita. Se utilizaron herramientas de inteligencia artificial
   como ChatGPT, ExplainDev, entre otras para generar un conjunto de datos en un
   archivo javascript. Como entregable final se creó una página web que permite
-  visualizar la data, filtrar, ordenar y calcular alguna estadística. Inicio del
-  proyecto Como primer paso en dupla identificamos el tema que centramos nuestro
+  visualizar la data, filtrar, ordenar y calcular alguna estadística.
+  
+<h2>2. Inicio del proyecto</h2> 
+  
+  <p>Como primer paso en dupla identificamos el tema que centramos nuestro
   proyecto, el cual fue las películas de animación japonesas.
-</p>
+  </p>
 <br />
 <img id="pelicula" src="./src/img/02 vt.jpg" width="150px" />
 
@@ -45,7 +48,7 @@
     Cuando quieran buscar información sobre alguna película en específico o quieran saber sobre más películas de algún género, director, año, etc. Dependiendo de sus intereses.
 
 </ul>
-<h2>2. Historias de Usuario</h2>
+<h2>3. Historias de Usuario</h2>
 
 <h3>Historia de Usuario n° 1</h3>
 <h4>Buscar información de una película</h4>
@@ -126,12 +129,14 @@ Es responsive <br>
 <h4>Definición de terminación</h4>
 - Testeo con usuario, recopilando información de las opiniones para luego modificar aquellos parámetros que deban cambiarse y se aplican las sugerencias que indico el usuario.<br>
 - Que se realicen las pruebas unitarias y que salgan aprobadas en su totalidad.<br>
-<h2>3. Prompting </h2>
+<h2>4. Prompting </h2>
 Preguntas generadas a la IA: <br>
 <p>Se hicieron una serie de consultas a IA para conseguir la data que se ocupo en el proyecto, adaptandolo al formato del dataset.js.</p>
-Un ejemplo fue : "Tienes la informacion de las mejores peliculas de animacion japonesa en los años de 90s , podrías darme una lista de las 24 mejores peliculas de animacion japonesa de ese año?  <br>
+Un ejemplo fue: 
 
-Podrías darme esta información organizada de la siguiente manera: 
+    "Tienes la informacion de las mejores peliculas de animacion japonesa en los años de 90s , podrías darme una lista de las 24 mejores peliculas de animacion japonesa de ese año?  <br>
+
+    Podrías darme esta información organizada de la siguiente manera: 
 
     export default [
     {
@@ -152,7 +157,7 @@ Podrías darme esta información organizada de la siguiente manera:
 <img id="iachatgpt" src="./src/img/chatgpt.jpg" width="600px"/><br>
 <img id="iachatgpt" src="./src/img/dataset con ia bard.jpg" width="600px"/></p>
 
-<h2>4. Prototipos</h2>
+<h2>5. Prototipos</h2>
 
 <p>Se hicieron prototipos acorde a las historias de usuarios identificadas con anterioridad, de esto se crearon un wireframe (prototipo en baja) y un mockup (prototipo en alta), donde pudimos identificar las diferentes caracteristicas graficas de nuestro proyecto.</p>
 <p>Wireframe</p>
@@ -160,7 +165,7 @@ Podrías darme esta información organizada de la siguiente manera:
 <p>Mockup trabajado en figma</p>
 <img id="wireframe" src="./src/img/mockupf.jpg" width="600px" /><br>
 
-<h2>5. Consideraciones técnicas</h2>
+<h2>6. Consideraciones técnicas</h2>
 
 <p>La lógica del proyecto esta implementada completamente en JavaScript
 (ES6), HTML y CSS. En este proyecto se utilizo solo vanilla JavaScript.</p>
@@ -213,12 +218,12 @@ a obtener, procesar y manipular datos (funciones). Por ejemplo:</p>
 
   <p>Tambien el proyecto implementa manipulaciones del DOM a traves de archivos javascript, junto con la visualizacion de la data, proveniente del archivo dataset.js., filtros acumulativos entre unos a otros, un boton con la opcion de limpiar los filtros implementados, un buscador por nombre de las peliculas y utilizacion de las propiedades flexbox en el archivo css junto con una vision reponsiva del sitio para dispositivos moviles.</p>
 
-<h2>6. Test Unitarios</h2>
+<h2>7. Test Unitarios</h2>
 
 <p>En este proyecto se crearon una serie de test unitarios de las funciones implementadas en el archivo dataFunctions.js. (filterBy, sortBy, etc.)</p><br>
 <img id="test" src="./src/img/test unitarios.jpg" width="600px" /><br>
 
-<h2>7. Proyecto</h2>
+<h2>8. Proyecto</h2>
 
 <p>Finalmente, el proyecto se llevó a cabo en 5 sprints, cada uno con una duración de una semana. Durante este proceso, se realizaron algunas modificaciones, pero se mantuvo la esencia original del proyecto. 
 
