@@ -213,4 +213,4 @@ a obtener, procesar y manipular datos (funciones). Por ejemplo:</p>
 <p>Finalmente, el proyecto se llevó a cabo en 5 sprints, cada uno con una duración de una semana. Durante este proceso, se realizaron algunas modificaciones, pero se mantuvo la esencia original del proyecto. 
 
 La funcionalidad principal consiste en filtrar las películas de animación japonesa según el género, estudio y año de lanzamiento. Además, se ofrece la opción de ordenarlas de manera ascendente o descendente, así como la posibilidad de buscarlas directamente por su nombre en el buscador proporcionado. El botón "limpiar", como su nombre lo indica, permite limpiar los filtros implementados. Adicional a esto, cuenta con una estadística que evalúa el estudio con mayor número de películas y el género que más destaca, así como un contador que muestra en tiempo real las películas exhibidas según los diferentes filtros implementados. De esta manera, se obtiene un sitio de fácil manipulación y comprensión para el usuario.
-<img id="sitio" src="./sitioweb.jpg" width="600px" /><br>
+<img id="sitio" src="./src/img/sitioweb.jpg" width="600px" /><br>
