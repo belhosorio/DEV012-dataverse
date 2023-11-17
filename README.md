@@ -18,7 +18,7 @@
 <ul>
   <li>¿Quiénes son las principales usuarias del producto?</li>
 
-  Personas que les guste las peliculas de animacion japonesa
+     Personas que les guste las peliculas de animacion japonesa
   
   <li>¿Cuáles son los objetivos de estas usuarias en relación con el producto?</li>
 
@@ -42,7 +42,7 @@
 
 <li>¿Cuándo utilizan o utilizarían el producto?</li>
 
-Cuando quieran buscar información sobre alguna película en específico o quieran saber sobre más películas de algún género, director, año, etc. Dependiendo de sus intereses.
+    Cuando quieran buscar información sobre alguna película en específico o quieran saber sobre más películas de algún género, director, año, etc. Dependiendo de sus intereses.
 
 </ul>
 <h2>2. Historias de Usuario</h2>
@@ -130,10 +130,12 @@ Es responsive <br>
 Preguntas generadas a la IA: <br>
 <p>Se hicieron una serie de consultas a IA para conseguir la data que se ocupo en el proyecto, adaptandolo al formato del dataset.js.</p>
 Un ejemplo fue : "Tienes la informacion de las mejores peliculas de animacion japonesa en los años de 90s , podrías darme una lista de las 24 mejores peliculas de animacion japonesa de ese año?  <br>
-Podrías darme esta información organizada de la siguiente manera: <br>
-export default [
-  {
-    "id": "ada-lovelace",
+
+Podrías darme esta información organizada de la siguiente manera: 
+
+    export default [
+    {
+     "id": "ada-lovelace",
     "name": "Ada Lovelace",
     "shortDescription": "Pionera de la informática, fue la primera programadora.",
     "description": "Una visionaria del siglo XIX ...",
@@ -143,7 +145,7 @@ export default [
       "placeOfBirth": "London, England",
       "mainField": "Computer Science",
     }
-  },]"
+    },]"
 
 <p>Listado de peliculas generado por la IA (usando ChatGPT y Bard)<br>
 
